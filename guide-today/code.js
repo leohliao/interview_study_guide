@@ -4,8 +4,7 @@
     Get topic videos: https://api.khanacademy.org/api/v1/topic/<topic_slug>/videos
 */
 
-import * as React from "react";
-import * as ReactDOM from "react-dom";
+let newArticles;
 
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
@@ -40,7 +39,7 @@ var Something = (function (_super) {
                 articleIds: articleIds,
             });
         }).then(function () { return self.fetchArticles(); });
-        ;
+        
     };
     Something.prototype.fetchArticles = function () {
         var self = this;
@@ -71,4 +70,5 @@ var Something = (function (_super) {
     };
     return Something;
 }(React.Component));
-ReactDOM.render(React.createElement(Something, null), document.getElementById('root'));
+const root = document.getElementById("root");
+ReactDOM.render(React.createElement(Something, null), root);
