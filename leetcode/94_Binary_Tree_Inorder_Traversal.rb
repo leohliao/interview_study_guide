@@ -13,11 +13,11 @@
 # end
 
 def inorder_traversal(root)
-  return [] if root.nil?
-  result = []
-  result.concat(root.left)
-  root << root.val
-  result.concat(root.right)
-  result
+    return [] if root.nil?
+    result = []
+    result.concat(inorder_traversal(root.left))
+    result << root.val
+    result.concat(inorder_traversal(root.right))
+    result
 end
 
