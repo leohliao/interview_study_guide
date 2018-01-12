@@ -24,3 +24,6 @@ end
 
 p is_palindrome(10101) == true 
 p is_palindrome(-122431) == false
+
+## Time complexity: O(log 10 n): we divided the input by 10 for every iteration
+## Space Complxity: O(1)
