@@ -21,12 +21,18 @@
 
 def breadth_first(node)
   results = []
-  queue = []
+  queue = Queue.new
+  # queue = [] // will also works
   return [] if node.nil?
+  # add node to queue
   queue << node 
+  # while queue is not empty continue to loop
   while !queue.empty?
+    # take the node out from the left side of the queue
     next_node = queue.shift
+    # pass the node value into the results
     results << next_node.val
+    # KEY!! continue to filling the queue
     if !next_node.left.nil?
       queue << next_node.left
     end
