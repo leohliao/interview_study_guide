@@ -1,6 +1,7 @@
 # You have N boxes in your room which you want to carry to a different place. 
 # There are too many to carry in one trip, 
-# so you want to split them into several piles using the following algorithm: if the current pile has at most M boxes, 
+# so you want to split them into several piles using the following algorithm: 
+# if the current pile has at most M boxes, 
 # you can carry it as is, otherwise you split it into P parts as equally as possible 
 # (i.e. so that the sizes of the parts differ at most by 1) and apply the same algorithm to each of the parts. 
 # If you're trying to split less than P boxes into P piles, discard resulting zero-sized piles (see example 2).
@@ -41,3 +42,6 @@
 # a = gets.sub(/\n/,"").to_i
 # b = gets.sub(/\n/,"").to_i
 # c = gets.sub(/\n/,"").to_i
+
+def n_of_piles(boxes_total, maximum_i_can_carry, desired_pile)
+end
