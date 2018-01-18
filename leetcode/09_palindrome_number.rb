@@ -1,6 +1,6 @@
 # Determine whether an integer is a palindrome. Do this without extra space.
 
-def is_palindrome(x)
+def is_number_palindrome?(x)
     # x - x.to_s.reverse.to_i == 0
 
     # First we handle some edge cases:
@@ -22,8 +22,8 @@ def is_palindrome(x)
     return x == revertedNumber || x == revertedNumber/10
 end
 
-p is_palindrome(10101) == true 
-p is_palindrome(-122431) == false
+p is_number_palindrome?(10101) == true 
+p is_number_palindrome?(-122431) == false
 
 ## Time complexity: O(log 10 n): we divided the input by 10 for every iteration
 ## Space Complxity: O(1)

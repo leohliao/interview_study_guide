@@ -12,7 +12,6 @@
 # nums2 = [3, 4]
 # The median is (2 + 3)/2 = 2.5
 
-def find_median_sorted_arrays(nums1, nums2)
   ## imagine that your data is merged [1,2,3,4,5,6,7,8,9]
   ## Then after the first 4 numbers, the next one is the median. 
   ##      Remaining    Remaining     Last used    Last used
@@ -35,6 +34,7 @@ def find_median_sorted_arrays(nums1, nums2)
   # C(k-1) = [A(m1-1), B(m2-1)].max
   # C(k)   = [A(m1), B(m2)].min
 
+def find_median_sorted_arrays(nums1, nums2)
   # Sort the arrays by its size
   a, b = [nums1, nums2].sort_by(&:size)
   # figure out the length of each array input
