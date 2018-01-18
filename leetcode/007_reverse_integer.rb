@@ -16,7 +16,7 @@
 # Note:
 # Assume we are dealing with an environment which could only hold integers within the 32-bit signed integer range. For the purpose of this problem, assume that your function returns 0 when the reversed integer overflows.
 
-
+# To learn more about 32-bit signed integer, vist https://www.interviewcake.com/concept/java/integer-overflowpry
 
 def reverse(x)
     return 0 if x == 0
