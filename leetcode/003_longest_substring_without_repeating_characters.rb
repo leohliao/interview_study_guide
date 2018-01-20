@@ -5,7 +5,7 @@
 # Given "bbbbb", the answer is "b", with the length of 1.
 # Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
 
-def length_of_longest_substring(str)
+def length_of_longest_substring(str) ## Does not pass LeetCode Test
   max_longest = ''
   current_longest = ''
   str.each_char do |letter|
