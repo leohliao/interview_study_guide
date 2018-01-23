@@ -26,7 +26,7 @@ Resource: `https://github.com/tianyuduan/JS30/blob/master/PrototypalInheritance/
 ### Q006. How to test whether a value is NaN? 
 - You can is `NaN.isNaN()` method to check to see if a value is NaN. 
 
-### Q007. Explain event delegation:
+##### Q007. Explain event delegation:
 ### Q008. Explain how `this` works in JavaScript
 ### Q009. Explain how prototypal inheritance works
 ### Q010. What do you think of AMD vs CommonJS?
