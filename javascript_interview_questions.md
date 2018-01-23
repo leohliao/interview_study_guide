@@ -5,11 +5,11 @@
 ### Q001. How would you empty the array?
 - use slice, splice method
 - use array.length = 0;
-
+'----------------------------'
 ### Q002. How do you clone an object? 
 - Use Object.Assign({}, obj)
 - Use JSON.parse(JSON.stringify(obj)) // faster
-
+//
 ### Q003. What is difference between .proto vs __proto__
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto
 
@@ -24,11 +24,17 @@ Resource: `https://github.com/tianyuduan/JS30/blob/master/PrototypalInheritance/
 - if using `merge`, remember to mention that you need to import from lodash.
 
 ### Q006. How to test whether a value is NaN? 
-- You can is `NaN.isNaN()` method to check to see if a value is NaN. 
+- You can use `isNaN(value)` method to check to see if a value is NaN. 
 
-#### Q007. Explain event delegation:
-#### Q008. Explain how `this` works in JavaScript
-### Q009. Explain how prototypal inheritance works
+### Q007. Explain event delegation:
+- Capturing and bubbling allow to implement one of most powerful event handling patterns called event delegation.
+- The idea is that if we have a lot of elements handled in a similar way, then instead of assigning a handler to each of them – we put a single handler on their common ancestor.
+- In the handler we get event.target, see where the event actually happened and handle it.
+- Let’s see an example – the Ba-Gua diagram reflecting the ancient Chinese philosophy.
+
+### Q008. Explain how `this` works in JavaScript
+
+### Q009. Explain how prototype inheritance works
 ### Q010. What do you think of AMD vs CommonJS?
 ### Q011. Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
 ### Q012. What needs to be changed to properly make it an IIFE?
@@ -90,4 +96,13 @@ duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
 ### Q065. What are the benefits of using `spread syntax` and how is it different from `rest syntax`?
 ### Q066. How can you share code between files?
 ### Q067. Why you might want to create static class members?
+### Function(not associate with object) vs Method(assoicate with object)
+```javascript
+var methodObject = {
+    attribute: "xyz",
+    display: function () {  // Method
+        console.log(this.attribute);
+    }
+};
+```
 
