@@ -95,8 +95,10 @@ duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
 #### Q064. Can you give an example of a curry function and why this syntax offers an advantage?
 #### Q065. What are the benefits of using `spread syntax` and how is it different from `rest syntax`?
 #### Q066. How can you share code between files?
+
 #### Q067. Why you might want to create static class members?
-#### Function(not associate with object) vs Method(assoicate with object)
+
+#### Q068. Function(not associate with object) vs Method(assoicate with object)
 ```javascript
 var methodObject = {
     attribute: "xyz",
