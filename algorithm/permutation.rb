@@ -1,3 +1,6 @@
+# Permutation
+
+# Recursive 
 def perm(array)
   return [array] if array.length == 1
   first = array.shift 
@@ -12,5 +15,4 @@ def perm(array)
   total_perm
 end 
 
-
-p perm([1,2,3])
+p perm([1,2,3]) 

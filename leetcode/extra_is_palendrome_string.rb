@@ -11,5 +11,5 @@ def is_palendrome?(str)
   true
 end
 
-print is_palendrome?("aca")
-print is_palendrome?("baaa")
+p is_palendrome?("aca")
+p is_palendrome?("baaa")
