@@ -33,6 +33,8 @@
 - [Resource]:(https://javascript.info/event-delegation)
 
 #### Q008. Explain how `this` works in JavaScript
+- The value of `this` is determined by how a function is called. It CANNOT be set by assignment during execution, and it may be different each time the function is called.
+- Has some difference between strict mode and non-strict mode.
 
 #### Q009. Explain how prototype inheritance works
 #### Q010. What do you think of AMD vs CommonJS?
