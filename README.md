@@ -2,8 +2,8 @@
 
 ## Interview Questions:
 
-### 1. [JavaScript]:(interview_questions/javascript_interview_questions.md)
-### 2. [Coding Questions]:(interview_questions/coding-questions.md)
+### 1. [JavaScript](/interview_questions/javascript_interview_questions.md)
+### 2. [Coding Questions](/interview_questions/coding-questions.md)
 
 
 
