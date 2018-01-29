@@ -10,14 +10,14 @@
 
 #### Q003. What is difference between .proto vs __proto__
 
-[Resource](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto)
+- [Resource.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto)
 
 #### Q004. Understand prototype inheritance: 
 - JS Object inherit their properties and methods from their prototype.
 - The prototype property is an object, and it has a constructor property by default which allows yo to add new properties and methods to existing objects types.
 - __proto__ : when an object is created in JAvaScript, JavaScript Engine adds a __proto__ property to the newly created object; it points to the prototype object of the constructor function. 
 
-[Resource](https://github.com/tianyuduan/JS30/blob/master/PrototypalInheritance/prototype.md)
+- [Resource.](https://github.com/tianyuduan/JS30/blob/master/PrototypalInheritance/prototype.md)
 
 #### Q005. How to merge two JavaScript Objects 
 - Use Object.assign({}, obj)
@@ -30,11 +30,12 @@
 - Capturing and bubbling allow to implement one of most powerful event handling patterns called event delegation.
 - The idea is that if we have a lot of elements handled in a similar way, then instead of assigning a handler to each of them – we put a single handler on their common ancestor.
 - In the handler we get event.target, see where the event actually happened and handle it.
-- [Resource]:(https://javascript.info/event-delegation)
+- [Resource](https://javascript.info/event-delegation)
 
 #### Q008. Explain how `this` works in JavaScript
 - The value of `this` is determined by how a function is called. It CANNOT be set by assignment during execution, and it may be different each time the function is called.
-- Has some difference between strict mode and non-strict mode.
+- Has some difference between `strict` mode and `non-strict` mode.
+
 
 #### Q009. Explain how prototype inheritance works
 #### Q010. What do you think of AMD vs CommonJS?
