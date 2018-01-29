@@ -111,3 +111,5 @@ var methodObject = {
 };
 ```
 
+[Back to Home](~/README.md)
+
