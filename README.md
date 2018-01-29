@@ -2,11 +2,11 @@
 
 ## Interview Questions:
 
-### 1. [JavaScript Interview Questions](/interview_questions/javascript-interview-questions.md)
+### 1. [JavaScript Interview Questions](/interviewQuestions/javascript-interview-questions.md)
 - Tricky JavaScript Question
-### 2. [Coding Interview Questions](/interview_questions/coding-questions.md)
+### 2. [Coding Interview Questions](/interviewQuestions/coding-questions.md)
 - Can you successfully tell me what the ouput values are?
-### 3. [Web Developer Interview Questions](/interview_questions/web-developer-interview-questions.md)
+### 3. [Web Developer Interview Questions](/interviewQuestions/web-developer-interview-questions.md)
 
 
 
