@@ -121,7 +121,7 @@ var myObject = {
 };
 myObject.func();
 ```
-Answer: 
+#### Answer: 
  ---------------------------------------
 |   outer func:  this.foo = bar         |
 |   outer func:  self.foo = bar         |
