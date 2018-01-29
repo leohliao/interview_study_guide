@@ -2,9 +2,10 @@
 
 ## Interview Questions:
 
-### 1. [JavaScript](/interview_questions/javascript_interview_questions.md)
-### 2. [Coding Questions](/interview_questions/coding-questions.md)
-
+### 1. [JavaScript Interview Questions](/interview_questions/javascript_interview_questions.md)
+- Tricky JavaScript Question
+### 2. [Coding Interview Questions](/interview_questions/coding-questions.md)
+- Can you successfully tell me what the ouput values are?
 
 
 Disclosure:
@@ -18,5 +19,6 @@ please let me know and I will remove anything that violates your contents.
 Reference:
 
 Please find the following for the lists of resources that I have used for this repo:
-1. https://github.com/h5bp/Front-end-Developer-Interview-Questions
-2. https://www.leetcode.com
+1. [Front End Developer Interview Questions](https://github.com/h5bp/Front-end-Developer-Interview-Questions)
+2. [Leetcode](https://www.leetcode.com)
+3. [Toptal](https://www.toptal.com/javascript/interview-questions)
