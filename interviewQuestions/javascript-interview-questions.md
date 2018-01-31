@@ -44,6 +44,8 @@
 - Class taxonomies are not an automatic side-effect of prototypal OO.
 
 ### Q010. What do you think of AMD vs CommonJS?
+- `AMD`: Asynchronous Module Definition - is another specification for modules. For example: RequireJS. It is generally more used in client-side(in-browser) JavaScript development due to this. 
+- [Resource](https://auth0.com/blog/javascript-module-systems-showdown/)
 ### Q011. Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
 ### Q012. What needs to be changed to properly make it an IIFE?
 ### Q013. What's the difference between a variable that is: `null`, `undefined` or undeclared?
