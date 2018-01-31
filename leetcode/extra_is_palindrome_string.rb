@@ -1,4 +1,4 @@
-def is_palendrome?(str)
+def is_palindrome?(str)
   idx1 = 0
   idx2 = -1
   
@@ -11,5 +11,5 @@ def is_palendrome?(str)
   true
 end
 
-p is_palendrome?("aca")
-p is_palendrome?("baaa")
+p is_palindrome?("aca")
+p is_palindrome?("baaa")

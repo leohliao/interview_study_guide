@@ -27,3 +27,4 @@ Please find the following for the lists of resources that I have used for this r
 1. [Front End Developer Interview Questions](https://github.com/h5bp/Front-end-Developer-Interview-Questions)
 2. [Leetcode](https://www.leetcode.com)
 3. [Toptal](https://www.toptal.com/javascript/interview-questions)
+4. [JavaScript.info](https://javascript.info/)

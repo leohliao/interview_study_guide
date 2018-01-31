@@ -38,6 +38,11 @@
 
 
 ### Q009. Explain how prototype inheritance works
+- *A prototype is a working object instance.*
+- *Objects inherit directly from other objects.*
+- Instances allows for easy selective inheritance and a flat [[Prototype]] delegation hierarchy. 
+- Class taxonomies are not an automatic side-effect of prototypal OO.
+
 ### Q010. What do you think of AMD vs CommonJS?
 ### Q011. Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
 ### Q012. What needs to be changed to properly make it an IIFE?
