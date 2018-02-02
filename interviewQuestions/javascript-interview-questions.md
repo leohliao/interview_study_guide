@@ -36,7 +36,6 @@
 - The value of `this` is determined by how a function is called. It CANNOT be set by assignment during execution, and it may be different each time the function is called.
 - Has some difference between `strict` mode and `non-strict` mode.
 
-
 ### Q009. Explain how prototype inheritance works
 - *A prototype is a working object instance.*
 - *Objects inherit directly from other objects.*
@@ -47,7 +46,14 @@
 - `AMD`: Asynchronous Module Definition - is another specification for modules. For example: RequireJS. It is generally more used in client-side(in-browser) JavaScript development due to this. 
 - [Resource](https://auth0.com/blog/javascript-module-systems-showdown/)
 ### Q011. Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
-### Q012. What needs to be changed to properly make it an IIFE?
+- `IIFE` - An immediately-invoked function expression which produces a lexical scope using JavaScript's function scoping. 
+- This example doesn't work because it needs a wrapper.
+
+  ### Q012. What needs to be changed to properly make it an IIFE?
+  - Proper way to make it IIFE is:
+  ```javascript
+  (function foo(){ })();
+  ```
 ### Q013. What's the difference between a variable that is: `null`, `undefined` or undeclared?
 ### Q014. How would you go about checking for any of these states?
 ### Q015. What is a closure, and how/why would you use one?
