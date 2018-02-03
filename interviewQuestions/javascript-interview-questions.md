@@ -54,7 +54,10 @@
   ```javascript
   (function foo(){ })();
   ```
-### Q013. What's the difference between a variable that is: `null`, `undefined` or undeclared?
+### Q013. What's the difference between a variable that is: `null`, `undefined` or `undeclared`?
+- `null` - is primitive type; can be assigned to variable; has no value.
+- `undefined` - variable is declared, but has yet to be assigned a value.
+- `undeclared` - variable is not declared at all --> will return Reference error 
 ### Q014. How would you go about checking for any of these states?
 ### Q015. What is a closure, and how/why would you use one?
 ### Q016. Can you describe the main difference between a `forEach` loop and a `.map()` loop and why you would pick one versus the other?
