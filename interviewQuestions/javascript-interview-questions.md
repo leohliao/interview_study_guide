@@ -58,8 +58,41 @@
 - `null` - is primitive type; can be assigned to variable; has no value.
 - `undefined` - variable is declared, but has yet to be assigned a value.
 - `undeclared` - variable is not declared at all --> will return Reference error 
+
 ### Q014. How would you go about checking for any of these states?
 ### Q015. What is a closure, and how/why would you use one?
+- Closure determines whether a function(inner) has access to certain variables in the outer one.
+- Closure has access to variables in three scopes:
+  - 1. variable of its own scope
+  - 2. variables in the enclosing function's scope
+  - 3. global variables
+  ```javascript
+  var globalVar = "xyz";
+
+  (function outerFunc(outerArg) {
+      var outerVar = 'a';
+      
+      (function innerFunc(innerArg) {
+      var innerVar = 'b';
+      
+      console.log(
+          "outerArg = " + outerArg + "\n" +
+          "innerArg = " + innerArg + "\n" +
+          "outerVar = " + outerVar + "\n" +
+          "innerVar = " + innerVar + "\n" +
+          "globalVar = " + globalVar);
+      
+      })(456);
+  })(123);
+  ```
+  output is: 
+  ```javascript
+  outerArg = 123
+  innerArg = 456
+  outerVar = a
+  innerVar = b
+  globalVar = xyz
+  ```
 ### Q016. Can you describe the main difference between a `forEach` loop and a `.map()` loop and why you would pick one versus the other?
 ### Q017. What's a typical use case for anonymous functions?
 ### Q018. How do you organize your code? (module pattern, classical inheritance?)
