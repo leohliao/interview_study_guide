@@ -105,9 +105,12 @@
 - Anonymous functions are `function expressions`, so we can assign functions to variables and object properties or pass them as arguments.
 ### Q018. How do you organize your code? (module pattern, classical inheritance?)
 ### Q019. What's the difference between host objects and native objects?
-- `Host objects` - objects supplied by the host environment to complete the execution environment. Ex: (assuming browser environemt) window, document, location, etc.
+- `Host objects` - objects supplied by the host environment to complete the execution environment. Ex: (assuming browser environment) window, document, location, etc.
 - `Native objects` - standard built-in objects provided by Javascript. Ex: Date, Math, Object (constructor)
 ### Q020. Difference between: `function Person(){}`, `var person = Person()`, and `var person = new Person()`?
+- `function Person(){}` - function declaration, function is declared but is not executed
+- `var person = Person()` - function expression, the variable `var person` has been defined and contains a value reference to a Person function. Javascript expressions always return a value.
+- `var person = new Person()` - function constructor, when we add the keyword 'new', we are instantiating a new object of the Person class constructor.
 ### Q021. What's the difference between `.call` and `.apply`?
 ### Q022. Explain `Function.prototype.bind`.
 ### Q023. When would you use `document.write()`?
