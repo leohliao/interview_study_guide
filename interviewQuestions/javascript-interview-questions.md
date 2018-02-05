@@ -121,6 +121,7 @@
 ### Q033. Why is extending built-in JavaScript objects not a good idea?
 ### Q034. Difference between document load event and document DOMContentLoaded event?
 ### Q035. What is the difference between `==` and `===`?
+- `==` will not check for types (tolerant) vs `===` checks for type and value
 ### Q036. Explain the same-origin policy with regards to JavaScript.
 ### Q037. Make this work:
 ```javascript
