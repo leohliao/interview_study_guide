@@ -102,6 +102,7 @@
 - [JavaScript — Map vs. ForEach](https://codeburst.io/javascript-map-vs-foreach-f38111822c0f)
 
 ### Q017. What's a typical use case for anonymous functions?
+- Anonymous functions are `function expressions`, so we can assign functions to variables and object properties or pass them as arguments.
 ### Q018. How do you organize your code? (module pattern, classical inheritance?)
 ### Q019. What's the difference between host objects and native objects?
 ### Q020. Difference between: `function Person(){}`, `var person = Person()`, and `var person = new Person()`?
