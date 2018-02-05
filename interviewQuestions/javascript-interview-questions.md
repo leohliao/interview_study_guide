@@ -94,6 +94,12 @@
   globalVar = xyz
   ```
 ### Q016. Can you describe the main difference between a `forEach` loop and a `.map()` loop and why you would pick one versus the other?
+- `forEach()` - executes a provided function once for each array element.
+- `forEach()` - may be preferable when you’re not trying to change the data in your array, but instead want to just do something with it — like saving it to a database or logging it out:
+- `.map()` - creates a new array with the results of calling a provided function on every element in the calling array.
+- `map()` - might be preferable when changing or altering data. Not only is it faster but it returns a new Array. This means we can do cool things like chaining on other methods ( map(), filter(), reduce(), etc.)
+- [JavaScript — Map vs. ForEach](https://codeburst.io/javascript-map-vs-foreach-f38111822c0f)
+
 ### Q017. What's a typical use case for anonymous functions?
 ### Q018. How do you organize your code? (module pattern, classical inheritance?)
 ### Q019. What's the difference between host objects and native objects?
