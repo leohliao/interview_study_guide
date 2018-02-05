@@ -44,7 +44,8 @@
 
 ### Q010. What do you think of AMD vs CommonJS?
 - `AMD`: Asynchronous Module Definition - is another specification for modules. For example: RequireJS. It is generally more used in client-side(in-browser) JavaScript development due to this. 
-- [Resource](https://auth0.com/blog/javascript-module-systems-showdown/)
+- [JavaScript Module Systems Showdown](https://auth0.com/blog/javascript-module-systems-showdown/)
+
 ### Q011. Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
 - `IIFE` - An immediately-invoked function expression which produces a lexical scope using JavaScript's function scoping. 
 - This example doesn't work because it needs a wrapper.
