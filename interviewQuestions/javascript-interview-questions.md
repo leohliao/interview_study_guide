@@ -142,6 +142,9 @@ jenn.greeting(); //'Hello, my name is Jenn'
 - `Feature inference` - a feature is determined to exist and the next web technology feature to be implemented is assumed to exist as well.
 - `UA String` - User Agent String; a string of text of data that each browser sends and can be accessed via navigator.userAgent. This string text contains information about the browser environment that is being targeted.
 ### Q025. Explain Ajax in as much detail as possible.
+- Asynchronous Javascript + XML
+- The use of XMLHttpRequest object to communicate with servers; information can be sent in different formats such as JSON, XML, HTML.
+- Its asynchronous nature allows it to communicate with server, exchange data, and update the page without refreshing the page.
 ### Q026. What are the advantages and disadvantages of using Ajax?
 ### Q027. Explain how JSONP works (and how it's not really Ajax).
 ### Q028. Have you ever used JavaScript templating?
