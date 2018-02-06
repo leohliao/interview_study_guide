@@ -151,6 +151,7 @@ jenn.greeting(); //'Hello, my name is Jenn'
 - Response time is faster, increasing performance and speed (optimization)
 - Improves user experience
 - The alternative to use JSON
+
 **Disadvantages**:
 - Could increase design and development time - difficult to debug and increases code size of webpage
 - Browser incompatibility because AJAX depends on Javascript which is implemented differently across different browsers
