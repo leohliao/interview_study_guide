@@ -133,6 +133,8 @@ jenn.greeting(); //'Hello, my name is Jenn'
 ```
 - With `bind`, there's no need to assign `this` to a variable to keep the same context.
 ### Q023. When would you use `document.write()`?
+- It was an old way of adding elements to a webpage; it only works while the page is loading
+- Because there's no DOM modification, it works fast. If a lot of text needs to be added into HTML dynamically and the page is still loading, it may help to use `document.write()`
 ### Q024. What's the difference between feature detection, feature inference, and using the UA string?
 ### Q025. Explain Ajax in as much detail as possible.
 ### Q026. What are the advantages and disadvantages of using Ajax?
