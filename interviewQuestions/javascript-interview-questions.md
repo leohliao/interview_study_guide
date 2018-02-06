@@ -116,10 +116,46 @@ They differ in how they handle function arguments:
 - `.call` - requires the arguments to be listed individually
 - `.apply` - allows you to invoke the function with `arguments` array as the second argument
 ### Q022. Explain `Function.prototype.bind`.
+- It creates a new function, where `this` keyword is set to the provided value
+- You keep the context of `this` within another function.
+Ex: 
+```javascript
+function Person(name) {
+  this.name = name;
+  this.greeting = function() {
+    setTimeOut(function() {
+      console.log("Hello, my name is " + this.name);
+    }.bind(this), 500);
+  }
+}
+var jenn = new Person('Jenn');
+jenn.greeting(); //'Hello, my name is Jenn'
+```
+- With `bind`, there's no need to assign `this` to a variable to keep the same context.
 ### Q023. When would you use `document.write()`?
+- It was an old way of adding elements to a webpage; it only works while the page is loading
+- Used when including third party code (ads or Google Analytics)
+- Because there's no DOM modification, it works fast. If a lot of text needs to be added into HTML dynamically and the page is still loading, it may help to use `document.write()`
 ### Q024. What's the difference between feature detection, feature inference, and using the UA string?
+- These are three ways to determine if a particular web technology feature exists in a user's browser or environment.
+- `Feature detection` - a way of determining if a feature exists in the browser
+- `Feature inference` - a feature is determined to exist and the next web technology feature to be implemented is assumed to exist as well.
+- `UA String` - User Agent String; a string of text of data that each browser sends and can be accessed via navigator.userAgent. This string text contains information about the browser environment that is being targeted.
 ### Q025. Explain Ajax in as much detail as possible.
+- Asynchronous Javascript + XML
+- The use of XMLHttpRequest object to communicate with servers; information can be sent in different formats such as JSON, XML, HTML.
+- Its asynchronous nature allows it to communicate with server, exchange data, and update the page without refreshing the page.
 ### Q026. What are the advantages and disadvantages of using Ajax?
+**Advantages**:
+- Reduces traffic between the client and the server
+- Response time is faster, increasing performance and speed (optimization)
+- Improves user experience
+- The alternative to use JSON
+
+**Disadvantages**:
+- Could increase design and development time - difficult to debug and increases code size of webpage
+- Browser incompatibility because AJAX depends on Javascript which is implemented differently across different browsers
+- Pages that are dynamically created using AJAX request do not autmotically register with the browser's history, so hitting the back button may not return to an earlier state of the page.
 ### Q027. Explain how JSONP works (and how it's not really Ajax).
 ### Q028. Have you ever used JavaScript templating?
 ### Q029. If so, what libraries have you used?
