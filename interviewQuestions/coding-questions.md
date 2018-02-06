@@ -4,11 +4,13 @@
 ```javascript
 var foo = 10 + '20';
 ```
+'1020' - adding an integer and a string will return a string
 
 ### Question: What will be the output of the code below?
 ```javascript
 console.log(0.1 + 0.2 == 0.3);
 ```
+false - In programming languages, floating point representation aren't accurate but approximate
 
 ### Question: How would you make this work? 
 ```javascript
@@ -16,10 +18,30 @@ add(2, 5); // 7
 add(2)(5); // 7
 ```
 
+```javascript
+function add(numArgs) {
+  const numbers = [];
+
+  function _add(num) {
+    numbers.push(num);
+
+    if (numbers.length === numArgs) {
+      let total = 0;
+      numbers.forEach(n => { total += n;});
+      return total;
+    } else {
+      return _add;
+    }
+  }
+  return _add;
+}
+
+```
 ### Question: What value is returned from the following statement? 
 ```javascript
 "i'm a lasagna hog".split("").reverse().join("");
 ```
+'goh angasal a m\'i' - `split("")` creates an array of individual characters in the string, `reverse` reverses the array, `join("")` creates a string of the reversed array
 
 ### Question: What is the value of `window.foo`?
 ```javascript
