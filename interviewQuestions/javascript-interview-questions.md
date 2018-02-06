@@ -137,6 +137,10 @@ jenn.greeting(); //'Hello, my name is Jenn'
 - Used when including third party code (ads or Google Analytics)
 - Because there's no DOM modification, it works fast. If a lot of text needs to be added into HTML dynamically and the page is still loading, it may help to use `document.write()`
 ### Q024. What's the difference between feature detection, feature inference, and using the UA string?
+- These are three ways to determine if a particular web technology feature exists in a user's browser or environment.
+- `Feature detection` - a way of determining if a feature exists in the browser
+- `Feature inference` - a feature is determined to exist and the next web technology feature to be implemented is assumed to exist as well.
+- `UA String` - User Agent String; a string of text of data that each browser sends and can be accessed via navigator.userAgent. This string text contains information about the browser environment that is being targeted.
 ### Q025. Explain Ajax in as much detail as possible.
 ### Q026. What are the advantages and disadvantages of using Ajax?
 ### Q027. Explain how JSONP works (and how it's not really Ajax).
