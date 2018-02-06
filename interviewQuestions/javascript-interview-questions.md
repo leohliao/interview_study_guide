@@ -116,6 +116,22 @@ They differ in how they handle function arguments:
 - `.call` - requires the arguments to be listed individually
 - `.apply` - allows you to invoke the function with `arguments` array as the second argument
 ### Q022. Explain `Function.prototype.bind`.
+- It creates a new function, where `this` keyword is set to the provided value
+- You keep the context of `this` within another function.
+Ex: 
+```javascript
+function Person(name) {
+  this.name = name;
+  this.greeting = function() {
+    setTimeOut(function() {
+      console.log("Hello, my name is " + this.name);
+    }.bind(this), 500);
+  }
+}
+var jenn = new Person('Jenn');
+jenn.greeting(); //'Hello, my name is Jenn'
+```
+- With `bind`, there's no need to assign `this` to a variable to keep the same context.
 ### Q023. When would you use `document.write()`?
 ### Q024. What's the difference between feature detection, feature inference, and using the UA string?
 ### Q025. Explain Ajax in as much detail as possible.
