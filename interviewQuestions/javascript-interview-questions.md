@@ -112,6 +112,9 @@
 - `var person = Person()` - function expression, the variable `var person` has been defined and contains a value reference to a Person function. Javascript expressions always return a value.
 - `var person = new Person()` - function constructor, when we add the keyword 'new', we are instantiating a new object of the Person class constructor.
 ### Q021. What's the difference between `.call` and `.apply`?
+They differ in how they handle function arguments:
+- `.call` - requires the arguments to be listed individually
+- `.apply` - allows you to invoke the function with `arguments` array as the second argument
 ### Q022. Explain `Function.prototype.bind`.
 ### Q023. When would you use `document.write()`?
 ### Q024. What's the difference between feature detection, feature inference, and using the UA string?
