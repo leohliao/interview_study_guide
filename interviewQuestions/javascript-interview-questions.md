@@ -146,6 +146,15 @@ jenn.greeting(); //'Hello, my name is Jenn'
 - The use of XMLHttpRequest object to communicate with servers; information can be sent in different formats such as JSON, XML, HTML.
 - Its asynchronous nature allows it to communicate with server, exchange data, and update the page without refreshing the page.
 ### Q026. What are the advantages and disadvantages of using Ajax?
+**Advantages**:
+- Reduces traffic between the client and the server
+- Response time is faster, increasing performance and speed (optimization)
+- Improves user experience
+- The alternative to use JSON
+**Disadvantages**:
+- Could increase design and development time - difficult to debug and increases code size of webpage
+- Browser incompatibility because AJAX depends on Javascript which is implemented differently across different browsers
+- Pages that are dynamically created using AJAX request do not autmotically register with the browser's history, so hitting the back button may not return to an earlier state of the page.
 ### Q027. Explain how JSONP works (and how it's not really Ajax).
 ### Q028. Have you ever used JavaScript templating?
 ### Q029. If so, what libraries have you used?
