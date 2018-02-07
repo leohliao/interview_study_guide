@@ -16,7 +16,9 @@
 #### Q004. Describe Floats and how they work.
 - Float is a CSS positioning property. To understand its purpose and origin, we can look to print design. In a print layout, images may be set into the page such that text wraps around them as needed. This is commonly and appropriately called "text wrap".
 
-* Describe z-index and how stacking context is formed.
+#### Q005. Describe z-index and how stacking context is formed.
+- Z-index controls the vertical stacking order of elements that overlap.
+- Stacking context is a three-dimensional conceptualization of HTML elements an imaginary z-axis relative to the user. Stacking contexts are treated as a single unit in the parent stacking context.
 * Describe BFC(Block Formatting Context) and how it works.
 * What are the various clearing techniques and which is appropriate for what context?
 * How would you approach fixing browser-specific styling issues?
