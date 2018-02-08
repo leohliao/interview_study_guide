@@ -19,8 +19,15 @@
 #### Q005. Describe z-index and how stacking context is formed.
 - Z-index controls the vertical stacking order of elements that overlap.
 - Stacking context is a three-dimensional conceptualization of HTML elements an imaginary z-axis relative to the user. Stacking contexts are treated as a single unit in the parent stacking context.
-* Describe BFC(Block Formatting Context) and how it works.
-* What are the various clearing techniques and which is appropriate for what context?
+#### Q006. Describe BFC(Block Formatting Context) and how it works.
+- The region in which the layout of block boxes occurs and in which floats interact with other elements. The positioning and clearning of floats apply only to the elements in the same block formatting context.
+
+#### Q007. What are the various clearing techniques and which is appropriate for what context?
+- The problem with floated object is that they don't add to the height of the object they reside in properly. To solve this problem, we clear the float.
+- First way (Old School Method): `.clear {clear:both;}`
+- Second way (Overflow): `.clear {overflow:hidden;}`
+
+
 * How would you approach fixing browser-specific styling issues?
 * How do you serve your pages for feature-constrained browsers?
   * What techniques/processes do you use?
