@@ -1,6 +1,6 @@
 # JavaScript Interview Questions 
 
-### Q001. How would you empty the array?
+### [Q001. How would you empty the array?](/interviewQuestions/answers/js-q001.md)
 - use slice, splice method
 - use array.length = 0
 
