@@ -1,12 +1,8 @@
 # JavaScript Interview Questions 
 
 ### [Q001. How would you empty the array?](/interviewQuestions/answers/js-q001.md)
-- use slice, splice method
-- use array.length = 0
 
-### Q002. How do you clone an object? 
-- Use Object.Assign({}, obj)
-- Use JSON.parse(JSON.stringify(obj)) // faster
+### [Q002. How do you clone an object?](/interviewQuestions/answers/js-q002.md)
 
 ### Q003. What is difference between .proto vs __proto__
 
