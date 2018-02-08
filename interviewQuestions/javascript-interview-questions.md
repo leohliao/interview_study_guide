@@ -158,6 +158,7 @@ jenn.greeting(); //'Hello, my name is Jenn'
 - Pages that are dynamically created using AJAX request do not autmotically register with the browser's history, so hitting the back button may not return to an earlier state of the page.
 ### Q027. Explain how JSONP works (and how it's not really Ajax).
 ### Q028. Have you ever used JavaScript templating?
+- Javascript templating is a fast and efficient technique to render client-side templates with Javascript using a JSON data source. The template is HTML markup, peppered with tags that will either insert variables or run programming logic.
 ### Q029. If so, what libraries have you used?
 ### Q030. Explain "hoisting".
 ### Q031. Describe event bubbling.
