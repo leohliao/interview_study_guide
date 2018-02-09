@@ -6,7 +6,7 @@
 * [How to merge two JavaScript Objects?](/interviewQuestions/answers/javascript-answers.md#how-to-merge-two-javascript-objects)
 * [How to test whether a value is NaN?](/interviewQuestions/answers/javascript-answers.md#how-to-test-whether-a-value-is-nan)
 * [Explain event delegation.](/interviewQuestions/answers/javascript-answers.md#explain-event-delegation)
-* [Explain how `this` works in JavaScript](/interviewQuestions/answers/javascript-answers.md#explain-how-this-works-in-javascript)
+* [Explain how this works in JavaScript](/interviewQuestions/answers/javascript-answers.md#explain-how-this-works-in-javascript)
 
 
 * Explain how prototype inheritance works
