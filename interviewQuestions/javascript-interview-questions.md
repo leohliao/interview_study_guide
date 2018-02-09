@@ -2,15 +2,12 @@
 * [How would you empty the array?](/interviewQuestions/answers/javascript-answers.md#how-would-you-empty-the-array)
 * [How do you clone an object?](/interviewQuestions/answers/javascript-answers.md#how-do-you-clone-an-object)
 * [What is difference between .proto vs __proto__?](/interviewQuestions/answers/javascript-answers.md#what-is-difference-between-dot-proto)
-* [Understand prototype inheritance?](/interviewQuestions/answers/javascript-answers.md#explain-how-prototypal-inheritance-works)
+* [Do you understand prototype inheritance?](/interviewQuestions/answers/javascript-answers.md#explain-how-prototypal-inheritance-works)
 * [How to merge two JavaScript Objects?](/interviewQuestions/answers/javascript-answers.md#how-to-merge-two-javascript-objects)
 * [How to test whether a value is NaN?](/interviewQuestions/answers/javascript-answers.md#how-to-test-whether-a-value-is-nan)
-* [Explain event delegation](/interviewQuestions/answers/javascript-answers.md#explain-event-delegation)
+* [Explain event delegation.](/interviewQuestions/answers/javascript-answers.md#explain-event-delegation)
+* [Explain how `this` works in JavaScript](/interviewQuestions/answers/javascript-answers.md#explain-how-this-works-in-javascript)
 
-
-* Explain how `this` works in JavaScript
-- The value of `this` is determined by how a function is called. It CANNOT be set by assignment during execution, and it may be different each time the function is called.
-- Has some difference between `strict` mode and `non-strict` mode.
 
 * Explain how prototype inheritance works
 - *A prototype is a working object instance.*
