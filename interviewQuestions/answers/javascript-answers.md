@@ -10,6 +10,10 @@
 [Resource Proto](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto)
 
 ### Explain how prototypal inheritance works?
+- *A prototype is a working object instance.*
+- *Objects inherit directly from other objects.*
+- Instances allows for easy selective inheritance and a flat [[Prototype]] delegation hierarchy. 
+- Class taxonomies are not an automatic side-effect of prototypal OO.
 - JS Object inherit their properties and methods from their prototype.
 - The prototype property is an object, and it has a constructor property by default which allows yo to add new properties and methods to existing objects types.
 - __proto__ : when an object is created in JAvaScript, JavaScript Engine adds a __proto__ property to the newly created object; it points to the prototype object of the constructor function. 
@@ -32,6 +36,8 @@
 - The value of `this` is determined by how a function is called. It CANNOT be set by assignment during execution, and it may be different each time the function is called.
 - Has some difference between `strict` mode and `non-strict` mode.
 ### What do you think of AMD vs CommonJS?
+- `AMD`: Asynchronous Module Definition - is another specification for modules. For example: ReS. It is generally more used in client-side(in-browser) JavaScript development due to this. 
+- [JavaScript Module Systems Showdown](https://auth0.com/blog/javascript-module-systems-showdown/)
 ### Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
   ### What needs to be changed to properly make it an IIFE?
 ### What's the difference between a variable that is: `null`, `undefined` or undeclared?

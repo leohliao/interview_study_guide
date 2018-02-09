@@ -2,22 +2,17 @@
 * [How would you empty the array?](/interviewQuestions/answers/javascript-answers.md#how-would-you-empty-the-array)
 * [How do you clone an object?](/interviewQuestions/answers/javascript-answers.md#how-do-you-clone-an-object)
 * [What is difference between .proto vs __proto__?](/interviewQuestions/answers/javascript-answers.md#what-is-difference-between-dot-proto)
-* [Do you understand prototype inheritance?](/interviewQuestions/answers/javascript-answers.md#explain-how-prototypal-inheritance-works)
+* [Explain how prototype inheritance works.](/interviewQuestions/answers/javascript-answers.md#explain-how-prototypal-inheritance-works)
 * [How to merge two JavaScript Objects?](/interviewQuestions/answers/javascript-answers.md#how-to-merge-two-javascript-objects)
 * [How to test whether a value is NaN?](/interviewQuestions/answers/javascript-answers.md#how-to-test-whether-a-value-is-nan)
 * [Explain event delegation.](/interviewQuestions/answers/javascript-answers.md#explain-event-delegation)
-* [Explain how this works in JavaScript](/interviewQuestions/answers/javascript-answers.md#explain-how-this-works-in-javascript)
-
+* [Explain how this works in JavaScript.](/interviewQuestions/answers/javascript-answers.md#explain-how-this-works-in-javascript)
 
 * Explain how prototype inheritance works
-- *A prototype is a working object instance.*
-- *Objects inherit directly from other objects.*
-- Instances allows for easy selective inheritance and a flat [[Prototype]] delegation hierarchy. 
-- Class taxonomies are not an automatic side-effect of prototypal OO.
 
-* What do you think of AMD vs CommonJS?
-- `AMD`: Asynchronous Module Definition - is another specification for modules. For example: ReS. It is generally more used in client-side(in-browser) JavaScript development due to this. 
-- [JavaScript Module Systems Showdown](https://auth0.com/blog/javascript-module-systems-showdown/)
+
+* [What do you think of AMD vs CommonJS?](/interviewQuestions/answers/javascript-answers.md#what-do-you-think-of-amd-vs-commonjs)
+
 
 * Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
 - `IIFE` - An immediately-invoked function expression which produces a lexical scope using JavaScript's function scoping. 
