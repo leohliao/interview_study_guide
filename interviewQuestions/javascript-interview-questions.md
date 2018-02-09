@@ -2,7 +2,7 @@
 
 ### [Q001. How would you empty the array?](/interviewQuestions/answers/js-q001.md#how-would-you-empty-the-array)
 ### [Q002. How do you clone an object?](/interviewQuestions/answers/js-q001.md#how-do-you-clone-an-object)
-### [Q003. What is difference between .proto vs __proto__](/interviewQuestions/answers/js-q001.md#what-is-difference-between-proto)
+### [Q003. What is difference between .proto vs __proto__](/interviewQuestions/answers/js-q001.md#what-is-difference-between)
 
 - [Resource.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto)
 
