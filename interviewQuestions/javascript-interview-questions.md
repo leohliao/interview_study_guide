@@ -6,17 +6,12 @@
 * [How to merge two JavaScript Objects?](/interviewQuestions/answers/javascript-answers.md#how-to-merge-two-javascript-objects)
 * [How to test whether a value is NaN?](/interviewQuestions/answers/javascript-answers.md#how-to-test-whether-a-value-is-nan)
 * [Explain event delegation.](/interviewQuestions/answers/javascript-answers.md#explain-event-delegation)
-* [Explain how this works in JavaScript.](/interviewQuestions/answers/javascript-answers.md#explain-how-this-works-in-javascript)
-
-* Explain how prototype inheritance works
-
+* [Explain how `this` works in JavaScript.](/interviewQuestions/answers/javascript-answers.md#explain-how-this-works-in-javascript)
 
 * [What do you think of AMD vs CommonJS?](/interviewQuestions/answers/javascript-answers.md#what-do-you-think-of-amd-vs-commonjs)
 
+* [Explain why the following doesn't work as an IIFE: `function foo(){ }();`.](/interviewQuestions/answers/javascript-answers.md#explain-why-the-following-doesnt-work-as-an-iife)
 
-* Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
-- `IIFE` - An immediately-invoked function expression which produces a lexical scope using JavaScript's function scoping. 
-- This example doesn't work because it needs a wrapper.
 
   * What needs to be changed to properly make it an IIFE?
   - Proper way to make it IIFE is:
