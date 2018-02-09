@@ -1,13 +1,10 @@
 # JavaScript Interview Questions
-* [How would you empty the array?](/interviewQuestions/answers/js-q001.md#how-would-you-empty-the-array)
-* [How do you clone an object?](/interviewQuestions/answers/js-q001.md#how-do-you-clone-an-object)
-* [What is difference between .proto vs __proto__ ?](/interviewQuestions/answers/js-q001.md#what-is-difference-between-dot-proto)
-* [Understand prototype inheritance](/interviewQuestions/answers/js-q001.md#explain-how-prototypal-inheritance-works)
+* [How would you empty the array?](/interviewQuestions/answers/javascript-answers.md#how-would-you-empty-the-array)
+* [How do you clone an object?](/interviewQuestions/answers/javascript-answers.md#how-do-you-clone-an-object)
+* [What is difference between .proto vs __proto__?](/interviewQuestions/answers/javascript-answers.md#what-is-difference-between-dot-proto)
+* [Understand prototype inheritance?](/interviewQuestions/answers/javascript-answers.md#explain-how-prototypal-inheritance-works)
+* [How to merge two JavaScript Objects](/interviewQuestions/answers/javascript-answers.md#how-to-merge-two-javascript-objects)
 
-
-* Q005. How to merge two JavaScript Objects 
-- Use Object.assign({}, obj)
-- if using `merge`, remember to mention that you need to import from lodash.
 
 * Q006. How to test whether a value is NaN? 
 - You can use `isNaN(value)` method to check to see if a value is NaN. 

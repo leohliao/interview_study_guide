@@ -1,23 +1,21 @@
 ### How would you empty the array?
 - use slice, splice method
 - use array.length = 0
-
 ### How do you clone an object?
 - Use Object.Assign({}, obj)
 - Use JSON.parse(JSON.stringify(obj)) // faster
-
 ### What is difference between `proto` vs `__proto__` ?
 [Resource Proto](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto)
-
-### Explain event delegation
-### Explain how `this` works in JavaScript
-### Explain how prototypal inheritance works
+### Explain event delegation? 
+### Explain how `this` works in JavaScript?
+### Explain how prototypal inheritance works?
 - JS Object inherit their properties and methods from their prototype.
 - The prototype property is an object, and it has a constructor property by default which allows yo to add new properties and methods to existing objects types.
 - __proto__ : when an object is created in JAvaScript, JavaScript Engine adds a __proto__ property to the newly created object; it points to the prototype object of the constructor function. 
-
 - [Resource.](https://github.com/tianyuduan/JS30/blob/master/PrototypalInheritance/prototype.md)
-
+### How to merge two JavaScript Objects?
+- Use Object.assign({}, obj)
+- if using `merge`, remember to mention that you need to import from lodash.
 ### What do you think of AMD vs CommonJS?
 ### Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
   ### What needs to be changed to properly make it an IIFE?
