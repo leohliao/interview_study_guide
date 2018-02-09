@@ -1,17 +1,9 @@
-# JavaScript Interview Questions 
+# JavaScript Interview Questions
+### [How would you empty the array?](/interviewQuestions/answers/js-q001.md#how-would-you-empty-the-array)
+### [How do you clone an object?](/interviewQuestions/answers/js-q001.md#how-do-you-clone-an-object)
+### [What is difference between .proto vs __proto__ ?](/interviewQuestions/answers/js-q001.md#what-is-difference-between-dot-proto)
+### [Understand prototype inheritance](/interviewQuestions/answers/js-q001.md#explain-how-prototypal-inheritance-works)
 
-### [Q001. How would you empty the array?](/interviewQuestions/answers/js-q001.md#how-would-you-empty-the-array)
-### [Q002. How do you clone an object?](/interviewQuestions/answers/js-q001.md#how-do-you-clone-an-object)
-### [Q003. What is difference between proto vs __proto__ ?](/interviewQuestions/answers/js-q001.md#what-is-difference-between-proto)
-
-- [Resource.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto)
-
-### Q004. Understand prototype inheritance: 
-- JS Object inherit their properties and methods from their prototype.
-- The prototype property is an object, and it has a constructor property by default which allows yo to add new properties and methods to existing objects types.
-- __proto__ : when an object is created in JAvaScript, JavaScript Engine adds a __proto__ property to the newly created object; it points to the prototype object of the constructor function. 
-
-- [Resource.](https://github.com/tianyuduan/JS30/blob/master/PrototypalInheritance/prototype.md)
 
 ### Q005. How to merge two JavaScript Objects 
 - Use Object.assign({}, obj)
