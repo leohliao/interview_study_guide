@@ -3,48 +3,41 @@
 * [How do you clone an object?](/interviewQuestions/answers/javascript-answers.md#how-do-you-clone-an-object)
 * [What is difference between .proto vs __proto__?](/interviewQuestions/answers/javascript-answers.md#what-is-difference-between-dot-proto)
 * [Understand prototype inheritance?](/interviewQuestions/answers/javascript-answers.md#explain-how-prototypal-inheritance-works)
-* [How to merge two JavaScript Objects](/interviewQuestions/answers/javascript-answers.md#how-to-merge-two-javascript-objects)
+* [How to merge two JavaScript Objects?](/interviewQuestions/answers/javascript-answers.md#how-to-merge-two-javascript-objects)
+* [How to test whether a value is NaN?](/interviewQuestions/answers/javascript-answers.md#how-to-test-whether-a-value-is-nan)
+* [Explain event delegation](/interviewQuestions/answers/javascript-answers.md#explain-event-delegation)
 
 
-* Q006. How to test whether a value is NaN? 
-- You can use `isNaN(value)` method to check to see if a value is NaN. 
-
-* Q007. Explain event delegation:
-- Capturing and bubbling allow to implement one of most powerful event handling patterns called event delegation.
-- The idea is that if we have a lot of elements handled in a similar way, then instead of assigning a handler to each of them – we put a single handler on their common ancestor.
-- In the handler we get event.target, see where the event actually happened and handle it.
-- [Resource](https://javascript.info/event-delegation)
-
-* Q008. Explain how `this` works in JavaScript
+* Explain how `this` works in JavaScript
 - The value of `this` is determined by how a function is called. It CANNOT be set by assignment during execution, and it may be different each time the function is called.
 - Has some difference between `strict` mode and `non-strict` mode.
 
-* Q009. Explain how prototype inheritance works
+* Explain how prototype inheritance works
 - *A prototype is a working object instance.*
 - *Objects inherit directly from other objects.*
 - Instances allows for easy selective inheritance and a flat [[Prototype]] delegation hierarchy. 
 - Class taxonomies are not an automatic side-effect of prototypal OO.
 
-* Q010. What do you think of AMD vs CommonJS?
-- `AMD`: Asynchronous Module Definition - is another specification for modules. For example: RequireJS. It is generally more used in client-side(in-browser) JavaScript development due to this. 
+* What do you think of AMD vs CommonJS?
+- `AMD`: Asynchronous Module Definition - is another specification for modules. For example: ReS. It is generally more used in client-side(in-browser) JavaScript development due to this. 
 - [JavaScript Module Systems Showdown](https://auth0.com/blog/javascript-module-systems-showdown/)
 
-* Q011. Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
+* Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
 - `IIFE` - An immediately-invoked function expression which produces a lexical scope using JavaScript's function scoping. 
 - This example doesn't work because it needs a wrapper.
 
-  * Q012. What needs to be changed to properly make it an IIFE?
+  * What needs to be changed to properly make it an IIFE?
   - Proper way to make it IIFE is:
   ```javascript
   (function foo(){ })();
   ```
-* Q013. What's the difference between a variable that is: `null`, `undefined` or `undeclared`?
+* What's the difference between a variable that is: `null`, `undefined` or `undeclared`?
 - `null` - is primitive type; can be assigned to variable; has no value.
 - `undefined` - variable is declared, but has yet to be assigned a value.
 - `undeclared` - variable is not declared at all --> will return Reference error 
 
-* Q014. How would you go about checking for any of these states?
-* Q015. What is a closure, and how/why would you use one?
+* How would you go about checking for any of these states?
+* What is a closure, and how/why would you use one?
 - Closure determines whether a function(inner) has access to certain variables in the outer one.
 - Closure has access to variables in three scopes:
   - 1. variable of its own scope
@@ -77,7 +70,7 @@
   innerVar = b
   globalVar = xyz
   ```
-* Q016. Can you describe the main difference between a `forEach` loop and a `.map()` loop and why you would pick one versus the other?
+* Can you describe the main difference between a `forEach` loop and a `.map()` loop and why you would pick one versus the other?
 - `forEach()` - executes a provided function once for each array element.
 - `forEach()` - may be preferable when you’re not trying to change the data in your array, but instead want to just do something with it — like saving it to a database or logging it out:
 - `.map()` - creates a new array with the results of calling a provided function on every element in the calling array.
