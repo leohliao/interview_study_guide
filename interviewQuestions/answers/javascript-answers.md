@@ -35,15 +35,27 @@
 ### Explain how `this` works in JavaScript?
 - The value of `this` is determined by how a function is called. It CANNOT be set by assignment during execution, and it may be different each time the function is called.
 - Has some difference between `strict` mode and `non-strict` mode.
+
 ### What do you think of AMD vs CommonJS?
 - `AMD`: Asynchronous Module Definition - is another specification for modules. For example: ReS. It is generally more used in client-side(in-browser) JavaScript development due to this. 
 - [JavaScript Module Systems Showdown](https://auth0.com/blog/javascript-module-systems-showdown/)
+
 ### Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
 - `IIFE` - An immediately-invoked function expression which produces a lexical scope using JavaScript's function scoping. 
 - This example doesn't work because it needs a wrapper.
-  ### What needs to be changed to properly make it an IIFE?
-  
-### What's the difference between a variable that is: `null`, `undefined` or undeclared?
+
+### What needs to be changed to properly make it an IIFE?
+  - Proper way to make it IIFE is:
+```javascript
+(function foo(){ })();
+```
+
+### What is the difference between a variable that is: `null`, `undefined` or undeclared?
+- `null` - is primitive type; can be assigned to variable; has no value.
+- `undefined` - variable is declared, but has yet to be assigned a value.
+- `undeclared` - variable is not declared at all --> will return Reference error 
+
+
   ### How would you go about checking for any of these states?
 ### What is a closure, and how/why would you use one?
 ### Can you describe the main difference between a `forEach` loop and a `.map()` loop and why you would pick one versus the other?

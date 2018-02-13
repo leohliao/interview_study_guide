@@ -7,17 +7,10 @@
 * [How to test whether a value is NaN?](/interviewQuestions/answers/javascript-answers.md#how-to-test-whether-a-value-is-nan)
 * [Explain event delegation.](/interviewQuestions/answers/javascript-answers.md#explain-event-delegation)
 * [Explain how `this` works in JavaScript.](/interviewQuestions/answers/javascript-answers.md#explain-how-this-works-in-javascript)
-
 * [What do you think of AMD vs CommonJS?](/interviewQuestions/answers/javascript-answers.md#what-do-you-think-of-amd-vs-commonjs)
+* [Explain why the following doesn't work as an IIFE: `function foo(){ }();`.](/interviewQuestions/answers/javascript-answers.md#what-do-you-think-of-amd-vs-commonjs)
+* [What needs to be changed to properly make it an IIFE?](/interviewQuestions/answers/javascript-answers.md#what-do-you-think-of-amd-vs-commonjs)
 
-* [Explain why the following doesn't work as an IIFE: `function foo(){ }();`.](/interviewQuestions/answers/javascript-answers.md#explain-why-the-following-doesnt-work-as-an-iife)
-
-
-  * What needs to be changed to properly make it an IIFE?
-  - Proper way to make it IIFE is:
-  ```javascript
-  (function foo(){ })();
-  ```
 * What's the difference between a variable that is: `null`, `undefined` or `undeclared`?
 - `null` - is primitive type; can be assigned to variable; has no value.
 - `undefined` - variable is declared, but has yet to be assigned a value.
