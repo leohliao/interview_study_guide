@@ -11,10 +11,8 @@
 * [Explain why the following doesn't work as an IIFE: `function foo(){ }();`.](/interviewQuestions/answers/javascript-answers.md#what-do-you-think-of-amd-vs-commonjs)
 * [What needs to be changed to properly make it an IIFE?](/interviewQuestions/answers/javascript-answers.md#what-do-you-think-of-amd-vs-commonjs)
 
-* What's the difference between a variable that is: `null`, `undefined` or `undeclared`?
-- `null` - is primitive type; can be assigned to variable; has no value.
-- `undefined` - variable is declared, but has yet to be assigned a value.
-- `undeclared` - variable is not declared at all --> will return Reference error 
+* [What is the difference between a variable that is: `null`, `undefined` or `undeclared`?](/interviewQuestions/answers/javascript-answers.md#what-is-the-difference-between-a-variable)
+
 
 * How would you go about checking for any of these states?
 * What is a closure, and how/why would you use one?
