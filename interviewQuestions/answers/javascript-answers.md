@@ -1,4 +1,5 @@
 <div id="answer-01"></div>
+
 ### How would you empty the array?
 - use slice, splice method
 - use array.length = 0
