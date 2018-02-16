@@ -19,7 +19,7 @@
 - JS Object inherit their properties and methods from their prototype.
 - The prototype property is an object, and it has a constructor property by default which allows yo to add new properties and methods to existing objects types.
 - __proto__ : when an object is created in JAvaScript, JavaScript Engine adds a __proto__ property to the newly created object; it points to the prototype object of the constructor function. 
-- [Resource.](https://github.com/tianyuduan/JS30/blob/master/PrototypalInheritance/prototype.md)
+- [Resource](https://github.com/tianyuduan/JS30/blob/master/PrototypalInheritance/prototype.md)
 
 ### How to merge two JavaScript Objects?
 - Use Object.assign({}, obj)

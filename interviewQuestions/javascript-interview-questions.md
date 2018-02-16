@@ -1,5 +1,5 @@
 # JavaScript Interview Questions
-* [How would you empty the array?](/interviewQuestions/answers/javascript-answers.md#how-would-you-empty-the-array)
+* [How would you empty the array?](/interviewQuestions/answers/javascript-answers.md#answer-01)
 * [How do you clone an object?](/interviewQuestions/answers/javascript-answers.md#how-do-you-clone-an-object)
 * [What is difference between .proto vs __proto__?](/interviewQuestions/answers/javascript-answers.md#what-is-difference-between-dot-proto)
 * [Explain how prototype inheritance works.](/interviewQuestions/answers/javascript-answers.md#explain-how-prototypal-inheritance-works)
