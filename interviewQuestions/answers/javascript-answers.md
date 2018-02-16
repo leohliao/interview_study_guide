@@ -13,8 +13,14 @@
 <div id="answer-02"></div>
 
 ### How do you clone an object?
-- Use Object.Assign({}, obj)
-- Use JSON.parse(JSON.stringify(obj)) // faster
+```javascript
+- var shallow_dup = Object.assign({}, obj); // shallow dup
+- var deep_dup = JSON.parse(JSON.stringify(obj)) // faster
+``` 
+<br />
+<br />
+
+[Back to JavacScript Interview Questions](/interviewQuestions/javascript-interview-questions.md)
 
 <div id="answer-03"></div>
 
