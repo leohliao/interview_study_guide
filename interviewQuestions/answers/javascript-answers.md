@@ -1,8 +1,7 @@
-<div id="answer-01">
+<div id="answer-01"></div>
 ### How would you empty the array?
 - use slice, splice method
 - use array.length = 0
-</div>
 
 ### How do you clone an object?
 - Use Object.Assign({}, obj)
