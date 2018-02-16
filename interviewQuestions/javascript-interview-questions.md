@@ -14,12 +14,7 @@
 * [What is the difference between a variable that is: `null`, `undefined` or `undeclared`?](/interviewQuestions/answers/javascript-answers.md#what-is-the-difference-between-a-variable)
 
 * [How would you go about checking for any of these states?]()
-```javascript
-var foo;
-console.log(foo); // undefined
-console.log(foo === undefined); // true
-console.log(typeof foo === 'undefined'); // true
-```
+
 * [What is a closure, and how/why would you use one?]()
 - Closure determines whether a function(inner) has access to certain variables in the outer one.
 - Closure has access to variables in three scopes:
