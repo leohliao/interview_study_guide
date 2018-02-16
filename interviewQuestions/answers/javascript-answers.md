@@ -7,6 +7,8 @@
 - Method 4: `while (array.length > 0) { array.pop(); }`
 
 [Resource from StackOverflow](https://stackoverflow.com/questions/1232040/how-do-i-empty-an-array-in-javascript)
+<br />
+<br />
 
 <div id="answer-02"></div>
 
