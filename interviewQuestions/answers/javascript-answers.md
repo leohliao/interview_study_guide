@@ -21,11 +21,30 @@
 <br />
 
 [Back to JavacScript Interview Questions](/interviewQuestions/javascript-interview-questions.md)
-
+<br />
+<br />
 <div id="answer-03"></div>
 
 ### What is difference between `proto` vs `__proto__` ?
-[Resource Proto](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto)
+- `Object.prototype.`
+**`Object.prototype.__proto__`** 
+- Points to the object which was used as prototype when the object was instantiated. 
+- Its getter function exposes the value of the internal [[Prototype]] of an object
+- Its setter allows [[Prototype]] of an object to be mutated. The object must be extensible accord to Object.isExtensible(): if it is not, a TypeError is thrown. The value provided must be an object or null. Providing any other value will do nothing.
+
+```javascript
+Object.prototype // Object created using object
+Array.prototype // Object created using array
+
+var fun = new Fun();
+fun.prototype // Object created using Fun, fun is a function; this value is the value of fun.prototype
+```
+
+* [MDN Prototype](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype)
+* [MDN Proto](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto)
+<br />
+<br />
+<div id="answer-04"></div>
 
 ### Explain how prototypal inheritance works?
 - *A prototype is a working object instance.*
@@ -36,6 +55,9 @@
 - The prototype property is an object, and it has a constructor property by default which allows yo to add new properties and methods to existing objects types.
 - __proto__ : when an object is created in JAvaScript, JavaScript Engine adds a __proto__ property to the newly created object; it points to the prototype object of the constructor function. 
 - [Resource](https://github.com/tianyuduan/JS30/blob/master/PrototypalInheritance/prototype.md)
+<br />
+<br />
+<div id="answer-05"></div>
 
 ### How to merge two JavaScript Objects?
 - Use Object.assign({}, obj)
@@ -59,8 +81,13 @@
 - [JavaScript Module Systems Showdown](https://auth0.com/blog/javascript-module-systems-showdown/)
 
 ### Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
-- `IIFE` - An immediately-invoked function expression which produces a lexical scope using JavaScript's function scoping. 
+- `IIFE` - **Immediately Invoked Function Expressions**
+- This roduces a lexical scope using JavaScript's function scoping. 
 - This example doesn't work because it needs a wrapper.
+
+IIFE stands for Immediately Invoked Function Expressions. The JavaScript parser reads function foo(){ }(); as function foo(){ } and ();, where the former is a function declaration and the latter (a pair of brackets) is an attempt at calling a function but there is no name specified, hence it throws Uncaught SyntaxError: Unexpected token ).
+
+Here are two ways to fix it that involves adding more brackets: (function foo(){ })() and (function foo(){ }()). These functions are not exposed in the global scope and you can even omit its name if you do not need to reference itself within the body.
 
 ### What needs to be changed to properly make it an IIFE?
   - Proper way to make it IIFE is:
