@@ -9,11 +9,13 @@
 [Resource from StackOverflow](https://stackoverflow.com/questions/1232040/how-do-i-empty-an-array-in-javascript)
 
 <div id="answer-02"></div>
+
 ### How do you clone an object?
 - Use Object.Assign({}, obj)
 - Use JSON.parse(JSON.stringify(obj)) // faster
 
 <div id="answer-03"></div>
+
 ### What is difference between `proto` vs `__proto__` ?
 [Resource Proto](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto)
 
