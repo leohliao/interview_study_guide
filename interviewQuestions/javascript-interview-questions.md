@@ -1,7 +1,7 @@
 # JavaScript Interview Questions
 * [How would you empty the array?](/interviewQuestions/answers/javascript-answers.md#answer-01)
-* [How do you clone an object?](/interviewQuestions/answers/javascript-answers.md#how-do-you-clone-an-object)
-* [What is difference between .proto vs __proto__?](/interviewQuestions/answers/javascript-answers.md#what-is-difference-between-dot-proto)
+* [How do you clone an object?](/interviewQuestions/answers/javascript-answers.md#answer-02)
+* [What is difference between .proto vs __proto__?](/interviewQuestions/answers/javascript-answers.md#answer-03)
 * [Explain how prototype inheritance works.](/interviewQuestions/answers/javascript-answers.md#explain-how-prototypal-inheritance-works)
 * [How to merge two JavaScript Objects?](/interviewQuestions/answers/javascript-answers.md#how-to-merge-two-javascript-objects)
 * [How to test whether a value is NaN?](/interviewQuestions/answers/javascript-answers.md#how-to-test-whether-a-value-is-nan)
