@@ -114,16 +114,27 @@ IIFE stands for Immediately Invoked Function Expressions. The JavaScript parser 
 
 Here are two ways to fix it that involves adding more brackets: (function foo(){ })() and (function foo(){ }()). These functions are not exposed in the global scope and you can even omit its name if you do not need to reference itself within the body.
 
+<br />
+<br />
+<div id="answer-11"></div>
+
 ### What needs to be changed to properly make it an IIFE?
   - Proper way to make it IIFE is:
 ```javascript
 (function foo(){ })();
 ```
+<br />
+<br />
+<div id="answer-12"></div>
 
 ### What is the difference between a variable that is: `null`, `undefined` or undeclared?
 - `null` - is primitive type; can be assigned to variable; has no value.
 - `undefined` - variable is declared, but has yet to be assigned a value.
 - `undeclared` - variable is not declared at all --> will return Reference error 
+<br />
+<br />
+<div id="answer-13"></div>
+
 ### How would you go about checking for any of these states?
 - Although there are many approaches to check for these states. I would say the key thing is to be able to console.log the output at certain point in your code. The following offer several good ways: 
 ```javascript
@@ -132,6 +143,10 @@ console.log(foo); // undefined
 console.log(foo === undefined); // true
 console.log(typeof foo === 'undefined'); // true
 ```
+<br />
+<br />
+<div id="answer-14"></div>
+
 ### What is a closure, and how/why would you use one?
 - Closure determines whether a function(inner) has access to certain variables in the outer one.
 - Closure has access to variables in three scopes:
@@ -165,17 +180,26 @@ console.log(typeof foo === 'undefined'); // true
   innerVar = b
   globalVar = xyz
   ```
+<br />
+<br />
+<div id="answer-15"></div>
 
 ### Can you describe the main difference between a `forEach` loop and a `.map()` loop and why you would pick one versus the other?
 - They are both iteration methods.
 - `forEach` - modifies the original assignment. Original gets modified. You should use this method if space is a concern in your codes. Also note that in OOP programs, state is shared so if you do modified the original, other function that depends on the same variable will also get affected.
 - `map()` - duplicate the original and create a new variable. Original will not be modified. 
+<br />
+<br />
+<div id="answer-16"></div>
 
 ### What's a typical use case for anonymous functions?
 ** Check the answers one more time **
 - Generally speak, an anonymous function is not a preferred practice in your coding.
 However, a typical use case of anonymous function is callback, 
 you can use a function as a callback if you do not need to repeatedly use the same function in other circumstance.
+<br />
+<br />
+<div id="answer-17"></div>
 
 ### How do you organize your code? (module pattern, classical inheritance?)
 ** Check the answers one more time **
@@ -185,10 +209,16 @@ and importing it if you need to access them from another function.
 - Classical inheritance is similar idea and is also a good option to consider, 
 however, since in JavaScript you can also use prototype inheritance,
 it is a better practice to use prototype inheritance over class so that you won't modified the original constructor.
-
+<br />
+<br />
+<div id="answer-18"></div>
 
 ### What's the difference between host objects and native objects?
 ** Research..... **
+
+<br />
+<br />
+<div id="answer-19"></div>
 
 ### Difference between: `function Person(){}`, `var person = Person()`, and `var person = new Person()`?
 ** Double Check **
@@ -196,11 +226,18 @@ it is a better practice to use prototype inheritance over class so that you won'
 - `function Person(){}` - Function decoration
 - `var person = Person()` - Function expression.
 - `var person = new Person()` - Creating an object, aka instantiate.
+<br />
+<br />
+<div id="answer-20"></div>
 
 ### What's the difference between `.call` and `.apply`?
 - They are both part of binding to a function/object.
 - `.call` - binds a single object to another.
 - `.apply`- binds an array of objects.
+
+<br />
+<br />
+<div id="answer-21"></div>
 
 ### Explain `Function.prototype.bind`.
 - This is same as explaining what bind() is. 
@@ -208,6 +245,10 @@ it is a better practice to use prototype inheritance over class so that you won'
 ** The bind() method creates a new function that, when called, has its `this` keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called. **
 
 [MDN Global Objects](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_objects/Function/bind)
+
+<br />
+<br />
+<div id="answer-22"></div>
 
 ### When would you use `document.write()`?
 `document.write` -  is executed after the page has been loaded. It will clear the contents of the whole page and rewrite them with something you define.
