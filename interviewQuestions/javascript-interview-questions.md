@@ -120,9 +120,14 @@ jenn.greeting(); //'Hello, my name is Jenn'
 - A variable can be used before is has been declared.
 - Variables defined while be moved to the top of the file. It will be checked to see if the variable is defined locally.
 * Q031. Describe event bubbling.
+- When an event occurs on an element, it will run the handlers on it, and then on its parents (going from inner to outer)
 * Q032. What's the difference between an "attribute" and a "property"?
+- HTML representation of a DOM element has attributes while those attributes in Javascript are represented as object properties.
 * Q033. Why is extending built-in JavaScript objects not a good idea?
+- A browser may implement your version of the method, silently overriding.
 * Q034. Difference between document load event and document DOMContentLoaded event?
+- DOMContentLoaded is fired when the document has been completely loaded and parsed, not waiting for assets like stylesheets and images.
+- Load waits for a fully-loaded page
 * Q035. What is the difference between `==` and `===`?
 - `==` will not check for types (tolerant) vs `===` checks for type and value
 * Q036. Explain the same-origin policy with regards to JavaScript.
