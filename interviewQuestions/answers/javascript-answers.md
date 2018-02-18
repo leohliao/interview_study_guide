@@ -6,7 +6,7 @@
 - Method 3: `array.splice(0,array.length)`
 - Method 4: `while (array.length > 0) { array.pop(); }`
 
-[Resource from StackOverflow](https://stackoverflow.com/questions/1232040/how-do-i-empty-an-array-in-javascript)
+[StackOverflow: How do I empty an array in JS?](https://stackoverflow.com/questions/1232040/how-do-i-empty-an-array-in-javascript)
 <br />
 <br />
 
@@ -20,13 +20,17 @@
 <br />
 <br />
 
-[Back to JavacScript Interview Questions](/interviewQuestions/javascript-interview-questions.md)
+[>> Back to JavacScript Interview Questions](/interviewQuestions/javascript-interview-questions.md)
 <br />
 <br />
 <div id="answer-03"></div>
 
-### What is difference between `proto` vs `__proto__` ?
-- `Object.prototype.`
+### What is difference between `proto` vs `__proto__`?
+**`Object.prototype.`**
+- one
+- two
+- three
+
 **`Object.prototype.__proto__`** 
 - Points to the object which was used as prototype when the object was instantiated. 
 - Its getter function exposes the value of the internal [[Prototype]] of an object
@@ -63,8 +67,16 @@ fun.prototype // Object created using Fun, fun is a function; this value is the 
 - Use Object.assign({}, obj)
 - if using `merge`, remember to mention that you need to import from lodash.
 
+<br />
+<br />
+<div id="answer-06"></div>
+
 ### How to test whether a value is NaN?
 - You can use `isNaN(value)` method to check to see if a value is NaN. 
+
+<br />
+<br />
+<div id="answer-07"></div>
 
 ### Explain event delegation
 - Capturing and bubbling allow to implement one of most powerful event handling patterns called event delegation.
@@ -72,13 +84,26 @@ fun.prototype // Object created using Fun, fun is a function; this value is the 
 - In the handler we get event.target, see where the event actually happened and handle it.
 - [Resource](https://javascript.info/event-delegation)
 
+<br />
+<br />
+<div id="answer-08"></div>
+
 ### Explain how `this` works in JavaScript?
 - The value of `this` is determined by how a function is called. It CANNOT be set by assignment during execution, and it may be different each time the function is called.
 - Has some difference between `strict` mode and `non-strict` mode.
 
+<br />
+<br />
+<div id="answer-09"></div>
+
+
 ### What do you think of AMD vs CommonJS?
 - `AMD`: Asynchronous Module Definition - is another specification for modules. For example: ReS. It is generally more used in client-side(in-browser) JavaScript development due to this. 
 - [JavaScript Module Systems Showdown](https://auth0.com/blog/javascript-module-systems-showdown/)
+
+<br />
+<br />
+<div id="answer-10"></div>
 
 ### Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
 - `IIFE` - **Immediately Invoked Function Expressions**
@@ -108,23 +133,38 @@ console.log(foo === undefined); // true
 console.log(typeof foo === 'undefined'); // true
 ```
 ### What is a closure, and how/why would you use one?
-- A closure, refers to how accessible the variables are inside a inner function. 
-For example, there are 3 variables that can be accessed inside an inner function:
-- 1. `global variable`
-- 2. `variable inside the outer function`
-- 3. `variable inside the inner function`
-```javascript
-function outer () {
-  var outerVariable = "I am outside";
-  function inner (){
-    var innnerVariable = "I am inside"
-    console.log(outerVariable;); // => "I am outside"
-    console.log(innerVariable); // => "I am inside"
-  }
-  console.log(outerVariable); // => "I am outside"
-  console.log(innerVariable);  // => "I am inside"
-};
-```
+- Closure determines whether a function(inner) has access to certain variables in the outer one.
+- Closure has access to variables in three scopes:
+  - 1. variable of its own scope
+  - 2. variables in the enclosing function's scope
+  - 3. global variables
+  ```javascript
+  var globalVar = "xyz";
+
+  (function outerFunc(outerArg) {
+      var outerVar = 'a';
+      
+      (function innerFunc(innerArg) {
+      var innerVar = 'b';
+      
+      console.log(
+          "outerArg = " + outerArg + "\n" +
+          "innerArg = " + innerArg + "\n" +
+          "outerVar = " + outerVar + "\n" +
+          "innerVar = " + innerVar + "\n" +
+          "globalVar = " + globalVar);
+      
+      })(456);
+  })(123);
+  ```
+  output is: 
+  ```javascript
+  outerArg = 123
+  innerArg = 456
+  outerVar = a
+  innerVar = b
+  globalVar = xyz
+  ```
 
 ### Can you describe the main difference between a `forEach` loop and a `.map()` loop and why you would pick one versus the other?
 - They are both iteration methods.

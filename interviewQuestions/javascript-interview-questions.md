@@ -2,20 +2,17 @@
 * [How would you empty the array?](/interviewQuestions/answers/javascript-answers.md#answer-01)
 * [How do you clone an object?](/interviewQuestions/answers/javascript-answers.md#answer-02)
 * [What is difference between .proto vs __proto__?](/interviewQuestions/answers/javascript-answers.md#answer-03)
-* [Explain how prototype inheritance works.](/interviewQuestions/answers/javascript-answers.md#explain-how-prototypal-inheritance-works)
-* [How to merge two JavaScript Objects?](/interviewQuestions/answers/javascript-answers.md#how-to-merge-two-javascript-objects)
-* [How to test whether a value is NaN?](/interviewQuestions/answers/javascript-answers.md#how-to-test-whether-a-value-is-nan)
-* [Explain event delegation.](/interviewQuestions/answers/javascript-answers.md#explain-event-delegation)
-* [Explain how `this` works in JavaScript.](/interviewQuestions/answers/javascript-answers.md#explain-how-this-works-in-javascript)
-* [What do you think of AMD vs CommonJS?](/interviewQuestions/answers/javascript-answers.md#what-do-you-think-of-amd-vs-commonjs)
-* [Explain why the following doesn't work as an IIFE: `function foo(){ }();`.](/interviewQuestions/answers/javascript-answers.md#what-do-you-think-of-amd-vs-commonjs)
-* [What needs to be changed to properly make it an IIFE?](/interviewQuestions/answers/javascript-answers.md#what-do-you-think-of-amd-vs-commonjs)
-
-* [What is the difference between a variable that is: `null`, `undefined` or `undeclared`?](/interviewQuestions/answers/javascript-answers.md#what-is-the-difference-between-a-variable)
-
-* [How would you go about checking for any of these states?]()
-
-* [What is a closure, and how/why would you use one?]()
+* [Explain how prototype inheritance works.](/interviewQuestions/answers/javascript-answers.mdd#answer-04)
+* [How to merge two JavaScript Objects?](/interviewQuestions/answers/javascript-answers.mdd#answer-05)
+* [How to test whether a value is NaN?](/interviewQuestions/answers/javascript-answers.mdd#answer-06)
+* [Explain event delegation.](/interviewQuestions/answers/javascript-answers.mdd#answer-07)
+* [Explain how `this` works in JavaScript.](/interviewQuestions/answers/javascript-answers.mdd#answer-08)
+* [What do you think of AMD vs CommonJS?](/interviewQuestions/answers/javascript-answers.mdd#answer-09)
+* [Explain why the following doesn't work as an IIFE: `function foo(){ }();`.](/interviewQuestions/answers/javascript-answers.mdd#answer-10)
+* [What needs to be changed to properly make it an IIFE?](/interviewQuestions/answers/javascript-answers.mdd#answer-11)
+* [What is the difference between a variable that is: `null`, `undefined` or `undeclared`?](/interviewQuestions/answers/javascript-answers.md#answer-12)
+* [How would you go about checking for any of these states?](/interviewQuestions/answers/javascript-answers.md#answer-13)
+* [What is a closure, and how/why would you use one?](/interviewQuestions/answers/javascript-answers.md#answer-14)
 - Closure determines whether a function(inner) has access to certain variables in the outer one.
 - Closure has access to variables in three scopes:
   - 1. variable of its own scope
