@@ -108,23 +108,44 @@ jenn.greeting(); //'Hello, my name is Jenn'
 - Browser incompatibility because AJAX depends on Javascript which is implemented differently across different browsers
 - Pages that are dynamically created using AJAX request do not autmotically register with the browser's history, so hitting the back button may not return to an earlier state of the page.
 * Q027. Explain how JSONP works (and how it's not really Ajax).
+- JSON with Padding: a method commonly used to bypass the cross-domain policies in web browsers.
+- AJAX requests are not allowed to a web page that is perceived to be on a server different by the browser.
 * Q028. Have you ever used JavaScript templating?
 - Javascript templating is a fast and efficient technique to render client-side templates with Javascript using a JSON data source. The template is HTML markup, peppered with tags that will either insert variables or run programming logic.
 * Q029. If so, what libraries have you used?
 * Q030. Explain "hoisting".
+- A variable can be used before is has been declared.
+- Variables defined while be moved to the top of the file. It will be checked to see if the variable is defined locally.
 * Q031. Describe event bubbling.
+- When an event occurs on an element, it will run the handlers on it, and then on its parents (going from inner to outer)
 * Q032. What's the difference between an "attribute" and a "property"?
+- HTML representation of a DOM element has attributes while those attributes in Javascript are represented as object properties.
 * Q033. Why is extending built-in JavaScript objects not a good idea?
+- A browser may implement your version of the method, silently overriding.
 * Q034. Difference between document load event and document DOMContentLoaded event?
+- DOMContentLoaded is fired when the document has been completely loaded and parsed, not waiting for assets like stylesheets and images.
+- Load waits for a fully-loaded page
 * Q035. What is the difference between `==` and `===`?
 - `==` will not check for types (tolerant) vs `===` checks for type and value
 * Q036. Explain the same-origin policy with regards to JavaScript.
+- 
 * Q037. Make this work:
 ```javascript
 duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
+function duplicate(arr) {
+  return arr.concat(arr)
+}
 ```
 * Q038. Why is it called a Ternary operator, what does the word "Ternary" indicate?
+- The ternary operator takes THREE operands (arguments)
 * Q039. What is `"use strict";`? what are the advantages and disadvantages to using it?
+- The purpose is to indicate that the code should be executed in 'strict mode'.
+**Advantages**
+- Eliminates some Javascript silent errors by changing them to throw errors.
+- Fixes mistakes that make it difficult for JS engines to perform optimizations - may run faster.
+- Disables features that are confusing or poorly thought out.
+**Disadvantages**
+- Browsers not supporting strict mode will run strict mode with different behaviro.
 * Q040. Create a for loop that iterates up to `100` while outputting **"fizz"** at multiples of `3`, **"buzz"** at multiples of `5` and **"fizzbuzz"** at multiples of `3` and `5`
 * Q041. Why is it, in general, a good idea to leave the global scope of a website as-is and never touch it?
 * Q042. Why would you use something like the `load` event? Does this event have disadvantages? Do you know any alternatives, and why would you use those?
@@ -135,7 +156,10 @@ duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
 * Q047. What tools and techniques do you use debugging JavaScript code?
 * Q048. What language constructions do you use for iterating over object properties and array items?
 * Q049. Explain the difference between mutable and immutable objects.
+- Mutable object is an object whose state can be modified after it is created - only objects and arrays are mutable in JS.
+- Immutables are objects whose state cannot be changed once the object has been created - Strings and Numbers (Results are allocated to a new block of memory)
   * Q050. What is an example of an immutable object in JavaScript?
+  - String and Number
   * Q051. What are the pros and cons of immutability?
   * Q052. How can you achieve immutability in your own code?
 * Q053. Explain the difference between synchronous and asynchronous functions.
