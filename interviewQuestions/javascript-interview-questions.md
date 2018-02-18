@@ -159,7 +159,10 @@ function duplicate(arr) {
 * Q047. What tools and techniques do you use debugging JavaScript code?
 * Q048. What language constructions do you use for iterating over object properties and array items?
 * Q049. Explain the difference between mutable and immutable objects.
+- Mutable object is an object whose state can be modified after it is created - only objects and arrays are mutable in JS.
+- Immutables are objects whose state cannot be changed once the object has been created - Strings and Numbers (Results are allocated to a new block of memory)
   * Q050. What is an example of an immutable object in JavaScript?
+  - String and Number
   * Q051. What are the pros and cons of immutability?
   * Q052. How can you achieve immutability in your own code?
 * Q053. Explain the difference between synchronous and asynchronous functions.
