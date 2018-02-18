@@ -131,12 +131,24 @@ jenn.greeting(); //'Hello, my name is Jenn'
 * Q035. What is the difference between `==` and `===`?
 - `==` will not check for types (tolerant) vs `===` checks for type and value
 * Q036. Explain the same-origin policy with regards to JavaScript.
+- 
 * Q037. Make this work:
 ```javascript
 duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
+function duplicate(arr) {
+  return arr.concat(arr)
+}
 ```
 * Q038. Why is it called a Ternary operator, what does the word "Ternary" indicate?
+- The ternary operator takes THREE operands (arguments)
 * Q039. What is `"use strict";`? what are the advantages and disadvantages to using it?
+- The purpose is to indicate that the code should be executed in 'strict mode'.
+**Advantages**
+- Eliminates some Javascript silent errors by changing them to throw errors.
+- Fixes mistakes that make it difficult for JS engines to perform optimizations - may run faster.
+- Disables features that are confusing or poorly thought out.
+**Disadvantages**
+- Browsers not supporting strict mode will run strict mode with different behaviro.
 * Q040. Create a for loop that iterates up to `100` while outputting **"fizz"** at multiples of `3`, **"buzz"** at multiples of `5` and **"fizzbuzz"** at multiples of `3` and `5`
 * Q041. Why is it, in general, a good idea to leave the global scope of a website as-is and never touch it?
 * Q042. Why would you use something like the `load` event? Does this event have disadvantages? Do you know any alternatives, and why would you use those?
