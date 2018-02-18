@@ -111,10 +111,14 @@ jenn.greeting(); //'Hello, my name is Jenn'
 - Browser incompatibility because AJAX depends on Javascript which is implemented differently across different browsers
 - Pages that are dynamically created using AJAX request do not autmotically register with the browser's history, so hitting the back button may not return to an earlier state of the page.
 * Q027. Explain how JSONP works (and how it's not really Ajax).
+- JSON with Padding: a method commonly used to bypass the cross-domain policies in web browsers.
+- AJAX requests are not allowed to a web page that is perceived to be on a server different by the browser.
 * Q028. Have you ever used JavaScript templating?
 - Javascript templating is a fast and efficient technique to render client-side templates with Javascript using a JSON data source. The template is HTML markup, peppered with tags that will either insert variables or run programming logic.
 * Q029. If so, what libraries have you used?
 * Q030. Explain "hoisting".
+- A variable can be used before is has been declared.
+- Variables defined while be moved to the top of the file. It will be checked to see if the variable is defined locally.
 * Q031. Describe event bubbling.
 * Q032. What's the difference between an "attribute" and a "property"?
 * Q033. Why is extending built-in JavaScript objects not a good idea?
