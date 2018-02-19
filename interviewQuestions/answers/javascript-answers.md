@@ -18,7 +18,7 @@
 ``` 
 <br />
 <br />
-[Back to JavacScript Interview Questions ](/interviewQuestions/javascript-interview-questions.md)
+[Back to JavacScript Interview Questions](/interviewQuestions/javascript-interview-questions.md)
 <br />
 <br />
 <div id="answer-03"></div>
@@ -97,7 +97,7 @@ fun.prototype // Object created using Fun, fun is a function; this value is the 
 - Has some difference between `strict` mode and `non-strict` mode.
 <br />
 <br />
-[Back to JavacScript Interview Questions ](/interviewQuestions/javascript-interview-questions.md)
+[Back to JavacScript Interview Questions](/interviewQuestions/javascript-interview-questions.md)
 <br />
 <br />
 <div id="answer-09"></div>
