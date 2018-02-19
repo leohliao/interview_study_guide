@@ -148,10 +148,18 @@ function duplicate(arr) {
 - Fixes mistakes that make it difficult for JS engines to perform optimizations - may run faster.
 - Disables features that are confusing or poorly thought out.
 **Disadvantages**
-- Browsers not supporting strict mode will run strict mode with different behaviro.
+- Browsers not supporting strict mode will run strict mode with different behavior.
+- Only recognized at the top of a script/function, making it sensitive to script concatenation.
 * Q040. Create a for loop that iterates up to `100` while outputting **"fizz"** at multiples of `3`, **"buzz"** at multiples of `5` and **"fizzbuzz"** at multiples of `3` and `5`
 * Q041. Why is it, in general, a good idea to leave the global scope of a website as-is and never touch it?
+- It is harder to read the code and reason about it when variables seem to appear out of thin air
+- Anyone can update a global variable from any point in the program at any time
+- Javascript defaults all variables to the global scope unless they are explicitly defined.
+
 * Q042. Why would you use something like the `load` event? Does this event have disadvantages? Do you know any alternatives, and why would you use those?
+- Useful when you want all content to be finished so if we need to work image of unknown sizes but can be really slow.
+- `$(document).ready()`: fires when HTML has finished loading. We can only interact with the DOM once the HTML is fully loaded. However it is just for jQuery, so has to be included on all of your site.
+- `DOMContentLoaded`: fired when document (DOM hierarchy) is fully loaded and parsed, without waiting for stylesheets and images. This is much faster than the `load` event 
 * Q043. Explain what a single page app is and how to make one SEO-friendly.
 * Q044. What is the extent of your experience with Promises and/or their polyfills?
 * Q045. What are the pros and cons of using Promises instead of callbacks?
