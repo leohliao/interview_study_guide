@@ -9,7 +9,6 @@
 [StackOverflow: How do I empty an array in JS?](https://stackoverflow.com/questions/1232040/how-do-i-empty-an-array-in-javascript)
 <br />
 <br />
-
 <div id="answer-02"></div>
 
 ### How do you clone an object?
@@ -19,7 +18,6 @@
 ``` 
 <br />
 <br />
-
 [>> Back to JavacScript Interview Questions](/interviewQuestions/javascript-interview-questions.md)
 <br />
 <br />
@@ -58,7 +56,10 @@ fun.prototype // Object created using Fun, fun is a function; this value is the 
 - JS Object inherit their properties and methods from their prototype.
 - The prototype property is an object, and it has a constructor property by default which allows yo to add new properties and methods to existing objects types.
 - __proto__ : when an object is created in JAvaScript, JavaScript Engine adds a __proto__ property to the newly created object; it points to the prototype object of the constructor function. 
-- [Resource](https://github.com/tianyuduan/JS30/blob/master/PrototypalInheritance/prototype.md)
+- [Resource Prototype Inheritance](https://github.com/tianyuduan/JS30/blob/master/PrototypalInheritance/prototype.md)
+<br />
+<br />
+[>> Back to JavacScript Interview Questions](/interviewQuestions/javascript-interview-questions.md)
 <br />
 <br />
 <div id="answer-05"></div>
@@ -76,6 +77,9 @@ fun.prototype // Object created using Fun, fun is a function; this value is the 
 
 <br />
 <br />
+[>> Back to JavacScript Interview Questions](/interviewQuestions/javascript-interview-questions.md)
+<br />
+<br />
 <div id="answer-07"></div>
 
 ### Explain event delegation
@@ -91,7 +95,9 @@ fun.prototype // Object created using Fun, fun is a function; this value is the 
 ### Explain how `this` works in JavaScript?
 - The value of `this` is determined by how a function is called. It CANNOT be set by assignment during execution, and it may be different each time the function is called.
 - Has some difference between `strict` mode and `non-strict` mode.
-
+<br />
+<br />
+[>> Back to JavacScript Interview Questions](/interviewQuestions/javascript-interview-questions.md)
 <br />
 <br />
 <div id="answer-09"></div>
@@ -113,7 +119,9 @@ fun.prototype // Object created using Fun, fun is a function; this value is the 
 IIFE stands for Immediately Invoked Function Expressions. The JavaScript parser reads function foo(){ }(); as function foo(){ } and ();, where the former is a function declaration and the latter (a pair of brackets) is an attempt at calling a function but there is no name specified, hence it throws Uncaught SyntaxError: Unexpected token ).
 
 Here are two ways to fix it that involves adding more brackets: (function foo(){ })() and (function foo(){ }()). These functions are not exposed in the global scope and you can even omit its name if you do not need to reference itself within the body.
-
+<br />
+<br />
+[>> Back to JavacScript Interview Questions](/interviewQuestions/javascript-interview-questions.md)
 <br />
 <br />
 <div id="answer-11"></div>
@@ -130,7 +138,11 @@ Here are two ways to fix it that involves adding more brackets: (function foo(){
 ### What is the difference between a variable that is: `null`, `undefined` or undeclared?
 - `null` - is primitive type; can be assigned to variable; has no value.
 - `undefined` - variable is declared, but has yet to be assigned a value.
-- `undeclared` - variable is not declared at all --> will return Reference error 
+- `undeclared` - variable is not declared at all --> will return Reference error
+
+<br />
+<br />
+[>> Back to JavacScript Interview Questions](/interviewQuestions/javascript-interview-questions.md)
 <br />
 <br />
 <div id="answer-13"></div>
@@ -275,7 +287,6 @@ jenn.greeting(); //'Hello, my name is Jenn'
 - With `bind`, there's no need to assign `this` to a variable to keep the same context.
 
 [MDN Global Objects](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_objects/Function/bind)
-
 <br />
 <br />
 <div id="answer-22"></div>
@@ -285,18 +296,26 @@ jenn.greeting(); //'Hello, my name is Jenn'
 - It was an old way of adding elements to a webpage; it only works while the page is loading
 - Used when including third party code (ads or Google Analytics)
 - Because there's no DOM modification, it works fast. If a lot of text needs to be added into HTML dynamically and the page is still loading, it may help to use `document.write()`
-
+<br />
+<br />
+<div id="answer-23"></div>
 
 ### What's the difference between feature detection, feature inference, and using the UA string?
 - These are three ways to determine if a particular web technology feature exists in a user's browser or environment.
 - `Feature detection` - a way of determining if a feature exists in the browser
 - `Feature inference` - a feature is determined to exist and the next web technology feature to be implemented is assumed to exist as well.
 - `UA String` - User Agent String; a string of text of data that each browser sends and can be accessed via navigator.userAgent. This string text contains information about the browser environment that is being targeted.
+<br />
+<br />
+<div id="answer-24"></div>
 
 ### Explain Ajax in as much detail as possible.
 - Asynchronous Javascript + XML
 - The use of XMLHttpRequest object to communicate with servers; information can be sent in different formats such as JSON, XML, HTML.
 - Its asynchronous nature allows it to communicate with server, exchange data, and update the page without refreshing the page.
+<br />
+<br />
+<div id="answer-25"></div>
 
 ### What are the advantages and disadvantages of using Ajax?
 **Advantages**:
@@ -309,10 +328,24 @@ jenn.greeting(); //'Hello, my name is Jenn'
 - Could increase design and development time - difficult to debug and increases code size of webpage
 - Browser incompatibility because AJAX depends on Javascript which is implemented differently across different browsers
 - Pages that are dynamically created using AJAX request do not autmotically register with the browser's history, so hitting the back button may not return to an earlier state of the page.
+<br />
+<br />
+<div id="answer-25"></div>
 
 ### Explain how JSONP works (and how it's not really Ajax).
+- JSON with Padding: a method commonly used to bypass the cross-domain policies in web browsers.
+- AJAX requests are not allowed to a web page that is perceived to be on a server different by the browser.
+<br />
+<br />
+<div id="answer-26"></div>
+
 ### Have you ever used JavaScript templating?
   ### If so, what libraries have you used?
+
+<br />
+<br />
+<div id="answer-27"></div>
+
 ### Explain "hoisting".
 ### Describe event bubbling.
 ### What's the difference between an "attribute" and a "property"?

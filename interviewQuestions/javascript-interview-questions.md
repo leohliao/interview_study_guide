@@ -2,14 +2,14 @@
 * [How would you empty the array?](/interviewQuestions/answers/javascript-answers.md#answer-01)
 * [How do you clone an object?](/interviewQuestions/answers/javascript-answers.md#answer-02)
 * [What is difference between .proto vs __proto__?](/interviewQuestions/answers/javascript-answers.md#answer-03)
-* [Explain how prototype inheritance works.](/interviewQuestions/answers/javascript-answers.mdd#answer-04)
-* [How to merge two JavaScript Objects?](/interviewQuestions/answers/javascript-answers.mdd#answer-05)
-* [How to test whether a value is NaN?](/interviewQuestions/answers/javascript-answers.mdd#answer-06)
-* [Explain event delegation.](/interviewQuestions/answers/javascript-answers.mdd#answer-07)
-* [Explain how `this` works in JavaScript.](/interviewQuestions/answers/javascript-answers.mdd#answer-08)
-* [What do you think of AMD vs CommonJS?](/interviewQuestions/answers/javascript-answers.mdd#answer-09)
-* [Explain why the following doesn't work as an IIFE: `function foo(){ }();`.](/interviewQuestions/answers/javascript-answers.mdd#answer-10)
-* [What needs to be changed to properly make it an IIFE?](/interviewQuestions/answers/javascript-answers.mdd#answer-11)
+* [Explain how prototype inheritance works.](/interviewQuestions/answers/javascript-answers.md#answer-04)
+* [How to merge two JavaScript Objects?](/interviewQuestions/answers/javascript-answers.md#answer-05)
+* [How to test whether a value is NaN?](/interviewQuestions/answers/javascript-answers.md#answer-06)
+* [Explain event delegation.](/interviewQuestions/answers/javascript-answers.md#answer-07)
+* [Explain how `this` works in JavaScript.](/interviewQuestions/answers/javascript-answers.md#answer-08)
+* [What do you think of AMD vs CommonJS?](/interviewQuestions/answers/javascript-answers.md#answer-09)
+* [Explain why the following doesn't work as an IIFE: `function foo(){ }();`.](/interviewQuestions/answers/javascript-answers.md#answer-10)
+* [What needs to be changed to properly make it an IIFE?](/interviewQuestions/answers/javascript-answers.md#answer-11)
 * [What is the difference between a variable that is: `null`, `undefined` or `undeclared`?](/interviewQuestions/answers/javascript-answers.md#answer-12)
 * [How would you go about checking for any of these states?](/interviewQuestions/answers/javascript-answers.md#answer-13)
 * [What is a closure, and how/why would you use one?](/interviewQuestions/answers/javascript-answers.md#answer-14)
@@ -24,10 +24,8 @@
 * [What's the difference between feature detection, feature inference, and using the UA string?](/interviewQuestions/answers/javascript-answers.md#answer-23)
 * [Explain Ajax in as much detail as possible.](/interviewQuestions/answers/javascript-answers.md#answer-24)
 * [What are the advantages and disadvantages of using Ajax?](/interviewQuestions/answers/javascript-answers.md#answer-25)
+* [Explain how JSONP works (and how it's not really Ajax).](/interviewQuestions/answers/javascript-answers.md#answer-26)
 
-* Q027. Explain how JSONP works (and how it's not really Ajax).
-- JSON with Padding: a method commonly used to bypass the cross-domain policies in web browsers.
-- AJAX requests are not allowed to a web page that is perceived to be on a server different by the browser.
 * Q028. Have you ever used JavaScript templating?
 - Javascript templating is a fast and efficient technique to render client-side templates with Javascript using a JSON data source. The template is HTML markup, peppered with tags that will either insert variables or run programming logic.
 * Q029. If so, what libraries have you used?
