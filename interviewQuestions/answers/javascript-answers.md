@@ -16,9 +16,7 @@
 - var shallow_dup = Object.assign({}, obj); // shallow dup
 - var deep_dup = JSON.parse(JSON.stringify(obj)) // faster
 ``` 
-<br />
-<br />
-[Back to JavacScript Interview Questions](/interviewQuestions/javascript-interview-questions.md)
+
 <br />
 <br />
 <div id="answer-03"></div>
@@ -57,9 +55,7 @@ fun.prototype // Object created using Fun, fun is a function; this value is the 
 - The prototype property is an object, and it has a constructor property by default which allows yo to add new properties and methods to existing objects types.
 - __proto__ : when an object is created in JAvaScript, JavaScript Engine adds a __proto__ property to the newly created object; it points to the prototype object of the constructor function. 
 - [Resource Prototype Inheritance](https://github.com/tianyuduan/JS30/blob/master/PrototypalInheritance/prototype.md)
-<br />
-<br />
-[Back to JavacScript Interview Questions](/interviewQuestions/javascript-interview-questions.md)
+
 <br />
 <br />
 <div id="answer-05"></div>
@@ -77,9 +73,6 @@ fun.prototype // Object created using Fun, fun is a function; this value is the 
 
 <br />
 <br />
-[Back to JavacScript Interview Questions](/interviewQuestions/javascript-interview-questions.md)
-<br />
-<br />
 <div id="answer-07"></div>
 
 ### Explain event delegation
@@ -95,9 +88,7 @@ fun.prototype // Object created using Fun, fun is a function; this value is the 
 ### Explain how `this` works in JavaScript?
 - The value of `this` is determined by how a function is called. It CANNOT be set by assignment during execution, and it may be different each time the function is called.
 - Has some difference between `strict` mode and `non-strict` mode.
-<br />
-<br />
-[Back to JavacScript Interview Questions](/interviewQuestions/javascript-interview-questions.md)
+
 <br />
 <br />
 <div id="answer-09"></div>
