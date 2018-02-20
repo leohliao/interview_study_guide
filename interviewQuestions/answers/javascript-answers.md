@@ -487,6 +487,9 @@ function fizz() {
 <div id="answer-42"></div>
 
 ### What is the extent of your experience with Promises and/or their polyfills?
+- Promises are objects which represent the eventual successful complete or failure of an asynchronous operation and its resulting value.
+- A promise has three different states: fulfilled, rejected, or pending.
+- Instead of passing a callback to the promise, we chain a callback using `.then()` to the promise.
 <br />
 <br />
 <div id="answer-43"></div>
