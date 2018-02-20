@@ -6,10 +6,9 @@
 - Method 3: `array.splice(0,array.length)`
 - Method 4: `while (array.length > 0) { array.pop(); }`
 
-[Resource from StackOverflow](https://stackoverflow.com/questions/1232040/how-do-i-empty-an-array-in-javascript)
+[StackOverflow: How do I empty an array in JS?](https://stackoverflow.com/questions/1232040/how-do-i-empty-an-array-in-javascript)
 <br />
 <br />
-
 <div id="answer-02"></div>
 
 ### How do you clone an object?
@@ -17,16 +16,17 @@
 - var shallow_dup = Object.assign({}, obj); // shallow dup
 - var deep_dup = JSON.parse(JSON.stringify(obj)) // faster
 ``` 
-<br />
-<br />
 
-[Back to JavacScript Interview Questions](/interviewQuestions/javascript-interview-questions.md)
 <br />
 <br />
 <div id="answer-03"></div>
 
-### What is difference between `proto` vs `__proto__` ?
-- `Object.prototype.`
+### What is difference between `proto` vs `__proto__`?
+**`Object.prototype.`**
+- one
+- two
+- three
+
 **`Object.prototype.__proto__`** 
 - Points to the object which was used as prototype when the object was instantiated. 
 - Its getter function exposes the value of the internal [[Prototype]] of an object
@@ -54,7 +54,8 @@ fun.prototype // Object created using Fun, fun is a function; this value is the 
 - JS Object inherit their properties and methods from their prototype.
 - The prototype property is an object, and it has a constructor property by default which allows yo to add new properties and methods to existing objects types.
 - __proto__ : when an object is created in JAvaScript, JavaScript Engine adds a __proto__ property to the newly created object; it points to the prototype object of the constructor function. 
-- [Resource](https://github.com/tianyuduan/JS30/blob/master/PrototypalInheritance/prototype.md)
+- [Resource Prototype Inheritance](https://github.com/tianyuduan/JS30/blob/master/PrototypalInheritance/prototype.md)
+
 <br />
 <br />
 <div id="answer-05"></div>
@@ -63,8 +64,16 @@ fun.prototype // Object created using Fun, fun is a function; this value is the 
 - Use Object.assign({}, obj)
 - if using `merge`, remember to mention that you need to import from lodash.
 
+<br />
+<br />
+<div id="answer-06"></div>
+
 ### How to test whether a value is NaN?
 - You can use `isNaN(value)` method to check to see if a value is NaN. 
+
+<br />
+<br />
+<div id="answer-07"></div>
 
 ### Explain event delegation
 - Capturing and bubbling allow to implement one of most powerful event handling patterns called event delegation.
@@ -72,13 +81,26 @@ fun.prototype // Object created using Fun, fun is a function; this value is the 
 - In the handler we get event.target, see where the event actually happened and handle it.
 - [Resource](https://javascript.info/event-delegation)
 
+<br />
+<br />
+<div id="answer-08"></div>
+
 ### Explain how `this` works in JavaScript?
 - The value of `this` is determined by how a function is called. It CANNOT be set by assignment during execution, and it may be different each time the function is called.
 - Has some difference between `strict` mode and `non-strict` mode.
 
+<br />
+<br />
+<div id="answer-09"></div>
+
+
 ### What do you think of AMD vs CommonJS?
 - `AMD`: Asynchronous Module Definition - is another specification for modules. For example: ReS. It is generally more used in client-side(in-browser) JavaScript development due to this. 
 - [JavaScript Module Systems Showdown](https://auth0.com/blog/javascript-module-systems-showdown/)
+
+<br />
+<br />
+<div id="answer-10"></div>
 
 ### Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
 - `IIFE` - **Immediately Invoked Function Expressions**
@@ -88,17 +110,34 @@ fun.prototype // Object created using Fun, fun is a function; this value is the 
 IIFE stands for Immediately Invoked Function Expressions. The JavaScript parser reads function foo(){ }(); as function foo(){ } and ();, where the former is a function declaration and the latter (a pair of brackets) is an attempt at calling a function but there is no name specified, hence it throws Uncaught SyntaxError: Unexpected token ).
 
 Here are two ways to fix it that involves adding more brackets: (function foo(){ })() and (function foo(){ }()). These functions are not exposed in the global scope and you can even omit its name if you do not need to reference itself within the body.
+<br />
+<br />
+[Back to JavacScript Interview Questions](/interviewQuestions/javascript-interview-questions.md)
+<br />
+<br />
+<div id="answer-11"></div>
 
 ### What needs to be changed to properly make it an IIFE?
   - Proper way to make it IIFE is:
 ```javascript
 (function foo(){ })();
 ```
+<br />
+<br />
+<div id="answer-12"></div>
 
 ### What is the difference between a variable that is: `null`, `undefined` or undeclared?
 - `null` - is primitive type; can be assigned to variable; has no value.
 - `undefined` - variable is declared, but has yet to be assigned a value.
-- `undeclared` - variable is not declared at all --> will return Reference error 
+- `undeclared` - variable is not declared at all --> will return Reference error
+
+<br />
+<br />
+[Back to JavacScript Interview Questions ](/interviewQuestions/javascript-interview-questions.md)
+<br />
+<br />
+<div id="answer-13"></div>
+
 ### How would you go about checking for any of these states?
 - Although there are many approaches to check for these states. I would say the key thing is to be able to console.log the output at certain point in your code. The following offer several good ways: 
 ```javascript
@@ -107,35 +146,68 @@ console.log(foo); // undefined
 console.log(foo === undefined); // true
 console.log(typeof foo === 'undefined'); // true
 ```
+<br />
+<br />
+<div id="answer-14"></div>
+
 ### What is a closure, and how/why would you use one?
-- A closure, refers to how accessible the variables are inside a inner function. 
-For example, there are 3 variables that can be accessed inside an inner function:
-- 1. `global variable`
-- 2. `variable inside the outer function`
-- 3. `variable inside the inner function`
-```javascript
-function outer () {
-  var outerVariable = "I am outside";
-  function inner (){
-    var innnerVariable = "I am inside"
-    console.log(outerVariable;); // => "I am outside"
-    console.log(innerVariable); // => "I am inside"
-  }
-  console.log(outerVariable); // => "I am outside"
-  console.log(innerVariable);  // => "I am inside"
-};
-```
+- Closure determines whether a function(inner) has access to certain variables in the outer one.
+- Closure has access to variables in three scopes:
+  - 1. variable of its own scope
+  - 2. variables in the enclosing function's scope
+  - 3. global variables
+  ```javascript
+  var globalVar = "xyz";
+
+  (function outerFunc(outerArg) {
+      var outerVar = 'a';
+      
+      (function innerFunc(innerArg) {
+      var innerVar = 'b';
+      
+      console.log(
+          "outerArg = " + outerArg + "\n" +
+          "innerArg = " + innerArg + "\n" +
+          "outerVar = " + outerVar + "\n" +
+          "innerVar = " + innerVar + "\n" +
+          "globalVar = " + globalVar);
+      
+      })(456);
+  })(123);
+  ```
+  output is: 
+  ```javascript
+  outerArg = 123
+  innerArg = 456
+  outerVar = a
+  innerVar = b
+  globalVar = xyz
+  ```
+<br />
+<br />
+<div id="answer-15"></div>
 
 ### Can you describe the main difference between a `forEach` loop and a `.map()` loop and why you would pick one versus the other?
 - They are both iteration methods.
-- `forEach` - modifies the original assignment. Original gets modified. You should use this method if space is a concern in your codes. Also note that in OOP programs, state is shared so if you do modified the original, other function that depends on the same variable will also get affected.
-- `map()` - duplicate the original and create a new variable. Original will not be modified. 
+- `forEach()` - executes a provided function once for each array element.
+- `forEach()` - may be preferable when you’re not trying to change the data in your array, but instead want to just do something with it — like saving it to a database or logging it out:
+- `.map()` - creates a new array with the results of calling a provided function on every element in the calling array.
+- `map()` - might be preferable when changing or altering data. Not only is it faster but it returns a new Array. This means we can do cool things like chaining on other methods ( map(), filter(), reduce(), etc.)
+
+- [JavaScript — Map vs. ForEach](https://codeburst.io/javascript-map-vs-foreach-f38111822c0f)
+<br />
+<br />
+<div id="answer-16"></div>
 
 ### What's a typical use case for anonymous functions?
 ** Check the answers one more time **
 - Generally speak, an anonymous function is not a preferred practice in your coding.
 However, a typical use case of anonymous function is callback, 
 you can use a function as a callback if you do not need to repeatedly use the same function in other circumstance.
+- Anonymous functions are `function expressions`, so we can assign functions to variables and object properties or pass them as arguments.
+<br />
+<br />
+<div id="answer-17"></div>
 
 ### How do you organize your code? (module pattern, classical inheritance?)
 ** Check the answers one more time **
@@ -145,10 +217,17 @@ and importing it if you need to access them from another function.
 - Classical inheritance is similar idea and is also a good option to consider, 
 however, since in JavaScript you can also use prototype inheritance,
 it is a better practice to use prototype inheritance over class so that you won't modified the original constructor.
-
+<br />
+<br />
+<div id="answer-18"></div>
 
 ### What's the difference between host objects and native objects?
-** Research..... **
+- `Host objects` - objects supplied by the host environment to complete the execution environment. Ex: (assuming browser environment) window, document, location, etc.
+- `Native objects` - standard built-in objects provided by Javascript. Ex: Date, Math, Object (constructor)
+
+<br />
+<br />
+<div id="answer-19"></div>
 
 ### Difference between: `function Person(){}`, `var person = Person()`, and `var person = new Person()`?
 ** Double Check **
@@ -156,29 +235,108 @@ it is a better practice to use prototype inheritance over class so that you won'
 - `function Person(){}` - Function decoration
 - `var person = Person()` - Function expression.
 - `var person = new Person()` - Creating an object, aka instantiate.
+- ////////
+- `function Person(){}` - function declaration, function is declared but is not executed
+- `var person = Person()` - function expression, the variable `var person` has been defined and contains a value reference to a Person function. Javascript expressions always return a value.
+- `var person = new Person()` - function constructor, when we add the keyword 'new', we are instantiating a new object of the Person class constructor.
+<br />
+<br />
+<div id="answer-20"></div>
 
 ### What's the difference between `.call` and `.apply`?
 - They are both part of binding to a function/object.
 - `.call` - binds a single object to another.
 - `.apply`- binds an array of objects.
+- ///////
+They differ in how they handle function arguments:
+- `.call` - requires the arguments to be listed individually
+- `.apply` - allows you to invoke the function with `arguments` array as the second argument
+<br />
+<br />
+<div id="answer-21"></div>
 
 ### Explain `Function.prototype.bind`.
 - This is same as explaining what bind() is. 
 - From MDN:
 ** The bind() method creates a new function that, when called, has its `this` keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called. **
+- It creates a new function, where `this` keyword is set to the provided value
+- You keep the context of `this` within another function.
+Ex: 
+```javascript
+function Person(name) {
+  this.name = name;
+  this.greeting = function() {
+    setTimeOut(function() {
+      console.log("Hello, my name is " + this.name);
+    }.bind(this), 500);
+  }
+}
+var jenn = new Person('Jenn');
+jenn.greeting(); //'Hello, my name is Jenn'
+```
+
+- With `bind`, there's no need to assign `this` to a variable to keep the same context.
 
 [MDN Global Objects](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_objects/Function/bind)
+<br />
+<br />
+<div id="answer-22"></div>
 
 ### When would you use `document.write()`?
 `document.write` -  is executed after the page has been loaded. It will clear the contents of the whole page and rewrite them with something you define.
+- It was an old way of adding elements to a webpage; it only works while the page is loading
+- Used when including third party code (ads or Google Analytics)
+- Because there's no DOM modification, it works fast. If a lot of text needs to be added into HTML dynamically and the page is still loading, it may help to use `document.write()`
+<br />
+<br />
+<div id="answer-23"></div>
 
 ### What's the difference between feature detection, feature inference, and using the UA string?
+- These are three ways to determine if a particular web technology feature exists in a user's browser or environment.
+- `Feature detection` - a way of determining if a feature exists in the browser
+- `Feature inference` - a feature is determined to exist and the next web technology feature to be implemented is assumed to exist as well.
+- `UA String` - User Agent String; a string of text of data that each browser sends and can be accessed via navigator.userAgent. This string text contains information about the browser environment that is being targeted.
+<br />
+<br />
+<div id="answer-24"></div>
 
 ### Explain Ajax in as much detail as possible.
+- Asynchronous Javascript + XML
+- The use of XMLHttpRequest object to communicate with servers; information can be sent in different formats such as JSON, XML, HTML.
+- Its asynchronous nature allows it to communicate with server, exchange data, and update the page without refreshing the page.
+<br />
+<br />
+<div id="answer-25"></div>
+
 ### What are the advantages and disadvantages of using Ajax?
+**Advantages**:
+- Reduces traffic between the client and the server
+- Response time is faster, increasing performance and speed (optimization)
+- Improves user experience
+- The alternative to use JSON
+
+**Disadvantages**:
+- Could increase design and development time - difficult to debug and increases code size of webpage
+- Browser incompatibility because AJAX depends on Javascript which is implemented differently across different browsers
+- Pages that are dynamically created using AJAX request do not autmotically register with the browser's history, so hitting the back button may not return to an earlier state of the page.
+<br />
+<br />
+<div id="answer-25"></div>
+
 ### Explain how JSONP works (and how it's not really Ajax).
+- JSON with Padding: a method commonly used to bypass the cross-domain policies in web browsers.
+- AJAX requests are not allowed to a web page that is perceived to be on a server different by the browser.
+<br />
+<br />
+<div id="answer-26"></div>
+
 ### Have you ever used JavaScript templating?
   ### If so, what libraries have you used?
+
+<br />
+<br />
+<div id="answer-27"></div>
+
 ### Explain "hoisting".
 ### Describe event bubbling.
 ### What's the difference between an "attribute" and a "property"?
