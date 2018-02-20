@@ -507,6 +507,9 @@ function fizz() {
 <div id="answer-45"></div>
 
 ### What tools and techniques do you use debugging JavaScript code?
+- Browser Developer Tools -- check for any error messages/console.log()
+- breakpoints - using a debugger, current context of the current scope is available
+- Avoid logging reference types - the values of primitive types inside the logged reference may change. 
 <br />
 <br />
 <div id="answer-46"></div>
