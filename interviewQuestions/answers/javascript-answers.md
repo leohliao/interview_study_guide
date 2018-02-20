@@ -5,22 +5,29 @@
 - Method 2: `array.length = 0`
 - Method 3: `array.splice(0,array.length)`
 - Method 4: `while (array.length > 0) { array.pop(); }`
+  [StackOverflow: How do I empty an array in JS?](https://stackoverflow.com/questions/1232040/how-do-i-empty-an-array-in-javascript)
 
-[StackOverflow: How do I empty an array in JS?](https://stackoverflow.com/questions/1232040/how-do-i-empty-an-array-in-javascript)
 <br />
 <br />
-
 <div id="answer-02"></div>
 
 ### How do you clone an object?
-```javascript
-- var shallow_dup = Object.assign({}, obj); // shallow dup
-- var deep_dup = JSON.parse(JSON.stringify(obj)) // faster
-``` 
+    ```javascript
+    let obj = {
+        a: 1,
+        b: 2,
+        c: {
+            age: 30
+        }
+    };
+    let shallow_dup1 = Object.clone(obj) // shallow clone
+    let deep_dup1 = Object.assign({}, obj); // deep clone
+    let deep_dup2 = JSON.parse(JSON.stringify(obj)) // faster
+    ``` 
+  [Medium: Objects in JS: object.assign deep copy](https://medium.com/@tkssharma/objects-in-javascript-object-assign-deep-copy-64106c9aefab)
 
 <br />
 <br />
-
 <div id="answer-03"></div>
 
 ### What is difference between `proto` vs `__proto__`?
