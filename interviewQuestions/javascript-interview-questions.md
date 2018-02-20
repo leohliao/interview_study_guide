@@ -26,12 +26,8 @@
 * [What are the advantages and disadvantages of using Ajax?](/interviewQuestions/answers/javascript-answers.md#answer-25)
 * [Explain how JSONP works (and how it's not really Ajax).](/interviewQuestions/answers/javascript-answers.md#answer-26)
 * [Have you ever used JavaScript templating? If so, what libraries have you used?](/interviewQuestions/answers/javascript-answers.md#answer-27)
-- Javascript templating is a fast and efficient technique to render client-side templates with Javascript using a JSON data source. The template is HTML markup, peppered with tags that will either insert variables or run programming logic.
 * [Explain "hoisting".](/interviewQuestions/answers/javascript-answers.md#answer-28)
-- A variable can be used before is has been declared.
-- Variables defined while be moved to the top of the file. It will be checked to see if the variable is defined locally.
 * [Describe event bubbling.](/interviewQuestions/answers/javascript-answers.md#answer-29)
-- When an event occurs on an element, it will run the handlers on it, and then on its parents (going from inner to outer)
 * [What's the difference between an "attribute" and a "property"?](/interviewQuestions/answers/javascript-answers.md#answer-30)
 - HTML representation of a DOM element has attributes while those attributes in Javascript are represented as object properties.
 * Q033. Why is extending built-in JavaScript objects not a good idea?
@@ -115,8 +111,57 @@ var methodObject = {
     display: function () {  // Method
         console.log(this.attribute);
     }
-};
-```
+}
+* [Why is extending built-in JavaScript objects not a good idea?](/interviewQuestions/answers/javascript-answers.md#answer-31)
+* [Difference between document load event and document DOMContentLoaded event?](/interviewQuestions/answers/javascript-answers.md#answer-32)
+* [What is the difference between `==` and `===`?](/interviewQuestions/answers/javascript-answers.md#answer-33)
+* [Explain the same-origin policy with regards to JavaScript.](/interviewQuestions/answers/javascript-answers.md#answer-34)
+* [Make this work:](/interviewQuestions/answers/javascript-answers.md#answer-35)
+    ```javascript
+    duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
+    function duplicate(arr) {
+      return arr.concat(arr)
+>>>>>>> ea1c5b5baf0d8c8c3283c152e0ef309baa9140e1
+    }
+    ```
+* [Why is it called a Ternary operator, what does the word "Ternary" indicate?](/interviewQuestions/answers/javascript-answers.md#answer-36)
+* [What is `"use strict";`? what are the advantages and disadvantages to using it?](/interviewQuestions/answers/javascript-answers.md#answer-37)
+* [Create a for loop that iterates up to `100` while outputting **"fizz"** at multiples of `3`, **"buzz"** at multiples of `5` and **"fizzbuzz"** at multiples of `3` and `5`](/interviewQuestions/answers/javascript-answers.md#answer-38)
+* [Why is it, in general, a good idea to leave the global scope of a website as-is and never touch it?](/interviewQuestions/answers/javascript-answers.md#answer-39)
+* [Why would you use something like the `load` event? Does this event have disadvantages? Do you know any alternatives, and why would you use those?](/interviewQuestions/answers/javascript-answers.md#answer-40)
+* [Explain what a single page app is and how to make one SEO-friendly.](/interviewQuestions/answers/javascript-answers.md#answer-41)
+* [What is the extent of your experience with Promises and/or their polyfills?](/interviewQuestions/answers/javascript-answers.md#answer-42)
+* [What are the pros and cons of using Promises instead of callbacks?](/interviewQuestions/answers/javascript-answers.md#answer-43)
+* [What are some of the advantages/disadvantages of writing JavaScript code in a language that compiles to JavaScript?](/interviewQuestions/answers/javascript-answers.md#answer-44)
+* [What tools and techniques do you use debugging JavaScript code?](/interviewQuestions/answers/javascript-answers.md#answer-45)
+* [What language constructions do you use for iterating over object properties and array items?](/interviewQuestions/answers/javascript-answers.md#answer-46)
+* [Explain the difference between mutable and immutable objects.](/interviewQuestions/answers/javascript-answers.md#answer-47)
+* [What is an example of an immutable object in JavaScript?](/interviewQuestions/answers/javascript-answers.md#answer-48)
+* [What are the pros and cons of immutability?](/interviewQuestions/answers/javascript-answers.md#answer-49)
+* [How can you achieve immutability in your own code?](/interviewQuestions/answers/javascript-answers.md#answer-50)
+* [Explain the difference between synchronous and asynchronous functions.](/interviewQuestions/answers/javascript-answers.md#answer-51)
+* [What is event loop? What is the difference between call stack and task queue?](/interviewQuestions/answers/javascript-answers.md#answer-52)
+* [Explain the differences on the usage of `foo` between `function foo() {}` and `var foo = function() {}`](/interviewQuestions/answers/javascript-answers.md#answer-53)
+* [What are the differences between variables created using `let`, `var` or `const`?](/interviewQuestions/answers/javascript-answers.md#answer-54)
+* [What are the differences between ES6 class and ES5 function constructors?](/interviewQuestions/answers/javascript-answers.md#answer-55)
+* [Can you offer a use case for the new arrow `=>` function syntax? How does this new syntax differ from other functions?](/interviewQuestions/answers/javascript-answers.md#answer-56)
+* [What advantage is there for using the arrow syntax for a method in a constructor?](/interviewQuestions/answers/javascript-answers.md#answer-57)
+* [What is the definition of a higher-order function?]((/interviewQuestions/answers/javascript-answers.md#answer-58))
+* [Can you give an example for destructuring an object or an array?](/interviewQuestions/answers/javascript-answers.md#answer-59)
+* [ES6 Template Literals offer a lot of flexibility in generating strings, can you give an example?](/interviewQuestions/answers/javascript-answers.md#answer-60)
+* [Can you give an example of a curry function and why this syntax offers an advantage?](/interviewQuestions/answers/javascript-answers.md#answer-61)
+* [What are the benefits of using `spread syntax` and how is it different from `rest syntax`?](/interviewQuestions/answers/javascript-answers.md#answer-62)
+* [How can you share code between files?](/interviewQuestions/answers/javascript-answers.md#answer-63)
+* [Why you might want to create static class members?](/interviewQuestions/answers/javascript-answers.md#answer-64)
+* [Function(not associate with object) vs Method(assoicate with object)](/interviewQuestions/answers/javascript-answers.md#answer-65)
+    ```javascript
+    var methodObject = {
+        attribute: "xyz",
+        display: function () {  // Method
+            console.log(this.attribute);
+        }
+    };
+    ```
 
 [Back to Home](/README.md)
 
