@@ -174,6 +174,8 @@ function duplicate(arr) {
   * Q051. What are the pros and cons of immutability?
   * Q052. How can you achieve immutability in your own code?
 * Q053. Explain the difference between synchronous and asynchronous functions.
+- Synchronous functions will be executed in the order they are called.
+- Asynchronous functions do not wait, so other events can occur in parallel.
 * Q054. What is event loop?
   * Q055. What is the difference between call stack and task queue?
 * Q056. Explain the differences on the usage of `foo` between `function foo() {}` and `var foo = function() {}`
