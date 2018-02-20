@@ -40,17 +40,17 @@
 - Points to the object which was used as prototype when the object was instantiated. 
 - Its getter function exposes the value of the internal [[Prototype]] of an object
 - Its setter allows [[Prototype]] of an object to be mutated. The object must be extensible accord to Object.isExtensible(): if it is not, a TypeError is thrown. The value provided must be an object or null. Providing any other value will do nothing.
+  ```javascript
+  Object.prototype // Object created using object
+  Array.prototype // Object created using array
 
-```javascript
-Object.prototype // Object created using object
-Array.prototype // Object created using array
+  var fun = new Fun();
+  fun.prototype // Object created using Fun, fun is a function; this value is the value of fun.prototype
+  ```
 
-var fun = new Fun();
-fun.prototype // Object created using Fun, fun is a function; this value is the value of fun.prototype
-```
+  [MDN Prototype](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype)
 
-[MDN Prototype](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype)
-[MDN Proto](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto)
+  [MDN Proto](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto)
 <br />
 <br />
 
