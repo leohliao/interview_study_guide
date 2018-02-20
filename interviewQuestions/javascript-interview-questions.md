@@ -72,6 +72,11 @@ function duplicate(arr) {
 - `$(document).ready()`: fires when HTML has finished loading. We can only interact with the DOM once the HTML is fully loaded. However it is just for jQuery, so has to be included on all of your site.
 - `DOMContentLoaded`: fired when document (DOM hierarchy) is fully loaded and parsed, without waiting for stylesheets and images. This is much faster than the `load` event 
 * Q043. Explain what a single page app is and how to make one SEO-friendly.
+- Single page applications reduce the amount of page refreshes -- heavier use of AJAX to get data loaded. The process of rendering page happens mostly on the client-side.
+- Careful thought must be put into search engine optimization so content is discoverable by searh engines/social media websites.
+- One solution is to use Fallback pages which are HTML pages that are displayed if the requesting resource does not parse Javascript.
+- Creating a custom 'share' UX elements and functionality including sharable URLs
+- Using pushState: HTML5 includes the ability to manage the path of the URL as seen in the browser
 * Q044. What is the extent of your experience with Promises and/or their polyfills?
 * Q045. What are the pros and cons of using Promises instead of callbacks?
 * Q046. What are some of the advantages/disadvantages of writing JavaScript code in a language that compiles to JavaScript?
