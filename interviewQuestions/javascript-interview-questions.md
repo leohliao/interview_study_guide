@@ -29,89 +29,6 @@
 * [Explain "hoisting".](/interviewQuestions/answers/javascript-answers.md#answer-28)
 * [Describe event bubbling.](/interviewQuestions/answers/javascript-answers.md#answer-29)
 * [What's the difference between an "attribute" and a "property"?](/interviewQuestions/answers/javascript-answers.md#answer-30)
-- HTML representation of a DOM element has attributes while those attributes in Javascript are represented as object properties.
-* Q033. Why is extending built-in JavaScript objects not a good idea?
-- A browser may implement your version of the method, silently overriding.
-* Q034. Difference between document load event and document DOMContentLoaded event?
-- DOMContentLoaded is fired when the document has been completely loaded and parsed, not waiting for assets like stylesheets and images.
-- Load waits for a fully-loaded page
-* Q035. What is the difference between `==` and `===`?
-- `==` will not check for types (tolerant) vs `===` checks for type and value
-* Q036. Explain the same-origin policy with regards to JavaScript.
-- 
-* Q037. Make this work:
-```javascript
-duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
-function duplicate(arr) {
-  return arr.concat(arr)
-}
-```
-* Q038. Why is it called a Ternary operator, what does the word "Ternary" indicate?
-- The ternary operator takes THREE operands (arguments)
-* Q039. What is `"use strict";`? what are the advantages and disadvantages to using it?
-- The purpose is to indicate that the code should be executed in 'strict mode'.
-**Advantages**
-- Eliminates some Javascript silent errors by changing them to throw errors.
-- Fixes mistakes that make it difficult for JS engines to perform optimizations - may run faster.
-- Disables features that are confusing or poorly thought out.
-**Disadvantages**
-- Browsers not supporting strict mode will run strict mode with different behavior.
-- Only recognized at the top of a script/function, making it sensitive to script concatenation.
-* Q040. Create a for loop that iterates up to `100` while outputting **"fizz"** at multiples of `3`, **"buzz"** at multiples of `5` and **"fizzbuzz"** at multiples of `3` and `5`
-* Q041. Why is it, in general, a good idea to leave the global scope of a website as-is and never touch it?
-- It is harder to read the code and reason about it when variables seem to appear out of thin air
-- Anyone can update a global variable from any point in the program at any time
-- Javascript defaults all variables to the global scope unless they are explicitly defined.
-
-* Q042. Why would you use something like the `load` event? Does this event have disadvantages? Do you know any alternatives, and why would you use those?
-- Useful when you want all content to be finished so if we need to work image of unknown sizes but can be really slow.
-- `$(document).ready()`: fires when HTML has finished loading. We can only interact with the DOM once the HTML is fully loaded. However it is just for jQuery, so has to be included on all of your site.
-- `DOMContentLoaded`: fired when document (DOM hierarchy) is fully loaded and parsed, without waiting for stylesheets and images. This is much faster than the `load` event 
-* Q043. Explain what a single page app is and how to make one SEO-friendly.
-- Single page applications reduce the amount of page refreshes -- heavier use of AJAX to get data loaded. The process of rendering page happens mostly on the client-side.
-- Careful thought must be put into search engine optimization so content is discoverable by searh engines/social media websites.
-- One solution is to use Fallback pages which are HTML pages that are displayed if the requesting resource does not parse Javascript.
-- Creating a custom 'share' UX elements and functionality including sharable URLs
-- Using pushState: HTML5 includes the ability to manage the path of the URL as seen in the browser
-* Q044. What is the extent of your experience with Promises and/or their polyfills?
-* Q045. What are the pros and cons of using Promises instead of callbacks?
-* Q046. What are some of the advantages/disadvantages of writing JavaScript code in a language that compiles to JavaScript?
-* Q047. What tools and techniques do you use debugging JavaScript code?
-* Q048. What language constructions do you use for iterating over object properties and array items?
-* Q049. Explain the difference between mutable and immutable objects.
-- Mutable object is an object whose state can be modified after it is created - only objects and arrays are mutable in JS.
-- Immutables are objects whose state cannot be changed once the object has been created - Strings and Numbers (Results are allocated to a new block of memory)
-  * Q050. What is an example of an immutable object in JavaScript?
-  - String and Number
-  * Q051. What are the pros and cons of immutability?
-  * Q052. How can you achieve immutability in your own code?
-* Q053. Explain the difference between synchronous and asynchronous functions.
-- Synchronous functions will be executed in the order they are called.
-- Asynchronous functions do not wait, so other events can occur in parallel.
-* Q054. What is event loop?
-  * Q055. What is the difference between call stack and task queue?
-* Q056. Explain the differences on the usage of `foo` between `function foo() {}` and `var foo = function() {}`
-* Q057. What are the differences between variables created using `let`, `var` or `const`?
-* Q058. What are the differences between ES6 class and ES5 function constructors?
-* Q059. Can you offer a use case for the new arrow `=>` function syntax? How does this new syntax differ from other functions?
-* Q060. What advantage is there for using the arrow syntax for a method in a constructor?
-* Q061. What is the definition of a higher-order function?
-* Q062. Can you give an example for destructuring an object or an array?
-* Q063. ES6 Template Literals offer a lot of flexibility in generating strings, can you give an example?
-* Q064. Can you give an example of a curry function and why this syntax offers an advantage?
-* Q065. What are the benefits of using `spread syntax` and how is it different from `rest syntax`?
-* Q066. How can you share code between files?
-
-* Q067. Why you might want to create static class members?
-
-* Q068. Function(not associate with object) vs Method(assoicate with object)
-```javascript
-var methodObject = {
-    attribute: "xyz",
-    display: function () {  // Method
-        console.log(this.attribute);
-    }
-}
 * [Why is extending built-in JavaScript objects not a good idea?](/interviewQuestions/answers/javascript-answers.md#answer-31)
 * [Difference between document load event and document DOMContentLoaded event?](/interviewQuestions/answers/javascript-answers.md#answer-32)
 * [What is the difference between `==` and `===`?](/interviewQuestions/answers/javascript-answers.md#answer-33)
@@ -164,4 +81,53 @@ var methodObject = {
     ```
 
 [Back to Home](/README.md)
+
+* Q040. Create a for loop that iterates up to `100` while outputting **"fizz"** at multiples of `3`, **"buzz"** at multiples of `5` and **"fizzbuzz"** at multiples of `3` and `5`
+* Q041. Why is it, in general, a good idea to leave the global scope of a website as-is and never touch it?
+- It is harder to read the code and reason about it when variables seem to appear out of thin air
+- Anyone can update a global variable from any point in the program at any time
+- Javascript defaults all variables to the global scope unless they are explicitly defined.
+
+* Q042. Why would you use something like the `load` event? Does this event have disadvantages? Do you know any alternatives, and why would you use those?
+- Useful when you want all content to be finished so if we need to work image of unknown sizes but can be really slow.
+- `$(document).ready()`: fires when HTML has finished loading. We can only interact with the DOM once the HTML is fully loaded. However it is just for jQuery, so has to be included on all of your site.
+- `DOMContentLoaded`: fired when document (DOM hierarchy) is fully loaded and parsed, without waiting for stylesheets and images. This is much faster than the `load` event 
+* Q043. Explain what a single page app is and how to make one SEO-friendly.
+- Single page applications reduce the amount of page refreshes -- heavier use of AJAX to get data loaded. The process of rendering page happens mostly on the client-side.
+- Careful thought must be put into search engine optimization so content is discoverable by searh engines/social media websites.
+- One solution is to use Fallback pages which are HTML pages that are displayed if the requesting resource does not parse Javascript.
+- Creating a custom 'share' UX elements and functionality including sharable URLs
+- Using pushState: HTML5 includes the ability to manage the path of the URL as seen in the browser
+* Q044. What is the extent of your experience with Promises and/or their polyfills?
+* Q045. What are the pros and cons of using Promises instead of callbacks?
+* Q046. What are some of the advantages/disadvantages of writing JavaScript code in a language that compiles to JavaScript?
+* Q047. What tools and techniques do you use debugging JavaScript code?
+* Q048. What language constructions do you use for iterating over object properties and array items?
+  * Q051. What are the pros and cons of immutability?
+  * Q052. How can you achieve immutability in your own code?
+
+* Q054. What is event loop?
+  * Q055. What is the difference between call stack and task queue?
+* Q056. Explain the differences on the usage of `foo` between `function foo() {}` and `var foo = function() {}`
+* Q057. What are the differences between variables created using `let`, `var` or `const`?
+* Q058. What are the differences between ES6 class and ES5 function constructors?
+* Q059. Can you offer a use case for the new arrow `=>` function syntax? How does this new syntax differ from other functions?
+* Q060. What advantage is there for using the arrow syntax for a method in a constructor?
+* Q061. What is the definition of a higher-order function?
+* Q062. Can you give an example for destructuring an object or an array?
+* Q063. ES6 Template Literals offer a lot of flexibility in generating strings, can you give an example?
+* Q064. Can you give an example of a curry function and why this syntax offers an advantage?
+* Q065. What are the benefits of using `spread syntax` and how is it different from `rest syntax`?
+* Q066. How can you share code between files?
+
+* Q067. Why you might want to create static class members?
+
+* Q068. Function(not associate with object) vs Method(assoicate with object)
+```javascript
+var methodObject = {
+    attribute: "xyz",
+    display: function () {  // Method
+        console.log(this.attribute);
+    }
+}
 
