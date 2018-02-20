@@ -584,7 +584,12 @@ duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
 <div id="answer-62"></div>
 
 ### What are the benefits of using `spread syntax` and how is it different from `rest syntax`?
-
+- `spread syntax` - offers a quicker and easier way to **create**, **combine** arrays.
+  ```javascript
+    let toBeSpread = ["one", "two", "three"];
+    let spread = [toBeSpread, ..."four"]
+  ```
+- `rest syntax` - offers offers convenient of passing in **undefinite** amount of arguments into a function.
 <br />
 <br />
 <div id="answer-63"></div>
