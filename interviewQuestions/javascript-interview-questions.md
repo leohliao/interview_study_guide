@@ -25,16 +25,14 @@
 * [Explain Ajax in as much detail as possible.](/interviewQuestions/answers/javascript-answers.md#answer-24)
 * [What are the advantages and disadvantages of using Ajax?](/interviewQuestions/answers/javascript-answers.md#answer-25)
 * [Explain how JSONP works (and how it's not really Ajax).](/interviewQuestions/answers/javascript-answers.md#answer-26)
-
-* Q028. Have you ever used JavaScript templating?
+* [Have you ever used JavaScript templating? If so, what libraries have you used?](/interviewQuestions/answers/javascript-answers.md#answer-27)
 - Javascript templating is a fast and efficient technique to render client-side templates with Javascript using a JSON data source. The template is HTML markup, peppered with tags that will either insert variables or run programming logic.
-* Q029. If so, what libraries have you used?
-* Q030. Explain "hoisting".
+* [Explain "hoisting".](/interviewQuestions/answers/javascript-answers.md#answer-28)
 - A variable can be used before is has been declared.
 - Variables defined while be moved to the top of the file. It will be checked to see if the variable is defined locally.
-* Q031. Describe event bubbling.
+* [Describe event bubbling.](/interviewQuestions/answers/javascript-answers.md#answer-29)
 - When an event occurs on an element, it will run the handlers on it, and then on its parents (going from inner to outer)
-* Q032. What's the difference between an "attribute" and a "property"?
+* [What's the difference between an "attribute" and a "property"?](/interviewQuestions/answers/javascript-answers.md#answer-30)
 - HTML representation of a DOM element has attributes while those attributes in Javascript are represented as object properties.
 * Q033. Why is extending built-in JavaScript objects not a good idea?
 - A browser may implement your version of the method, silently overriding.
