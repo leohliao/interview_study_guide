@@ -495,6 +495,8 @@ function fizz() {
 <div id="answer-43"></div>
 
 ### What are the pros and cons of using Promises instead of callbacks?
+- Pros: functions can bee added anywhere in the code, subject only to the promise being within scope. functions added after a settled promise will fire immediately.
+- Cons: Promises always require at least one more iteration of the event loop to resolve.
 <br />
 <br />
 <div id="answer-44"></div>
