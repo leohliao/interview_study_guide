@@ -82,24 +82,6 @@
 
 [Back to Home](/README.md)
 
-
-* Q033. Why is extending built-in JavaScript objects not a good idea?
-- A browser may implement your version of the method, silently overriding.
-* Q034. Difference between document load event and document DOMContentLoaded event?
-- DOMContentLoaded is fired when the document has been completely loaded and parsed, not waiting for assets like stylesheets and images.
-- Load waits for a fully-loaded page
-* Q035. What is the difference between `==` and `===`?
-- `==` will not check for types (tolerant) vs `===` checks for type and value
-* Q036. Explain the same-origin policy with regards to JavaScript.
-- 
-* Q037. Make this work:
-```javascript
-duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
-function duplicate(arr) {
-  return arr.concat(arr)
-}
-```
-
 * Q040. Create a for loop that iterates up to `100` while outputting **"fizz"** at multiples of `3`, **"buzz"** at multiples of `5` and **"fizzbuzz"** at multiples of `3` and `5`
 * Q041. Why is it, in general, a good idea to leave the global scope of a website as-is and never touch it?
 - It is harder to read the code and reason about it when variables seem to appear out of thin air
@@ -121,16 +103,9 @@ function duplicate(arr) {
 * Q046. What are some of the advantages/disadvantages of writing JavaScript code in a language that compiles to JavaScript?
 * Q047. What tools and techniques do you use debugging JavaScript code?
 * Q048. What language constructions do you use for iterating over object properties and array items?
-* Q049. Explain the difference between mutable and immutable objects.
-- Mutable object is an object whose state can be modified after it is created - only objects and arrays are mutable in JS.
-- Immutables are objects whose state cannot be changed once the object has been created - Strings and Numbers (Results are allocated to a new block of memory)
-  * Q050. What is an example of an immutable object in JavaScript?
-  - String and Number
   * Q051. What are the pros and cons of immutability?
   * Q052. How can you achieve immutability in your own code?
-* Q053. Explain the difference between synchronous and asynchronous functions.
-- Synchronous functions will be executed in the order they are called.
-- Asynchronous functions do not wait, so other events can occur in parallel.
+
 * Q054. What is event loop?
   * Q055. What is the difference between call stack and task queue?
 * Q056. Explain the differences on the usage of `foo` between `function foo() {}` and `var foo = function() {}`

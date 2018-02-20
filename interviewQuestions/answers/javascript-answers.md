@@ -516,6 +516,8 @@ duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
 <div id="answer-51"></div>
 
 ### Explain the difference between synchronous and asynchronous functions.
+- Synchronous functions will be executed in the order they are called.
+- Asynchronous functions do not wait, so other events can occur in parallel.
 
 <br />
 <br />
