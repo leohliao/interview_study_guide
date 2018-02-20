@@ -38,7 +38,6 @@
     duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
     function duplicate(arr) {
       return arr.concat(arr)
->>>>>>> ea1c5b5baf0d8c8c3283c152e0ef309baa9140e1
     }
     ```
 * [Why is it called a Ternary operator, what does the word "Ternary" indicate?](/interviewQuestions/answers/javascript-answers.md#answer-36)
