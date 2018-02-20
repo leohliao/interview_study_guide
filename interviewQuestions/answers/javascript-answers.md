@@ -458,6 +458,9 @@ function fizz() {
 
 
 ### Why is it, in general, a good idea to leave the global scope of a website as-is and never touch it?
+- It is harder to read the code and reason about it when variables seem to appear out of thin air
+- Anyone can update a global variable from any point in the program at any time
+- Javascript defaults all variables to the global scope unless they are explicitly defined.
 
 <br />
 <br />
@@ -465,11 +468,20 @@ function fizz() {
 
 
 ### Why would you use something like the `load` event? Does this event have disadvantages? Do you know any alternatives, and why would you use those?
+- Useful when you want all content to be finished so if we need to work image of unknown sizes but can be really slow.
+- `$(document).ready()`: fires when HTML has finished loading. We can only interact with the DOM once the HTML is fully loaded. However it is just for jQuery, so has to be included on all of your site.
+- `DOMContentLoaded`: fired when document (DOM hierarchy) is fully loaded and parsed, without waiting for stylesheets and images. This is much faster than the `load` event 
 <br />
 <br />
 <div id="answer-41"></div>
 
 ### Explain what a single page app is and how to make one SEO-friendly.
+- Single page applications reduce the amount of page refreshes -- heavier use of AJAX to get data loaded. The process of rendering page happens mostly on the client-side.
+- Careful thought must be put into search engine optimization so content is discoverable by searh engines/social media websites.
+- One solution is to use Fallback pages which are HTML pages that are displayed if the requesting resource does not parse Javascript.
+- Creating a custom 'share' UX elements and functionality including sharable URLs
+- Using pushState: HTML5 includes the ability to manage the path of the URL as seen in the browser
+
 <br />
 <br />
 <div id="answer-42"></div>
