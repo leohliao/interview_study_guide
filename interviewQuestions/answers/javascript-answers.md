@@ -515,6 +515,9 @@ function fizz() {
 <div id="answer-46"></div>
 
 ### What language constructions do you use for iterating over object properties and array items?
+- for loops
+- array methods like `Array.prototype.forEach()`
+- listing property keys: combine `Object.keys()` or `Object.getOwnPropertyNames()` with `forEach()`
 <br />
 <br />
 <div id="answer-47"></div>
