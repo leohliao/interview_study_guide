@@ -343,8 +343,8 @@ jenn.greeting(); //'Hello, my name is Jenn'
 <br />
 <div id="answer-27"></div>
 
-### Have you ever used JavaScript templating?
-  ### If so, what libraries have you used?
+### Have you ever used JavaScript templating?mk
+  #### If so, what libraries have you used?
 - Javascript templating is a fast and efficient technique to render client-side templates with Javascript using a JSON data source. The template is HTML markup, peppered with tags that will either insert variables or run programming logic.
 
 <br />
