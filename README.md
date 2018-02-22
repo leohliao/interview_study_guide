@@ -3,14 +3,10 @@
 ## Interview Questions:
 
 ### 1. [JavaScript Interview Questions](/interviewQuestions/javascript-interview-questions.md)
-- Tricky JavaScript Question
 ### 2. [Coding Interview Questions](/interviewQuestions/coding-questions.md)
-- Can you successfully tell me what the ouput values are?
 ### 3. [Web Developer Interview Questions](/interviewQuestions/web-developer-interview-questions.md)
 ### 4. [CSS Interview Questions](/interviewQuestions/css-questions.md)
-
-
-
+### 5. [React Interview Questions](/interviewQuestions/react-interview-questions.md)
 
 
 
