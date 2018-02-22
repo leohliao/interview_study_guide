@@ -694,4 +694,17 @@ function fizz() {
 
   * [Resource: Static and Instance Method in JavaScript](https://abdulapopoola.com/2013/03/30/static-and-instance-methods-in-javascript/)
 
+<br />
+<br />
+<div id="answer-65"></div>
+
+### Function(not associate with object) vs Method(assoicate with object)
+    ```javascript
+    var methodObject = {
+        attribute: "xyz",
+        display: function () {  // Method
+            console.log(this.attribute);
+        }
+    };
+    ```
 [Back to JavacScript Interview Questions](/interviewQuestions/javascript-interview-questions.md)
