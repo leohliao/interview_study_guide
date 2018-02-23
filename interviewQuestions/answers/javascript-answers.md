@@ -573,10 +573,35 @@ function fizz() {
 <div id="answer-54"></div>
 
 ### What are the differences between variables created using `let`, `var` or `const`?
-  - The biggest difference is the scope of the variable created using each keyword:
-  `var` - allows the variable to be hoisted.
-  `let` - does not allow the variable to be hoisted, but 
-  `const` - 
+  **The biggest difference is the scope of the variable created using each keyword**
+  * `var`: 
+        - Allows the variable to be hoisted.
+        - The variable may be reassigned (There are exceptions).
+        - The variable may be used for an entire function, or just for the purpose of a block or loop (There are exceptions).
+        
+  ```javascript
+  function printing(){
+    for(var i = 0; i<5; i++) {
+      console.log(i) // 0, 1, 2, 3, 4
+    }
+  }
+  printing()
+  console.log(i) // undefined
+  ```
+
+  * `let`: 
+        - Does NOT allow the variable to be hoisted.
+        - CANNOT re-declare variable, 
+        - CAN re-assign the value.
+  ```javascript
+  for(let i = 0; i<5; i++) {
+    console.log(i); // 0, 1, 2, 3, 4;
+  }
+  console.log(i) // reference error
+  ```
+  * `const`: Cannot reassign value to variable once declared.
+
+[Medium: Javascript variables; should you use let, var or const?](https://medium.com/craft-academy/javascript-variables-should-you-use-let-var-or-const-394f7645c88f)
 
 <br />
 <br />
