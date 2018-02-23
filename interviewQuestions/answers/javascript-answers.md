@@ -636,6 +636,10 @@ function fizz() {
 <div id="answer-58"></div>
 
 ### What is the definition of a higher-order function?
+- A `HIGHER ORDER FUNCTION` is a function that takes a function as an argument, or returns a function.
+
+
+[Medium : Higher Order Functions (Composing Software)](https://medium.com/javascript-scene/higher-order-functions-composing-software-5365cf2cbe99)
 
 <br />
 <br />
