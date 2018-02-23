@@ -573,6 +573,11 @@ function fizz() {
 <div id="answer-54"></div>
 
 ### What are the differences between variables created using `let`, `var` or `const`?
+  - The biggest difference is the scope of the variable created using each keyword:
+  `var` - allows the variable to be hoisted.
+  `let` - does not allow the variable to be hoisted, but 
+  `const` - 
+
 <br />
 <br />
 <div id="answer-55"></div>
@@ -614,7 +619,31 @@ function fizz() {
 <div id="answer-61"></div>
 
 ### Can you give an example of a curry function and why this syntax offers an advantage?
+- 
 
+  ```javascript
+  // using spread
+  Function.prototype.curry = function (numArgs){
+    const args = [];
+    const fn = this; // so that we have access to outer function in the inner function
+    function _curriedFn(arg) {
+      args.push(arg);
+
+      if(args.length === numArgs){
+        return fn(...args);
+      } else {
+        return _curriedFn;
+      }
+    }
+    return _curriedFn;
+  };
+
+  function sumThree(num1, num2, num3) {
+    return num1 + num2 + num3;
+  }
+  let cur = sumThree.curry(3)(4)(20)(6);
+  console.log(cur); // 30
+  ```
 <br />
 <br />
 <div id="answer-62"></div>
@@ -622,15 +651,16 @@ function fizz() {
 ### What are the benefits of using `spread syntax` and how is it different from `rest syntax`?
 - `spread syntax` - offers a quicker and easier way to **create**, **combine** arrays.
   ```javascript
-    let toBeSpread = ["one", "two", "three"];
-    let spread = [toBeSpread, ..."four"]
+    let toBeSpread = ["one", "two", "three"]; // ["one", "two", "three"]
+    let spread = [toBeSpread, ..."four"]; // ["one", "two", "three", "four"]
   ```
-- `rest syntax` - offers offers convenient of passing in **undefinite** amount of arguments into a function.
+- `rest syntax` - offers offers convenient of passing in **indefinite** amount of arguments into a function.
 <br />
 <br />
 <div id="answer-63"></div>
 
 ### How can you share code between files?
+- You can use create a module to wrap the codes into one object, and then import the modules from another file.
 
 <br />
 <br />
@@ -651,7 +681,7 @@ function fizz() {
       
       //Public methods
       this.sayHi = function(){
-          alert('hello');
+          console.log('hello');
       }
   }
 
@@ -659,7 +689,7 @@ function fizz() {
   // exists on the class and doesn't exist 
   // on child objects
   Person.sayName = function() {
-      alert("I am a Person object ;)");  
+      console.log("I am a Person object");  
   };
 
   // An instance method; 
@@ -668,37 +698,28 @@ function fizz() {
       this.name = nameIn;  
   }
 
-  // Tests
+  // Tests Case: 
   var per = new Person('John Doe', 22);
 
-  //Shows alert
-  Person.sayName();
-
-  //TypeError: Object [object Object] has no method 'sayName'
-  per.sayName()
-
-  //Show alert
-  per.sayHi();
-
-  //John Doe
-  per.name;
-
-  //22
-  per.age;
-
+  Person.sayName(); // 'I am a Person Object'
+  Person.sayHi(); // TypeError: Person.sayHi is not a function
+  per.sayName(); // TypeError: Object [object Object] has no method 'sayName'
+  per.sayHi(); // 'hello'
+  per.name;  // John Doe
+  Person.name; // 'Person'
+  per.age;   //22
+  Person.age; // undefined
   per.setName('Jane Doe');
-
-  //Jane Doe
-  per.name;
+  per.name;   //Jane Doe
+  Person.setName('John Doe') // TypeError: Person.setName is not a function;
   ```
-
-  * [Resource: Static and Instance Method in JavaScript](https://abdulapopoola.com/2013/03/30/static-and-instance-methods-in-javascript/)
+  [Resource: Static and Instance Method in JavaScript](https://abdulapopoola.com/2013/03/30/static-and-instance-methods-in-javascript/)
 
 <br />
 <br />
 <div id="answer-65"></div>
 
-### Function(not associate with object) vs Method(assoicate with object)
+### Function(not associate with object) vs Method(associate with object)
     ```javascript
     var methodObject = {
         attribute: "xyz",
