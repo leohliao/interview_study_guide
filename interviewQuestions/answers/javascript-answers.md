@@ -578,7 +578,15 @@ function fizz() {
         - Allows the variable to be hoisted.
         - The variable may be reassigned (There are exceptions).
         - The variable may be used for an entire function, or just for the purpose of a block or loop (There are exceptions).
-        
+  ```javascript
+    function(){
+      for(var i = 0; i<5; i++) {
+        console.log(i) // 0, 1, 2, 3, 4
+      }
+      console.log(i) // 5
+    } 
+  ```
+  **VS** 
   ```javascript
   function printing(){
     for(var i = 0; i<5; i++) {
@@ -599,7 +607,9 @@ function fizz() {
   }
   console.log(i) // reference error
   ```
-  * `const`: Cannot reassign value to variable once declared.
+  * `const`: 
+        - CANNOT reassign value to variable once declared.
+        - CANNOT re-assign the value (except for array, hash).
 
 [Medium: Javascript variables; should you use let, var or const?](https://medium.com/craft-academy/javascript-variables-should-you-use-let-var-or-const-394f7645c88f)
 
