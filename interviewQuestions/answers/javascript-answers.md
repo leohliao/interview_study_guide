@@ -599,6 +599,7 @@ function fizz() {
 
   * `let`: 
         - Does NOT allow the variable to be hoisted.
+        - More strict in scope compare with `var`.
         - CANNOT re-declare variable, 
         - CAN re-assign the value.
   ```javascript
