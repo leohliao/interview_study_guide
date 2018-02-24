@@ -1,11 +1,11 @@
 <div id="answer-01"></div>
 
 ### How would you empty the array?
-- Method 1: `array = []`
-- Method 2: `array.length = 0`
-- Method 3: `array.splice(0,array.length)`
-- Method 4: `while (array.length > 0) { array.pop(); }`
-  [StackOverflow: How do I empty an array in JS?](https://stackoverflow.com/questions/1232040/how-do-i-empty-an-array-in-javascript)
+  - Method 1: `array = []`
+  - Method 2: `array.length = 0`
+  - Method 3: `array.splice(0,array.length)`
+  - Method 4: `while (array.length > 0) { array.pop(); }`
+    [StackOverflow: How do I empty an array in JS?](https://stackoverflow.com/questions/1232040/how-do-i-empty-an-array-in-javascript)
 
 <br />
 <br />
@@ -31,40 +31,39 @@
 <div id="answer-03"></div>
 
 ### What is difference between `proto` vs `__proto__`?
-**`Object.prototype.`**
-- one
-- two
-- three
+  **`Object.prototype.`**
+  - one
+  - two
+  - three
 
-**`Object.prototype.__proto__`** 
-- Points to the object which was used as prototype when the object was instantiated. 
-- Its getter function exposes the value of the internal [[Prototype]] of an object
-- Its setter allows [[Prototype]] of an object to be mutated. The object must be extensible accord to Object.isExtensible(): if it is not, a TypeError is thrown. The value provided must be an object or null. Providing any other value will do nothing.
-  ```javascript
-  Object.prototype // Object created using object
-  Array.prototype // Object created using array
+  **`Object.prototype.__proto__`** 
+  - Points to the object which was used as prototype when the object was instantiated. 
+  - Its getter function exposes the value of the internal [[Prototype]] of an object
+  - Its setter allows [[Prototype]] of an object to be mutated. The object must be extensible accord to Object.isExtensible(): if it is not, a TypeError is thrown. The value provided must be an object or null. Providing any other value will do nothing.
+    ```javascript
+    Object.prototype // Object created using object
+    Array.prototype // Object created using array
 
-  var fun = new Fun();
-  fun.prototype // Object created using Fun, fun is a function; this value is the value of fun.prototype
-  ```
+    var fun = new Fun();
+    fun.prototype // Object created using Fun, fun is a function; this value is the value of fun.prototype
+    ```
 
-  [MDN Prototype](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype)
+    [MDN Prototype](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype)
 
-  [MDN Proto](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto)
+    [MDN Proto](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto)
 <br />
 <br />
 
 <div id="answer-04"></div>
 
 ### Explain how prototypal inheritance works?
-- *A prototype is a working object instance.*
-- *Objects inherit directly from other objects.*
+- **A prototype is a working object instance and objects inherit directly from other objects.**
 - Instances allows for easy selective inheritance and a flat [[Prototype]] delegation hierarchy. 
 - Class taxonomies are not an automatic side-effect of prototypal OO.
 - JS Object inherit their properties and methods from their prototype.
 - The prototype property is an object, and it has a constructor property by default which allows yo to add new properties and methods to existing objects types.
 - __proto__ : when an object is created in JAvaScript, JavaScript Engine adds a __proto__ property to the newly created object; it points to the prototype object of the constructor function. 
-[Resource Prototype Inheritance](https://github.com/tianyuduan/JS30/blob/master/PrototypalInheritance/prototype.md)
+[TianyuDuan Prototype Inheritance](https://github.com/tianyuduan/JS30/blob/master/PrototypalInheritance/prototype.md)
 <br />
 <br />
 
@@ -625,6 +624,8 @@ function fizz() {
 <div id="answer-56"></div>
 
 ### Can you offer a use case for the new arrow `=>` function syntax? How does this new syntax differ from other functions?
+- if you use `=>` (Fat Arrow), you do not have to worry about binding.
+
 
 <br />
 <br />
