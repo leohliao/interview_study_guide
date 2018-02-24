@@ -5,10 +5,10 @@
   - Method 2: `array.length = 0`
   - Method 3: `array.splice(0,array.length)`
   - Method 4: `while (array.length > 0) { array.pop(); }`
-    [StackOverflow: How do I empty an array in JS?](https://stackoverflow.com/questions/1232040/how-do-i-empty-an-array-in-javascript)
+    [See StackOverflow: How do I empty an array in JS?](https://stackoverflow.com/questions/1232040/how-do-i-empty-an-array-in-javascript)
+<br />
+<br />
 
-<br />
-<br />
 <div id="answer-02"></div>
 
 ### How do you clone an object?
@@ -24,10 +24,10 @@
     let deep_dup1 = Object.assign({}, obj); // deep clone
     let deep_dup2 = JSON.parse(JSON.stringify(obj)) // faster
     ``` 
-  [Medium: Objects in JS: object.assign deep copy](https://medium.com/@tkssharma/objects-in-javascript-object-assign-deep-copy-64106c9aefab)
+  [See Medium: Objects in JS: object.assign deep copy](https://medium.com/@tkssharma/objects-in-javascript-object-assign-deep-copy-64106c9aefab)
+<br />
+<br />
 
-<br />
-<br />
 <div id="answer-03"></div>
 
 ### What is difference between `proto` vs `__proto__`?
@@ -48,9 +48,9 @@
     fun.prototype // Object created using Fun, fun is a function; this value is the value of fun.prototype
     ```
 
-    [MDN Prototype](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype)
+    [See MDN Prototype](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype)
 
-    [MDN Proto](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto)
+    [See MDN Proto](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto)
 <br />
 <br />
 
@@ -63,45 +63,47 @@
 - JS Object inherit their properties and methods from their prototype.
 - The prototype property is an object, and it has a constructor property by default which allows yo to add new properties and methods to existing objects types.
 - __proto__ : when an object is created in JAvaScript, JavaScript Engine adds a __proto__ property to the newly created object; it points to the prototype object of the constructor function. 
-[TianyuDuan Prototype Inheritance](https://github.com/tianyuduan/JS30/blob/master/PrototypalInheritance/prototype.md)
+[See TianyuDuan: Prototypal Inheritance](https://github.com/tianyuduan/JS30/blob/master/PrototypalInheritance/prototype.md)
 <br />
 <br />
 
 <div id="answer-05"></div>
 
 ### How to merge two JavaScript Objects?
-- Use Object.assign({}, obj)
-- if using `merge`, remember to mention that you need to import from lodash.
-
+- Use `Object.assign({}, obj)`
+- if you choose to use `merge`, remember to mention that you need to import from `lodash`.
 <br />
 <br />
 
 <div id="answer-06"></div>
 
 ### How to test whether a value is NaN?
-- You can use `isNaN(value)` method to check to see if a value is NaN. 
-
+- `isNaN(value)`: method to check to see if a value is NaN. 
+ANSWER
 <br />
 <br />
 
 <div id="answer-07"></div>
 
-### Explain event delegation
-- Capturing and bubbling allow to implement one of most powerful event handling patterns called event delegation.
+### Explain event delegation:
+- **Event Delegation** is a behavior where when you select an element, 
+additional elements under similar hierarchy will also be selected. 
+- **Capturing** and **Bubbling** allow to implement one of most powerful event handling patterns called event delegation.
 - The idea is that if we have a lot of elements handled in a similar way, then instead of assigning a handler to each of them – we put a single handler on their common ancestor.
 - In the handler we get event.target, see where the event actually happened and handle it.
-- [Resource](https://javascript.info/event-delegation)
 
+[See JavaScript Info: Event Delegation](https://javascript.info/event-delegation)
 <br />
 <br />
+
 <div id="answer-08"></div>
 
 ### Explain how `this` works in JavaScript?
 - The value of `this` is determined by how a function is called. It CANNOT be set by assignment during execution, and it may be different each time the function is called.
-- Has some difference between `strict` mode and `non-strict` mode.
+- `This` works slightly differently during `strict` mode and `non-strict` mode.
+<br />
+<br />
 
-<br />
-<br />
 <div id="answer-09"></div>
 
 ### What do you think of AMD vs CommonJS?
