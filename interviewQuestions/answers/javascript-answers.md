@@ -57,21 +57,21 @@
 <div id="answer-04"></div>
 
 ### Explain how prototypal inheritance works?
-- **A prototype is a working object instance and objects inherit directly from other objects.**
-- Instances allows for easy selective inheritance and a flat [[Prototype]] delegation hierarchy. 
-- Class taxonomies are not an automatic side-effect of prototypal OO.
-- JS Object inherit their properties and methods from their prototype.
-- The prototype property is an object, and it has a constructor property by default which allows yo to add new properties and methods to existing objects types.
-- __proto__ : when an object is created in JAvaScript, JavaScript Engine adds a __proto__ property to the newly created object; it points to the prototype object of the constructor function. 
-[See TianyuDuan: Prototypal Inheritance](https://github.com/tianyuduan/JS30/blob/master/PrototypalInheritance/prototype.md)
+  - **A prototype is a working object instance and objects inherit directly from other objects.**
+  - Instances allows for easy selective inheritance and a flat [[Prototype]] delegation hierarchy. 
+  - Class taxonomies are not an automatic side-effect of prototypal OO.
+  - JS Object inherit their properties and methods from their prototype.
+  - The prototype property is an object, and it has a constructor property by default which allows yo to add new properties and methods to existing objects types.
+  - __proto__ : when an object is created in JAvaScript, JavaScript Engine adds a __proto__ property to the newly created object; it points to the prototype object of the constructor function. 
+  [See TianyuDuan: Prototypal Inheritance](https://github.com/tianyuduan/JS30/blob/master/PrototypalInheritance/prototype.md)
 <br />
 <br />
 
 <div id="answer-05"></div>
 
 ### How to merge two JavaScript Objects?
-- Use `Object.assign({}, obj)`
-- if you choose to use `merge`, remember to mention that you need to import from `lodash`.
+  - Use `Object.assign({}, obj)`
+  - if you choose to use `merge`, remember to mention that you need to import from `lodash`.
 <br />
 <br />
 [Back to JavacScript Interview Questions](/interviewQuestions/javascript-interview-questions.md)
@@ -81,50 +81,50 @@
 <div id="answer-06"></div>
 
 ### How to test whether a value is NaN?
-- `isNaN(value)`: method to check to see if a value is NaN. 
-ANSWER
+  - `isNaN(value)`: method to check to see if a value is NaN. 
+  ANSWER
 <br />
 <br />
 
 <div id="answer-07"></div>
 
 ### Explain event delegation:
-- **Event Delegation** is a behavior where when you select an element, 
-additional elements under similar hierarchy will also be selected. 
-- **Capturing** and **Bubbling** allow to implement one of most powerful event handling patterns called event delegation.
-- The idea is that if we have a lot of elements handled in a similar way, then instead of assigning a handler to each of them – we put a single handler on their common ancestor.
-- In the handler we get event.target, see where the event actually happened and handle it.
+  - **Event Delegation** is a behavior where when you select an element, 
+  additional elements under similar hierarchy will also be selected. 
+  - **Capturing** and **Bubbling** allow to implement one of most powerful event handling patterns called event delegation.
+  - The idea is that if we have a lot of elements handled in a similar way, then instead of assigning a handler to each of them – we put a single handler on their common ancestor.
+  - In the handler we get event.target, see where the event actually happened and handle it.
 
-[See JavaScript Info: Event Delegation](https://javascript.info/event-delegation)
+  [See JavaScript Info: Event Delegation](https://javascript.info/event-delegation)
 <br />
 <br />
 
 <div id="answer-08"></div>
 
 ### Explain how `this` works in JavaScript?
-- The value of `this` is determined by how a function is called. It CANNOT be set by assignment during execution, and it may be different each time the function is called.
-- `This` works slightly differently during `strict` mode and `non-strict` mode.
+  - The value of `this` is determined by how a function is called. It CANNOT be set by assignment during execution, and it may be different each time the function is called.
+  - `This` works slightly differently during `strict` mode and `non-strict` mode.
 <br />
 <br />
 
 <div id="answer-09"></div>
 
 ### What do you think of AMD vs CommonJS?
-- `AMD`: Asynchronous Module Definition - is another specification for modules. For example: ReS. It is generally more used in client-side(in-browser) JavaScript development due to this. 
-- [JavaScript Module Systems Showdown](https://auth0.com/blog/javascript-module-systems-showdown/)
+  - `AMD`: Asynchronous Module Definition - is another specification for modules. For example: ReS. It is generally more used in client-side(in-browser) JavaScript development due to this. 
+  [JavaScript Module Systems Showdown](https://auth0.com/blog/javascript-module-systems-showdown/)
 
 <br />
 <br />
 <div id="answer-10"></div>
 
 ### Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
-- `IIFE` - **Immediately Invoked Function Expressions**
-- This reduces a lexical scope using JavaScript's function scoping. 
-- This example doesn't work because it needs a wrapper. 
+  - `IIFE` - **Immediately Invoked Function Expressions**
+  - This reduces a lexical scope using JavaScript's function scoping. 
+  - This example doesn't work because it needs a wrapper. 
 
-- The JavaScript parser reads `function foo(){ }(); `as `function foo(){ }` and `()`;, 
-where the former is a function declaration and the latter (a pair of brackets) is an attempt at calling a function but there is no name specified, hence it throws Uncaught SyntaxError: Unexpected token.
-- Here are two ways to fix it that involves adding more brackets: `(function foo(){ })()` and `(function foo(){ }())`. These functions are not exposed in the global scope and you can even omit its name if you do not need to reference itself within the body.
+  - The JavaScript parser reads `function foo(){ }(); `as `function foo(){ }` and `()`;, 
+  where the former is a function declaration and the latter (a pair of brackets) is an attempt at calling a function but there is no name specified, hence it throws Uncaught SyntaxError: Unexpected token.
+  
 <br />
 <br />
 
@@ -134,23 +134,24 @@ where the former is a function declaration and the latter (a pair of brackets) i
 <div id="answer-11"></div>
 
 ### What needs to be changed to properly make it an IIFE?
+  - Here are two ways to fix it that involves adding more brackets: `(function foo(){ })()` and `(function foo(){ }())`. These functions are not exposed in the global scope and you can even omit its name if you do not need to reference itself within the body.
   - Proper way to make it IIFE is:
-```javascript
-(function foo(){ })();
-```
+  ```javascript
+  (function foo(){ })();
+  ```
+  OR
+  ```javascript
+  (function foo(){ }());
+  ```
 <br />
 <br />
 
 <div id="answer-12"></div>
 
-### What is the difference between a variable that is: `null`, `undefined` or undeclared?
-- `null` - is primitive type; can be assigned to variable; has no value.
-- `undefined` - variable is declared, but has yet to be assigned a value.
-- `undeclared` - variable is not declared at all --> will return Reference error
-
-<br />
-<br />
-[Back to JavacScript Interview Questions ](/interviewQuestions/javascript-interview-questions.md)
+### What is the difference between a variable that is: `null`, `undefined` or `undeclared`?
+  - `null` - is primitive type; can be assigned to variable; has no value.
+  - `undefined` - variable is declared, but has yet to be assigned a value. 
+  - `undeclared` - variable is not declared at all --> will return Reference error
 <br />
 <br />
 <div id="answer-13"></div>
@@ -212,6 +213,9 @@ console.log(typeof foo === 'undefined'); // true
 - `map()` - might be preferable when changing or altering data. Not only is it faster but it returns a new Array. This means we can do cool things like chaining on other methods ( map(), filter(), reduce(), etc.)
 
 - [JavaScript — Map vs. ForEach](https://codeburst.io/javascript-map-vs-foreach-f38111822c0f)
+<br />
+<br />
+[Back to JavacScript Interview Questions ](/interviewQuestions/javascript-interview-questions.md)
 <br />
 <br />
 <div id="answer-16"></div>
