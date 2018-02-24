@@ -74,6 +74,9 @@
 - if you choose to use `merge`, remember to mention that you need to import from `lodash`.
 <br />
 <br />
+[Back to JavacScript Interview Questions](/interviewQuestions/javascript-interview-questions.md)
+<br />
+<br />
 
 <div id="answer-06"></div>
 
@@ -116,12 +119,12 @@ additional elements under similar hierarchy will also be selected.
 
 ### Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
 - `IIFE` - **Immediately Invoked Function Expressions**
-- This roduces a lexical scope using JavaScript's function scoping. 
-- This example doesn't work because it needs a wrapper.
+- This reduces a lexical scope using JavaScript's function scoping. 
+- This example doesn't work because it needs a wrapper. 
 
-IIFE stands for Immediately Invoked Function Expressions. The JavaScript parser reads function foo(){ }(); as function foo(){ } and ();, where the former is a function declaration and the latter (a pair of brackets) is an attempt at calling a function but there is no name specified, hence it throws Uncaught SyntaxError: Unexpected token ).
-
-Here are two ways to fix it that involves adding more brackets: (function foo(){ })() and (function foo(){ }()). These functions are not exposed in the global scope and you can even omit its name if you do not need to reference itself within the body.
+- The JavaScript parser reads `function foo(){ }(); `as `function foo(){ }` and `()`;, 
+where the former is a function declaration and the latter (a pair of brackets) is an attempt at calling a function but there is no name specified, hence it throws Uncaught SyntaxError: Unexpected token.
+- Here are two ways to fix it that involves adding more brackets: `(function foo(){ })()` and `(function foo(){ }())`. These functions are not exposed in the global scope and you can even omit its name if you do not need to reference itself within the body.
 <br />
 <br />
 
