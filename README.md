@@ -19,7 +19,6 @@ please let me know and I will remove anything that violates your contents.
 - Please feel free to share comments and feedback.
 
 Reference:
-
 Please find the following for the lists of resources that I have used for this repo:
 1. [Front End Developer Interview Questions](https://github.com/h5bp/Front-end-Developer-Interview-Questions)
 2. [Leetcode](https://www.leetcode.com)
@@ -27,3 +26,6 @@ Please find the following for the lists of resources that I have used for this r
 4. [JavaScript.info](https://javascript.info/)
 5. [Front End Interview Handbook](https://github.com/yangshun/front-end-interview-handbook#create-a-for-loop-that-iterates-up-to-100-while-outputting-fizz-at-multiples-of-3-buzz-at-multiples-of-5-and-fizzbuzz-at-multiples-of-3-and-5)
 6. [React Interview Questions](https://github.com/Pau1fitz/react-interview)
+
+Article: 
+[Promise.prototype.finally](http://thecodebarbarian.com/using-promise-finally-in-node-js.html)
