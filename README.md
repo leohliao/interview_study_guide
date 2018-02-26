@@ -8,8 +8,6 @@
 ### 4. [CSS Interview Questions](/interviewQuestions/css-questions.md)
 ### 5. [React Interview Questions](/interviewQuestions/react-interview-questions.md)
 
-
-
 Disclosure:
 - This repo is solely used for the purpose of studying. 
 This is non-profit and is served only to help people.
