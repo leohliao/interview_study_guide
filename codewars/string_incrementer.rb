@@ -16,25 +16,26 @@
 
 def increment_string(input)
   # declare a str and int variable
-  str = ""
-  int = 0 
-  int_idx = 0
+  return "1" if input.nil?
+
+  numbers = Hash.new(0)
+  10.times {|n| numbers[n.to_s]=true }
+  idx = nil
   # iterate the input
   (0...input.length).each do |i|
     # find the index of the end of string
-    if (input[i].to_i).is_a?(Integer)
-      int_idx = i
+    if (numbers[input[i]]) == true
+      idx = i
+      break
     end 
   end
-  str = input[0..int_idx]
-  int = input[int_idx+1..-1].to_i 
   # separate the string and the integer
+  str = input[0..idx- 1]
+  int = input[idx..-1]
+  p str
+  p int 
   # increment the integer
-  p str 
-  p int_idx
-  # int_idx += 1
   # combine the string and integer again
-  # str + int.to_s
 end
 
 # p increment_string("foo")#  == "foo1"
