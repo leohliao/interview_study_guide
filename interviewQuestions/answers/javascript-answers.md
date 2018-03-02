@@ -278,8 +278,8 @@ They differ in how they handle function arguments:
 
 ### Explain `Function.prototype.bind`.
 - This is same as explaining what bind() is. 
-- From MDN:
-** The bind() method creates a new function that, when called, has its `this` keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called. **
+**From MDN:**
+The bind() method creates a new function that, when called, has its `this` keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called. **
 - It creates a new function, where `this` keyword is set to the provided value
 - You keep the context of `this` within another function.
 Ex: 
