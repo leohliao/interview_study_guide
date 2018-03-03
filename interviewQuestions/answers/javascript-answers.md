@@ -261,18 +261,16 @@ it is a better practice to use prototype inheritance over class so that you won'
 - `function Person(){}` - function declaration, function is declared but is not executed
 - `var person = Person()` - function expression, the variable `var person` has been defined and contains a value reference to a Person function. Javascript expressions always return a value.
 - `var person = new Person()` - function constructor, when we add the keyword 'new', we are instantiating a new object of the Person class constructor.
+
 <br />
 <br />
 <div id="answer-20"></div>
 
 ### What's the difference between `.call` and `.apply`?
-- They are both part of binding to a function/object.
-- `.call` - binds a single object to another.
-- `.apply`- binds an array of objects.
-- ///////
 They differ in how they handle function arguments:
-- `.call` - requires the arguments to be listed individually
-- `.apply` - allows you to invoke the function with `arguments` array as the second argument
+- `.call` - requires the arguments to be listed individually.
+- `.apply` - allows you to invoke the function with `arguments` array as the second argument.
+
 <br />
 <br />
 <div id="answer-21"></div>
@@ -309,6 +307,7 @@ jenn.greeting(); //'Hello, my name is Jenn'
 - It was an old way of adding elements to a webpage; it only works while the page is loading
 - Used when including third party code (ads or Google Analytics)
 - Because there's no DOM modification, it works fast. If a lot of text needs to be added into HTML dynamically and the page is still loading, it may help to use `document.write()`
+
 <br />
 <br />
 <div id="answer-23"></div>
@@ -318,6 +317,7 @@ jenn.greeting(); //'Hello, my name is Jenn'
 - `Feature detection` - a way of determining if a feature exists in the browser
 - `Feature inference` - a feature is determined to exist and the next web technology feature to be implemented is assumed to exist as well.
 - `UA String` - User Agent String; a string of text of data that each browser sends and can be accessed via navigator.userAgent. This string text contains information about the browser environment that is being targeted.
+
 <br />
 <br />
 <div id="answer-24"></div>
@@ -340,7 +340,8 @@ jenn.greeting(); //'Hello, my name is Jenn'
 **Disadvantages**:
 - Could increase design and development time - difficult to debug and increases code size of webpage
 - Browser incompatibility because AJAX depends on Javascript which is implemented differently across different browsers
-- Pages that are dynamically created using AJAX request do not autmotically register with the browser's history, so hitting the back button may not return to an earlier state of the page.
+- Pages that are dynamically created using AJAX request do not automatically register with the browser's history, so hitting the back button may not return to an earlier state of the page.
+
 <br />
 <br />
 <div id="answer-26"></div>
