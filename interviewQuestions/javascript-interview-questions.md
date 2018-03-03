@@ -70,14 +70,14 @@
 * [How can you share code between files?](/interviewQuestions/answers/javascript-answers.md#answer-63)
 * [Why you might want to create static class members?](/interviewQuestions/answers/javascript-answers.md#answer-64)
 * [Function(not associate with object) vs Method(assoicate with object)](/interviewQuestions/answers/javascript-answers.md#answer-65)
-    ```javascript
+```javascript
     var methodObject = {
         attribute: "xyz",
         display: function () {  // Method
             console.log(this.attribute);
         }
     };
-    ```
+```
 
 [Back to Home](/README.md)
 

@@ -370,7 +370,7 @@ jenn.greeting(); //'Hello, my name is Jenn'
 <div id="answer-29"></div>
 
 ### Describe event bubbling.
-- When an event occurs on an element, it will run the handlers on it, and then on its parents (going from inner to outer)
+- When an event occurs on an element, it will run the handlers on it, and then on its parents (going from inner to outer).
 
 <br />
 <br />
