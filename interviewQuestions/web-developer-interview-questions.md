@@ -5,6 +5,19 @@
 * [What is the importance of Doctype in HTML?](/interviewQuestions/answers/web-answers.md#what-is-the-importance-of-doctype-in-html)
 * [What is the difference between `display: none` and `visibility: hidden`?](/interviewQuestions/answers/web-answers.md#what-is-the-difference-between-displaynone-and-visibilityhidden)
 * [Consider the following code: What font-size will have the text inside the <p> element?](/interviewQuestions/answers/web-answers.md#consider-the-following-code-what-font-size-will-have-text-inside-the-p-element)
+  ```html
+  <div> Lorem ipsum
+    <p> Lorem ipsum</p>
+  </div>
+  ```
+  ```css
+    div {
+      font-size: 16px;
+    }
+    p {
+      font-size: 0.5em;
+    }
+  ```
 * [What is the difference between `sessionStorage` and `localStorage`?](/interviewQuestions/answers/web-answers.md#)
 * [What are `data-attributes`?](/interviewQuestions/answers/web-answers.md#)
 * [Explain the difference between Normalize CSS and Reset CSS?](/interviewQuestions/answers/web-answers.md#)
