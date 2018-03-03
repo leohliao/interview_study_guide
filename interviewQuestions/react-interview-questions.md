@@ -17,7 +17,7 @@ Below is a list of common React interview questions.
 - [What is the alternative of binding `this` in the constructor?](/interviewQuestions/answers/react-answers.md#what-is-the-alternative-of-binding-this-in-the-constructor)
 - [How would you prevent a component from rendering?](/interviewQuestions/answers/react-answers.md#how-would-you-prevent-a-component-from-rendering)
 - [When rendering a list what is a key and what is its purpose?](/interviewQuestions/answers/react-answers.md#when-rendering-a-list-what-is-a-key-and-what-is-its-purpose)
-- [What is the purpose of super(props)?](/interviewQuestions/answers/react-answers.md#what-is-the-purpose-of-super(props))
+- [What is the purpose of super(props)?](/interviewQuestions/answers/react-answers.md#what-is-the-purpose-of-super-props)
 - [What is JSX?](/interviewQuestions/answers/react-answers.md#what-is-jsx)
 - [What is equivalent of the following using React.createElement?](/interviewQuestions/answers/react-answers.md#what-is-equivalent-of-the-following-using-React.createElement)
 - [What is `Children`?](/interviewQuestions/answers/react-answers.md#what-is-children)
