@@ -222,10 +222,16 @@ console.log(typeof foo === 'undefined'); // true
 
 ### What's a typical use case for anonymous functions?
 ** Check the answers one more time **
-- Generally speak, an anonymous function is not a preferred practice in your coding.
+- Generally speaking, an anonymous function is not a preferred practice in your coding.
 However, a typical use case of anonymous function is callback, 
 you can use a function as a callback if you do not need to repeatedly use the same function in other circumstance.
 - Anonymous functions are `function expressions`, so we can assign functions to variables and object properties or pass them as arguments.
+  ```javascript
+    let noName = function() {
+      console.log("I have no name!")
+    }
+  ```
+
 <br />
 <br />
 <div id="answer-17"></div>
@@ -251,12 +257,7 @@ it is a better practice to use prototype inheritance over class so that you won'
 <div id="answer-19"></div>
 
 ### Difference between: `function Person(){}`, `var person = Person()`, and `var person = new Person()`?
-** Double Check **
 - They are all ways to declare a function.
-- `function Person(){}` - Function decoration
-- `var person = Person()` - Function expression.
-- `var person = new Person()` - Creating an object, aka instantiate.
-- ////////
 - `function Person(){}` - function declaration, function is declared but is not executed
 - `var person = Person()` - function expression, the variable `var person` has been defined and contains a value reference to a Person function. Javascript expressions always return a value.
 - `var person = new Person()` - function constructor, when we add the keyword 'new', we are instantiating a new object of the Person class constructor.
