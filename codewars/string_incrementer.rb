@@ -17,32 +17,34 @@
 def increment_string(input)
   # declare a str and int variable
   return "1" if input.empty?
-
   numbers = Hash.new(0)
   10.times {|n| numbers[n.to_s]=true }
-  idx = nil
-  str, int = ""
-  
+  input_arr = input.chars
+  found_num = false
+  int, str = ""
+
   # iterate the input
-  (0...input.length).each do |i|
-    # find the index of the end of string
-    if (numbers[input[i]]) == true
-      idx = i
-      break
-    end 
+  until input_arr.empty? || found_num == true
+    num = input_arr.pop
+    if numbers[num] == true
+      int += num 
+    else 
+      found_num = true
+    end
   end
   # separate the string and the integer
-  return input + "1" if idx.nil?
+  int = int.reverse
+  str = input.delete(int)
 
-  str = input[0..idx-1]
-  int = input[idx..-1]
-  
+  # return input + "1" if int.nil?
+  if int.nil?
+    return str += "1" if int.nil?
+  else
   # increment the integer
-  parsed_int = parseInt(int)
-
+    parsed_int = parseInt(int)
   # combine the string and integer again
-  return str + parsed_int
-  
+    return str + parsed_int
+  end
 end
 
 def parseInt(str)
@@ -70,3 +72,13 @@ p increment_string("foobar1") == "foobar2"
 p increment_string("foobar00") == "foobar01"
 p increment_string("foobar99") == "foobar100"
 p increment_string("") == "1"
+
+p increment_string("f00bar") == "f00bar1"
+p increment_string("f004r") == "f004r1"
+p increment_string("1") == "2"
+p increment_string("009") == "010"
+
+# Answer:
+# def increment_string(input)
+#   input.sub(/\d*$/) { |n| n.empty? ? 1 : n.succ }
+# end
