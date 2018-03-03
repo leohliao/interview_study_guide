@@ -2,9 +2,9 @@
 
 ## HTML / CSS / JavaScript / DevTool
 
-* [What is the importance of Doctype in HTML?]()
-* [What is the difference between `display: none` and `visibility: hidden`?]()
-* [Consider the following code: What font-siz will have the text inside the <p> element?]()
+* [What is the importance of Doctype in HTML?](/interviewQuestions/answers/web-answers.md#what-is-the-importance-of-doctype-in-html)
+* [What is the difference between `display: none` and `visibility: hidden`?](/interviewQuestions/answers/web-answers.md#what-is-the-difference-between)
+* [Consider the following code: What font-siz will have the text inside the <p> element?](/interviewQuestions/answers/web-answers.md#consider-the-following-code)
 * [What is the difference between `sessionStorage` and `localStorage`?]()
 * [What are `data-attributes`?]()
 * [Explain the difference between Normalize CSS and Reset CSS?]()
