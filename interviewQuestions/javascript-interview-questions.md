@@ -81,36 +81,4 @@
 
 [Back to Home](/README.md)
 
-* Q044. What is the extent of your experience with Promises and/or their polyfills?
-* Q045. What are the pros and cons of using Promises instead of callbacks?
-* Q046. What are some of the advantages/disadvantages of writing JavaScript code in a language that compiles to JavaScript?
-* Q047. What tools and techniques do you use debugging JavaScript code?
-* Q048. What language constructions do you use for iterating over object properties and array items?
-  * Q051. What are the pros and cons of immutability?
-  * Q052. How can you achieve immutability in your own code?
-
-* Q054. What is event loop?
-  * Q055. What is the difference between call stack and task queue?
-* Q056. Explain the differences on the usage of `foo` between `function foo() {}` and `var foo = function() {}`
-* Q057. What are the differences between variables created using `let`, `var` or `const`?
-* Q058. What are the differences between ES6 class and ES5 function constructors?
-* Q059. Can you offer a use case for the new arrow `=>` function syntax? How does this new syntax differ from other functions?
-* Q060. What advantage is there for using the arrow syntax for a method in a constructor?
-* Q061. What is the definition of a higher-order function?
-* Q062. Can you give an example for destructuring an object or an array?
-* Q063. ES6 Template Literals offer a lot of flexibility in generating strings, can you give an example?
-* Q064. Can you give an example of a curry function and why this syntax offers an advantage?
-* Q065. What are the benefits of using `spread syntax` and how is it different from `rest syntax`?
-* Q066. How can you share code between files?
-
-* Q067. Why you might want to create static class members?
-
-* Q068. Function(not associate with object) vs Method(assoicate with object)
-```javascript
-var methodObject = {
-    attribute: "xyz",
-    display: function () {  // Method
-        console.log(this.attribute);
-    }
-}
 
