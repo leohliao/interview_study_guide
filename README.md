@@ -27,5 +27,9 @@ Please find the following for the lists of resources that I have used for this r
 
 ## Cool Study Site:
 [Padding Me](https://github.com/paddingme/Front-end-Web-Development-Interview-Question)
-Article: 
+[Regular Expression Info](https://www.regular-expressions.info/)
+[RegexOne](https://regexone.com/)
+[RegexEgg](http://www.rexegg.com/)
+
+## Article: 
 [Promise.prototype.finally](http://thecodebarbarian.com/using-promise-finally-in-node-js.html)
