@@ -1,6 +1,6 @@
 # Interview Study Guide
 
-## Interview Questions:
+# Interview Questions:
 
 ### 1. [JavaScript Interview Questions](/interviewQuestions/javascript-interview-questions.md)
 ### 2. [Coding Interview Questions](/interviewQuestions/coding-questions.md)
@@ -8,7 +8,7 @@
 ### 4. [CSS Interview Questions](/interviewQuestions/css-questions.md)
 ### 5. [React Interview Questions](/interviewQuestions/react-interview-questions.md)
 
-Disclosure:
+# Disclosure:
 - This repo is solely used for the purpose of studying. 
 This is non-profit and is served only to help people.
 I will not held any responsbilities nor would I have any copyrights for any of the contents and materials in this repo.
@@ -16,7 +16,7 @@ I will not held any responsbilities nor would I have any copyrights for any of t
 please let me know and I will remove anything that violates your contents.
 - Please feel free to share comments and feedback.
 
-Reference:
+# Reference & Resources:
 Please find the following for the lists of resources that I have used for this repo:
 1. [Front End Developer Interview Questions](https://github.com/h5bp/Front-end-Developer-Interview-Questions)
 2. [Leetcode](https://www.leetcode.com)
@@ -26,6 +26,6 @@ Please find the following for the lists of resources that I have used for this r
 6. [React Interview Questions](https://github.com/Pau1fitz/react-interview)
 
 ## Cool Study Site:
-[Padding Me](https://github.com/paddingme/Front-end-Web-Development-Interview-Question)
+* [Padding Me](https://github.com/paddingme/Front-end-Web-Development-Interview-Question)
 Article: 
-[Promise.prototype.finally](http://thecodebarbarian.com/using-promise-finally-in-node-js.html)
+* [Promise.prototype.finally](http://thecodebarbarian.com/using-promise-finally-in-node-js.html)
