@@ -671,8 +671,6 @@ function fizz() {
 <div id="answer-61"></div>
 
 ### Can you give an example of a curry function and why this syntax offers an advantage?
-- 
-
   ```javascript
   // using spread
   Function.prototype.curry = function (numArgs){
@@ -707,6 +705,11 @@ function fizz() {
     let spread = [toBeSpread, ..."four"]; // ["one", "two", "three", "four"]
   ```
 - `rest syntax` - offers offers convenient of passing in **indefinite** amount of arguments into a function.
+```javascript
+  function say(...words){
+    console.log()
+  }
+```
 <br />
 <br />
 <div id="answer-63"></div>
