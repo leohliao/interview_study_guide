@@ -26,6 +26,10 @@ Please find the following for the lists of resources that I have used for this r
 6. [React Interview Questions](https://github.com/Pau1fitz/react-interview)
 
 ## Cool Study Site:
-* [Padding Me](https://github.com/paddingme/Front-end-Web-Development-Interview-Question)
-Article: 
-* [Promise.prototype.finally](http://thecodebarbarian.com/using-promise-finally-in-node-js.html)
+[Padding Me](https://github.com/paddingme/Front-end-Web-Development-Interview-Question)
+[Regular Expression Info](https://www.regular-expressions.info/)
+[RegexOne](https://regexone.com/)
+[RegexEgg](http://www.rexegg.com/)
+
+## Article: 
+[Promise.prototype.finally](http://thecodebarbarian.com/using-promise-finally-in-node-js.html)
