@@ -7,7 +7,7 @@
   - Method 4: `while (array.length > 0) { array.pop(); }`
     [See StackOverflow: How do I empty an array in JS?](https://stackoverflow.com/questions/1232040/how-do-i-empty-an-array-in-javascript)
  
-<div id="answer-02" style="margin-top: 30px"></div>
+<div id="answer-02" style="margin-top:30px;"></div>
 
 ### How do you clone an object?
     ```javascript
@@ -31,7 +31,7 @@
     ``` 
   [See Medium: Objects in JS: object.assign deep copy](https://medium.com/@tkssharma/objects-in-javascript-object-assign-deep-copy-64106c9aefab)
 
-<div id="answer-03" style="margin-top: 50px"></div>
+<div id="answer-03" style="margin-top:50px;"></div>
 
 ### What is difference between `proto` vs `__proto__`?
   **`Object.prototype.`**
