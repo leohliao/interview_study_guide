@@ -18,13 +18,20 @@
             age: 30
         }
     };
-    let shallow_dup1 = Object.clone(obj) // shallow clone
+    var objclone = Object.assign({},obj);
+    console.log('objclone: ', objclone);
+
+    obj.c.age = 45;
+    console.log('After Change - obj: ', obj);           // 45 
+    console.log('After Change - objclone: ', objclone); // 45 - This also changes
+
+    let shallow_dup1 = Object.clone(obj) // shallow clone, which means nested objects ain't copied.
     let deep_dup1 = Object.assign({}, obj); // deep clone
     let deep_dup2 = JSON.parse(JSON.stringify(obj)) // faster
     ``` 
   [See Medium: Objects in JS: object.assign deep copy](https://medium.com/@tkssharma/objects-in-javascript-object-assign-deep-copy-64106c9aefab)
 
-<div id="answer-03" style="margin-top: 30px"></div>
+<div id="answer-03" style="margin-top: 50px"></div>
 
 ### What is difference between `proto` vs `__proto__`?
   **`Object.prototype.`**
