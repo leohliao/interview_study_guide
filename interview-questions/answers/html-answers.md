@@ -17,11 +17,18 @@ which means the handling of HTML element depends on the browser and thus will va
 ### Consider HTML5 as an open web platform. What are the building blocks of HTML5?
 ### Describe the difference between a `cookie`, `sessionStorage` and `localStorage`.
 ### Describe the difference between `<script>`, `<script async>` and `<script defer>`.
+
 ### Why is it generally a good idea to position CSS `<link>`s between `<head></head>` and JS `<script>`s just before `</body>`? Do you know any exceptions?
+
 ### What is progressive rendering?
+
 ### Why you would use a `srcset` attribute in an image tag? Explain the process the browser uses when evaluating the content of this attribute.
+
 ### Have you used different HTML templating languages before?
+- 
 ### Why do you need to include `<meta charset="UTF-8/>`?
+- This will enable the programmers to use emoticon and advanced fonts.
+
 
 Describe the difference between <script>, <script async> and <script defer>.
 <script> - HTML parsing is blocked, the script is fetched and executed immediately, HTML parsing resumes after the script is executed.

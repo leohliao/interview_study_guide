@@ -34,3 +34,5 @@ Below is a list of common React interview questions.
 - [Example projects](/interviewQuestions/answers/react-answers.md#example-projects)
 
 [Original Post: React Interview Questions by Pau1fitz](https://github.com/Pau1fitz/react-interview)
+
+[Back to Home](/README.md)

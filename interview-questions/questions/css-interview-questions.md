@@ -91,3 +91,5 @@
 * Can you explain the difference between coding a web site to be responsive versus using a mobile-first strategy?
 * Have you ever worked with retina graphics? If so, when and what techniques did you use?
 * Is there any reason you'd want to use `translate()` instead of *absolute positioning*, or vice-versa? And why?
+
+[Back to Home](/README.md)

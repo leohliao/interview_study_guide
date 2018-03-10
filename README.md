@@ -13,9 +13,13 @@
 
 ## Cool Study Site:
 [Padding Me](https://github.com/paddingme/Front-end-Web-Development-Interview-Question)
+
 [Regular Expression Info](https://www.regular-expressions.info/)
+
 [RegexOne](https://regexone.com/)
+
 [RegexEgg](http://www.rexegg.com/)
+
 
 ## Article: 
 [Promise.prototype.finally](http://thecodebarbarian.com/using-promise-finally-in-node-js.html)
