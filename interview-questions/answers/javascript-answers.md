@@ -6,10 +6,8 @@
   - Method 3: `array.splice(0,array.length)`
   - Method 4: `while (array.length > 0) { array.pop(); }`
     [See StackOverflow: How do I empty an array in JS?](https://stackoverflow.com/questions/1232040/how-do-i-empty-an-array-in-javascript)
-<br />
-<br />
-
-<div id="answer-02"></div>
+ 
+<div id="answer-02" style="margin-top: 30px"></div>
 
 ### How do you clone an object?
     ```javascript
@@ -25,10 +23,8 @@
     let deep_dup2 = JSON.parse(JSON.stringify(obj)) // faster
     ``` 
   [See Medium: Objects in JS: object.assign deep copy](https://medium.com/@tkssharma/objects-in-javascript-object-assign-deep-copy-64106c9aefab)
-<br />
-<br />
 
-<div id="answer-03"></div>
+<div id="answer-03" style="margin-top: 30px"></div>
 
 ### What is difference between `proto` vs `__proto__`?
   **`Object.prototype.`**
@@ -51,10 +47,8 @@
     [See MDN Prototype](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype)
 
     [See MDN Proto](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto)
-<br />
-<br />
-
-<div id="answer-04"></div>
+ 
+<div id="answer-04" style="margin-top: 30px"></div>
 
 ### Explain how prototypal inheritance works?
   - **A prototype is a working object instance and objects inherit directly from other objects.**
@@ -64,29 +58,22 @@
   - The prototype property is an object, and it has a constructor property by default which allows yo to add new properties and methods to existing objects types.
   - __proto__ : when an object is created in JAvaScript, JavaScript Engine adds a __proto__ property to the newly created object; it points to the prototype object of the constructor function. 
   [See TianyuDuan: Prototypal Inheritance](https://github.com/tianyuduan/JS30/blob/master/PrototypalInheritance/prototype.md)
-<br />
-<br />
-
-<div id="answer-05"></div>
+ 
+<div id="answer-05" style="margin-top: 30px"></div>
 
 ### How to merge two JavaScript Objects?
   - Use `Object.assign({}, obj)`
   - if you choose to use `merge`, remember to mention that you need to import from `lodash`.
-<br />
-<br />
-[Back to JavacScript Interview Questions](/interviewQuestions/javascript-interview-questions.md)
-<br />
-<br />
+ 
+[Back to JavacScript Interview Questions](/interview-questions/questions/javascript-interview-questions.md)
 
-<div id="answer-06"></div>
+<div id="answer-06" style="margin-top: 30px"></div>
 
 ### How to test whether a value is NaN?
   - `isNaN(value)`: method to check to see if a value is NaN. 
   ANSWER
-<br />
-<br />
 
-<div id="answer-07"></div>
+<div id="answer-07" style="margin-top: 30px"></div>
 
 ### Explain event delegation:
   - **Event Delegation** is a behavior where when you select an element, 
@@ -96,26 +83,20 @@
   - In the handler we get event.target, see where the event actually happened and handle it.
 
   [See JavaScript Info: Event Delegation](https://javascript.info/event-delegation)
-<br />
-<br />
 
-<div id="answer-08"></div>
+<div id="answer-08" style="margin-top: 30px"></div>
 
 ### Explain how `this` works in JavaScript?
   - The value of `this` is determined by how a function is called. It CANNOT be set by assignment during execution, and it may be different each time the function is called.
   - `This` works slightly differently during `strict` mode and `non-strict` mode.
-<br />
-<br />
 
-<div id="answer-09"></div>
+<div id="answer-09" style="margin-top: 30px"></div>
 
 ### What do you think of AMD vs CommonJS?
   - `AMD`: Asynchronous Module Definition - is another specification for modules. For example: ReS. It is generally more used in client-side(in-browser) JavaScript development due to this. 
   [JavaScript Module Systems Showdown](https://auth0.com/blog/javascript-module-systems-showdown/)
-
-<br />
-<br />
-<div id="answer-10"></div>
+ 
+<div id="answer-10" style="margin-top: 30px"></div>
 
 ### Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
   - `IIFE` - **Immediately Invoked Function Expressions**
@@ -125,13 +106,7 @@
   - The JavaScript parser reads `function foo(){ }(); `as `function foo(){ }` and `()`;, 
   where the former is a function declaration and the latter (a pair of brackets) is an attempt at calling a function but there is no name specified, hence it throws Uncaught SyntaxError: Unexpected token.
   
-<br />
-<br />
-
-[Back to JavacScript Interview Questions](/interviewQuestions/javascript-interview-questions.md)
-<br />
-<br />
-<div id="answer-11"></div>
+<div id="answer-11" style="margin-top: 30px"></div>
 
 ### What needs to be changed to properly make it an IIFE?
   - Here are two ways to fix it that involves adding more brackets: `(function foo(){ })()` and `(function foo(){ }())`. These functions are not exposed in the global scope and you can even omit its name if you do not need to reference itself within the body.
@@ -143,18 +118,15 @@
   ```javascript
   (function foo(){ }());
   ```
-<br />
-<br />
 
-<div id="answer-12"></div>
+<div id="answer-12" style="margin-top: 30px"></div>
 
 ### What is the difference between a variable that is: `null`, `undefined` or `undeclared`?
   - `null` - is primitive type; can be assigned to variable; has no value.
   - `undefined` - variable is declared, but has yet to be assigned a value. 
   - `undeclared` - variable is not declared at all --> will return Reference error
-<br />
-<br />
-<div id="answer-13"></div>
+ 
+<div id="answer-13" style="margin-top: 30px"></div>
 
 ### How would you go about checking for any of these states?
 - Although there are many approaches to check for these states. I would say the key thing is to be able to console.log the output at certain point in your code. The following offer several good ways: 
@@ -164,9 +136,8 @@ console.log(foo); // undefined
 console.log(foo === undefined); // true
 console.log(typeof foo === 'undefined'); // true
 ```
-<br />
-<br />
-<div id="answer-14"></div>
+ 
+<div id="answer-14" style="margin-top: 30px"></div>
 
 ### What is a closure, and how/why would you use one?
 - Closure determines whether a function(inner) has access to certain variables in the outer one.
@@ -201,9 +172,8 @@ console.log(typeof foo === 'undefined'); // true
   innerVar = b
   globalVar = xyz
   ```
-<br />
-<br />
-<div id="answer-15"></div>
+ 
+<div id="answer-15" style="margin-top: 30px"></div>
 
 ### Can you describe the main difference between a `forEach` loop and a `.map()` loop and why you would pick one versus the other?
 - They are both iteration methods.
@@ -213,12 +183,8 @@ console.log(typeof foo === 'undefined'); // true
 - `map()` - might be preferable when changing or altering data. Not only is it faster but it returns a new Array. This means we can do cool things like chaining on other methods ( map(), filter(), reduce(), etc.)
 
 - [JavaScript — Map vs. ForEach](https://codeburst.io/javascript-map-vs-foreach-f38111822c0f)
-<br />
-<br />
-[Back to JavacScript Interview Questions ](/interviewQuestions/javascript-interview-questions.md)
-<br />
-<br />
-<div id="answer-16"></div>
+ 
+<div id="answer-16" style="margin-top: 30px"></div>
 
 ### What's a typical use case for anonymous functions?
 ** Check the answers one more time **
@@ -231,10 +197,8 @@ you can use a function as a callback if you do not need to repeatedly use the sa
       console.log("I have no name!")
     }
   ```
-
-<br />
-<br />
-<div id="answer-17"></div>
+ 
+<div id="answer-17" style="margin-top: 30px"></div>
 
 ### How do you organize your code? (module pattern, classical inheritance?)
 ** Check the answers one more time **
@@ -244,36 +208,29 @@ and importing it if you need to access them from another function.
 - Classical inheritance is similar idea and is also a good option to consider, 
 however, since in JavaScript you can also use prototype inheritance,
 it is a better practice to use prototype inheritance over class so that you won't modified the original constructor.
-<br />
-<br />
-<div id="answer-18"></div>
+ 
+<div id="answer-18" style="margin-top: 30px"></div>
 
 ### What's the difference between host objects and native objects?
 - `Host objects` - objects supplied by the host environment to complete the execution environment. Ex: (assuming browser environment) window, document, location, etc.
 - `Native objects` - standard built-in objects provided by Javascript. Ex: Date, Math, Object (constructor)
 
-<br />
-<br />
-<div id="answer-19"></div>
+<div id="answer-19" style="margin-top: 30px"></div>
 
 ### Difference between: `function Person(){}`, `var person = Person()`, and `var person = new Person()`?
 - They are all ways to declare a function.
 - `function Person(){}` - function declaration, function is declared but is not executed
 - `var person = Person()` - function expression, the variable `var person` has been defined and contains a value reference to a Person function. Javascript expressions always return a value.
 - `var person = new Person()` - function constructor, when we add the keyword 'new', we are instantiating a new object of the Person class constructor.
-
-<br />
-<br />
-<div id="answer-20"></div>
+ 
+<div id="answer-20" style="margin-top: 30px"></div>
 
 ### What's the difference between `.call` and `.apply`?
 They differ in how they handle function arguments:
 - `.call` - requires the arguments to be listed individually.
 - `.apply` - allows you to invoke the function with `arguments` array as the second argument.
-
-<br />
-<br />
-<div id="answer-21"></div>
+ 
+<div id="answer-21" style="margin-top: 30px"></div>
 
 ### Explain `Function.prototype.bind`.
 - This is same as explaining what bind() is. 
@@ -298,37 +255,32 @@ jenn.greeting(); //'Hello, my name is Jenn'
 - With `bind`, there's no need to assign `this` to a variable to keep the same context.
 
 [MDN Global Objects](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_objects/Function/bind)
-<br />
-<br />
-<div id="answer-22"></div>
+ 
+ 
+<div id="answer-22" style="margin-top: 30px"></div>
 
 ### When would you use `document.write()`?
 `document.write` -  is executed after the page has been loaded. It will clear the contents of the whole page and rewrite them with something you define.
 - It was an old way of adding elements to a webpage; it only works while the page is loading
 - Used when including third party code (ads or Google Analytics)
 - Because there's no DOM modification, it works fast. If a lot of text needs to be added into HTML dynamically and the page is still loading, it may help to use `document.write()`
-
-<br />
-<br />
-<div id="answer-23"></div>
+ 
+<div id="answer-23" style="margin-top: 30px"></div>
 
 ### What's the difference between feature detection, feature inference, and using the UA string?
 - These are three ways to determine if a particular web technology feature exists in a user's browser or environment.
 - `Feature detection` - a way of determining if a feature exists in the browser
 - `Feature inference` - a feature is determined to exist and the next web technology feature to be implemented is assumed to exist as well.
 - `UA String` - User Agent String; a string of text of data that each browser sends and can be accessed via navigator.userAgent. This string text contains information about the browser environment that is being targeted.
-
-<br />
-<br />
-<div id="answer-24"></div>
+ 
+<div id="answer-24" style="margin-top: 30px"></div>
 
 ### Explain Ajax in as much detail as possible.
 - Asynchronous Javascript + XML
 - The use of XMLHttpRequest object to communicate with servers; information can be sent in different formats such as JSON, XML, HTML.
 - Its asynchronous nature allows it to communicate with server, exchange data, and update the page without refreshing the page.
-<br />
-<br />
-<div id="answer-25"></div>
+ 
+<div id="answer-25" style="margin-top: 30px"></div>
 
 ### What are the advantages and disadvantages of using Ajax?
 **Advantages**:
@@ -342,98 +294,67 @@ jenn.greeting(); //'Hello, my name is Jenn'
 - Browser incompatibility because AJAX depends on Javascript which is implemented differently across different browsers
 - Pages that are dynamically created using AJAX request do not automatically register with the browser's history, so hitting the back button may not return to an earlier state of the page.
 
-<br />
-<br />
-<div id="answer-26"></div>
+<div id="answer-26" style="margin-top: 30px"></div>
 
 ### Explain how JSONP works (and how it's not really Ajax).
 - JSON with Padding: a method commonly used to bypass the cross-domain policies in web browsers.
 - AJAX requests are not allowed to a web page that is perceived to be on a server different by the browser.
-<br />
-<br />
-<div id="answer-27"></div>
+ 
+<div id="answer-27" style="margin-top: 30px"></div>
 
 ### Have you ever used JavaScript templating?mk
   #### If so, what libraries have you used?
 - Javascript templating is a fast and efficient technique to render client-side templates with Javascript using a JSON data source. The template is HTML markup, peppered with tags that will either insert variables or run programming logic.
 
-<br />
-<br />
-<div id="answer-28"></div>
+<div id="answer-28" style="margin-top: 30px"></div>
 
 ### Explain "hoisting".
 - A variable can be used before is has been declared.
 - Variables defined while be moved to the top of the file. It will be checked to see if the variable is defined locally.
-
-<br />
-<br />
-<div id="answer-29"></div>
+ 
+<div id="answer-29" style="margin-top: 30px"></div>
 
 ### Describe event bubbling.
 - When an event occurs on an element, it will run the handlers on it, and then on its parents (going from inner to outer).
-
-<br />
-<br />
-<div id="answer-30"></div>
+ 
+<div id="answer-30" style="margin-top: 30px"></div>
 
 ### What's the difference between an "attribute" and a "property"?
 - HTML representation of a DOM element has attributes while those attributes in Javascript are represented as object properties.
-
-<br />
-<br />
-<div id="answer-31"></div>
-
+ 
+<div id="answer-31" style="margin-top: 30px"></div>
 
 ### Why is extending built-in JavaScript objects not a good idea?
 - A browser may implement your version of the method, silently overriding.
-
-<br />
-<br />
-<div id="answer-32"></div>
-
+ 
+<div id="answer-32" style="margin-top: 30px"></div>
 
 ### Difference between document load event and document DOMContentLoaded event?
 - DOMContentLoaded is fired when the document has been completely loaded and parsed, not waiting for assets like stylesheets and images.
 - Load waits for a fully-loaded page
-
-
-<br />
-<br />
-<div id="answer-33"></div>
-
+ 
+<div id="answer-33" style="margin-top: 30px"></div>
 
 ### What is the difference between `==` and `===`?
 - `==` will not check for types (tolerant) vs `===` checks for type and value
-
-<br />
-<br />
-<div id="answer-34"></div>
-
+ 
+<div id="answer-34" style="margin-top: 30px"></div>
 
 ### Explain the same-origin policy with regards to JavaScript.
-
-<br />
-<br />
-<div id="answer-35"></div>
-
+ 
+<div id="answer-35" style="margin-top: 30px"></div>
 
 ### Make this work:
 ```javascript
 duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
 ```
 
-<br />
-<br />
-<div id="answer-36"></div>
-
+<div id="answer-36" style="margin-top: 30px"></div>
 
 ### Why is it called a Ternary operator, what does the word "Ternary" indicate?
 - The ternary operator takes THREE operands (arguments)
-
-<br />
-<br />
-<div id="answer-37"></div>
-
+ 
+<div id="answer-37" style="margin-top: 30px"></div>
 
 ### What is `"use strict";`? what are the advantages and disadvantages to using it?
 - The purpose is to indicate that the code should be executed in 'strict mode'.
@@ -443,11 +364,8 @@ duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
 - Disables features that are confusing or poorly thought out.
   **Disadvantages**
 - Browsers not supporting strict mode will run strict mode with different behaviro.
-
-<br />
-<br />
-<div id="answer-38"></div>
-
+ 
+<div id="answer-38" style="margin-top: 30px"></div>
 
 ### Create a for loop that iterates up to `100` while outputting **"fizz"** at multiples of `3`, **"buzz"** at multiples of `5` and **"fizzbuzz"** at multiples of `3` and `5`
 ```javascript
@@ -461,29 +379,23 @@ function fizz() {
   }
 }
 ```
-
-<br />
-<br />
-<div id="answer-39"></div>
-
+ 
+<div id="answer-39" style="margin-top: 30px"></div>
 
 ### Why is it, in general, a good idea to leave the global scope of a website as-is and never touch it?
 - It is harder to read the code and reason about it when variables seem to appear out of thin air
 - Anyone can update a global variable from any point in the program at any time
 - Javascript defaults all variables to the global scope unless they are explicitly defined.
 
-<br />
-<br />
-<div id="answer-40"></div>
-
+ 
+<div id="answer-40" style="margin-top: 30px"></div>
 
 ### Why would you use something like the `load` event? Does this event have disadvantages? Do you know any alternatives, and why would you use those?
 - Useful when you want all content to be finished so if we need to work image of unknown sizes but can be really slow.
 - `$(document).ready()`: fires when HTML has finished loading. We can only interact with the DOM once the HTML is fully loaded. However it is just for jQuery, so has to be included on all of your site.
 - `DOMContentLoaded`: fired when document (DOM hierarchy) is fully loaded and parsed, without waiting for stylesheets and images. This is much faster than the `load` event 
-<br />
-<br />
-<div id="answer-41"></div>
+ 
+<div id="answer-41" style="margin-top: 30px"></div>
 
 ### Explain what a single page app is and how to make one SEO-friendly.
 - Single page applications reduce the amount of page refreshes -- heavier use of AJAX to get data loaded. The process of rendering page happens mostly on the client-side.
@@ -491,96 +403,74 @@ function fizz() {
 - One solution is to use Fallback pages which are HTML pages that are displayed if the requesting resource does not parse Javascript.
 - Creating a custom 'share' UX elements and functionality including sharable URLs
 - Using pushState: HTML5 includes the ability to manage the path of the URL as seen in the browser
-
-<br />
-<br />
-<div id="answer-42"></div>
+ 
+<div id="answer-42" style="margin-top: 30px"></div>
 
 ### What is the extent of your experience with Promises and/or their polyfills?
 - Promises are objects which represent the eventual successful complete or failure of an asynchronous operation and its resulting value.
 - A promise has three different states: fulfilled, rejected, or pending.
 - Instead of passing a callback to the promise, we chain a callback using `.then()` to the promise.
-<br />
-<br />
-<div id="answer-43"></div>
+ 
+<div id="answer-43" style="margin-top: 30px"></div>
 
 ### What are the pros and cons of using Promises instead of callbacks?
 - Pros: functions can bee added anywhere in the code, subject only to the promise being within scope. functions added after a settled promise will fire immediately.
 - Cons: Promises always require at least one more iteration of the event loop to resolve.
-<br />
-<br />
-<div id="answer-44"></div>
+ 
+<div id="answer-44" style="margin-top: 30px"></div>
 
 ### What are some of the advantages/disadvantages of writing JavaScript code in a language that compiles to JavaScript?
-<br />
-<br />
-<div id="answer-45"></div>
+ 
+<div id="answer-45" style="margin-top: 30px"></div>
 
 ### What tools and techniques do you use debugging JavaScript code?
 - Browser Developer Tools -- check for any error messages/console.log()
 - breakpoints - using a debugger, current context of the current scope is available
 - Avoid logging reference types - the values of primitive types inside the logged reference may change. 
-<br />
-<br />
-<div id="answer-46"></div>
+ 
+<div id="answer-46" style="margin-top: 30px"></div>
 
 ### What language constructions do you use for iterating over object properties and array items?
 - for loops
 - array methods like `Array.prototype.forEach()`
 - listing property keys: combine `Object.keys()` or `Object.getOwnPropertyNames()` with `forEach()`
-<br />
-<br />
-<div id="answer-47"></div>
+ 
+<div id="answer-47" style="margin-top: 30px"></div>
 
 ### Explain the difference between mutable and immutable objects.
 - Mutable object is an object whose state can be modified after it is created - only objects and arrays are mutable in JS.
 - Immutables are objects whose state cannot be changed once the object has been created - Strings and Numbers (Results are allocated to a new block of memory)
-
-<br />
-<br />
-<div id="answer-48"></div>
+ 
+<div id="answer-48" style="margin-top: 30px"></div>
 
 ### What is an example of an immutable object in JavaScript?
   - String and Number
-
-<br />
-<br />
-<div id="answer-49"></div>
+ 
+<div id="answer-49" style="margin-top: 30px"></div>
 
 ### What are the pros and cons of immutability?
-
-<br />
-<br />
-<div id="answer-50"></div>
+ 
+<div id="answer-50" style="margin-top: 30px"></div>
 
 ### How can you achieve immutability in your own code?
 
-<br />
-<br />
-<div id="answer-51"></div>
+<div id="answer-51" style="margin-top: 30px"></div>
 
 ### Explain the difference between synchronous and asynchronous functions.
 - Synchronous functions will be executed in the order they are called.
 - Asynchronous functions do not wait, so other events can occur in parallel.
-
-<br />
-<br />
-<div id="answer-52"></div>
+ 
+<div id="answer-52" style="margin-top: 30px"></div>
 
 ### What is event loop?
 
 ### What is the difference between call stack and task queue?
-
-<br />
-<br />
-<div id="answer-53"></div>
+ 
+<div id="answer-53" style="margin-top: 30px"></div>
 
 ### Explain the differences on the usage of `foo` between `function foo() {}` and `var foo = function() {}`
-
-
-<br />
-<br />
-<div id="answer-54"></div>
+ 
+<div id="answer-54" style="margin-top: 30px"></div>
 
 ### What are the differences between variables created using `let`, `var` or `const`?
   **The biggest difference is the scope of the variable created using each keyword**
@@ -624,29 +514,29 @@ function fizz() {
 
 [Medium: Javascript variables; should you use let, var or const?](https://medium.com/craft-academy/javascript-variables-should-you-use-let-var-or-const-394f7645c88f)
 
-<br />
-<br />
-<div id="answer-55"></div>
+ 
+ 
+<div id="answer-55" style="margin-top: 30px"></div>
 
 ### What are the differences between ES6 class and ES5 function constructors?
 
-<br />
-<br />
-<div id="answer-56"></div>
+ 
+ 
+<div id="answer-56" style="margin-top: 30px"></div>
 
 ### Can you offer a use case for the new arrow `=>` function syntax? How does this new syntax differ from other functions?
 - if you use `=>` (Fat Arrow), you do not have to worry about binding.
 
 
-<br />
-<br />
-<div id="answer-57"></div>
+ 
+ 
+<div id="answer-57" style="margin-top: 30px"></div>
 
 ### What advantage is there for using the arrow syntax for a method in a constructor?
 
-<br />
-<br />
-<div id="answer-58"></div>
+ 
+ 
+<div id="answer-58" style="margin-top: 30px"></div>
 
 ### What is the definition of a higher-order function?
 - A `HIGHER ORDER FUNCTION` is a function that takes a function as an argument, or returns a function.
@@ -654,21 +544,21 @@ function fizz() {
 
 [Medium : Higher Order Functions (Composing Software)](https://medium.com/javascript-scene/higher-order-functions-composing-software-5365cf2cbe99)
 
-<br />
-<br />
-<div id="answer-59"></div>
+ 
+ 
+<div id="answer-59" style="margin-top: 30px"></div>
 
 ### Can you give an example for destructuring an object or an array?
 
-<br />
-<br />
-<div id="answer-60"></div>
+ 
+ 
+<div id="answer-60" style="margin-top: 30px"></div>
 
 ### ES6 Template Literals offer a lot of flexibility in generating strings, can you give an example?
 
-<br />
-<br />
-<div id="answer-61"></div>
+ 
+ 
+<div id="answer-61" style="margin-top: 30px"></div>
 
 ### Can you give an example of a curry function and why this syntax offers an advantage?
   ```javascript
@@ -694,9 +584,9 @@ function fizz() {
   let cur = sumThree.curry(3)(4)(20)(6);
   console.log(cur); // 30
   ```
-<br />
-<br />
-<div id="answer-62"></div>
+ 
+ 
+<div id="answer-62" style="margin-top: 30px"></div>
 
 ### What are the benefits of using `spread syntax` and how is it different from `rest syntax`?
 - `spread syntax` - offers a quicker and easier way to **create**, **combine** arrays.
@@ -710,16 +600,16 @@ function fizz() {
     console.log()
   }
 ```
-<br />
-<br />
-<div id="answer-63"></div>
+ 
+ 
+<div id="answer-63" style="margin-top: 30px"></div>
 
 ### How can you share code between files?
 - You can use create a module to wrap the codes into one object, and then import the modules from another file.
 
-<br />
-<br />
-<div id="answer-64"></div>
+ 
+ 
+<div id="answer-64" style="margin-top: 30px"></div>
 
 ### Why you might want to create static class members?
 - `static method` - a method that only exists on the class, not on the child objects
@@ -770,9 +660,9 @@ function fizz() {
   ```
   [Resource: Static and Instance Method in JavaScript](https://abdulapopoola.com/2013/03/30/static-and-instance-methods-in-javascript/)
 
-<br />
-<br />
-<div id="answer-65"></div>
+ 
+ 
+<div id="answer-65" style="margin-top: 30px"></div>
 
 ### Function(not associate with object) vs Method(associate with object)
     ```javascript
