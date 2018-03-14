@@ -2,6 +2,7 @@
 
 
 const searchNestedObject = function(obj, target) {
+  console.log("inside the great function")
   return obj;
 } 
 
