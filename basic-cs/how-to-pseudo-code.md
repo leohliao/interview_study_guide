@@ -1,30 +1,34 @@
 # How to Pseudocode Efficiently?
 
-Whether you are a junior or senior developer, 
-knowing how to do successfully pseudo code will differentiate the good engineers from the bad engineers.
-You may still find exceptions from time to time, 
-or you may find people who just go straight into code without pseudo coding, 
-either way is fine. There is no right or wrong ways when you code,
-but if you are struggling with coding, 
-I would try to improve psuedo coding skills first.
+There are many problem-solving approach in the world of developments.
+The most popular one that everyone uses, is probably psuedo coding. 
+With pseudocoding you can design your own approach to solve the problems.
+Whether you are junior level, or senior level, 
+ability to pseudo code efficiently differentiate from good engineers to the bad engineers.
+So I would like to share some hints and tips about how to do pseudo code.
 
-So I would like to go over some hints and tips about how to do pseudo code.
-
-## Understand Pseudocode
+## Understand Pseudocode:
 
 ### What is pseudocode?
-Pseudocode are verbal outlines of the logic to your solution to a specific coding using English.
-    ```javascript
-        
+**Pseudocode are verbal outlines of the logic to your solution to a specific coding challenges using English.**
 
-    ```
-###
+### Why is pseudocode useful?
+It deals with designing a process to see how one would approach to solve a problem, 
+or creating new algorithm for your very awesome products.
+They are often used between the planning stage and the stage of writing executable codes. 
+Good psuedocodes eventually becomes comments in the final program explaing and guiding other programmer to debug, or make revisions to your code in the future.
+Outlines of what pseudo are generally used for:
+   * **Construction of your code.** 
+   * **Explaining / Communicating your computer process.** 
+   * **Design code under collaborative development group to solve complex problems.** 
 
 ### Steps
 - Think over the questions 1 more time, ask yourself the following questions first:
     * What is the input of this program for? For example, am I dealing with array, strings or integer?
     * What is the output of this program for? For example, should I return false? a string? a number?
     * What are the test cases that I should use for this program? For example, when should I break my game logic and make it stop?
+    * Drawing it out with pen and paper (aka whiteboarding) if you can!!! STRONGLY RECOMMENDED
+
 
 - Once you 
 
