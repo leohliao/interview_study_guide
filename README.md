@@ -23,6 +23,7 @@
 
 ## Article: 
 [Promise.prototype.finally](http://thecodebarbarian.com/using-promise-finally-in-node-js.html)
+
 [Psuedo Code](/basic-cs/how-to-pseudo-code.md)
 
 # Disclosure:
