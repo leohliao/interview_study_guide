@@ -671,7 +671,16 @@ function fizz() {
  
 <div id="answer-65"></div>
 
-### Function(not associate with object) vs Method(associate with object)
+### What is the difference between Function and Method?
+  - Both functions and methods are functions in JavaScript.
+  - In javascript every function is an object. An object is a collection of key:value pairs. If a value is a primitive (integer, string, boolean), or another object, the value is considered a property. If a value is a function, it is called a 'method'.
+  - `Function` (not associate with object):
+    ```javascript
+    function functionObject(){
+      // somecode...
+    }
+    ``` 
+  - `Method`(associate with object): 
     ```javascript
     var methodObject = {
         attribute: "xyz",
@@ -680,4 +689,7 @@ function fizz() {
         }
     };
     ```
+  [Stackoverflow: Method vs Functions, and other questions](https://stackoverflow.com/questions/15285293/method-vs-functions-and-other-questions)
+
+
 [Back to JavacScript Interview Questions](/interviewQuestions/javascript-interview-questions.md)
