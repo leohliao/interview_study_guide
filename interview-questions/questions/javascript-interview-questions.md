@@ -69,15 +69,7 @@
 * [What are the benefits of using `spread syntax` and how is it different from `rest syntax`?](/interview-questions/answers/javascript-answers.md#answer-62)
 * [How can you share code between files?](/interview-questions/answers/javascript-answers.md#answer-63)
 * [Why you might want to create static class members?](/interview-questions/answers/javascript-answers.md#answer-64)
-* [Function(not associate with object) vs Method(assoicate with object)](/interview-questions/answers/javascript-answers.md#answer-65)
-    ```javascript
-        var methodObject = {
-            attribute: "xyz",
-            display: function () {  // Method
-                console.log(this.attribute);
-            }
-        };
-    ```
+* [What is the difference between Function and Method?](/interview-questions/answers/javascript-answers.md#answer-65)
 
 [Back to Home](/README.md)
 
