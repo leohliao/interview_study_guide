@@ -52,20 +52,23 @@ Outlines of what pseudo are generally used for:
 
         function ceasarCipher("sweet") {
             var alpha = "abcdefghijklmnopqrstuvwyz"; // for storing alphabetical orders
+            var cipheredOutput = ""; // for storing my decoded output
             // some codes here...
         }
     ```
+-  Variables are declared! Hurray, now it's time to do some logical thinking. Before we get into that, you must first realize how fast your brains are:
+    * [You brain really IS faster than you think: It take just 13 milliseconds to see an image](http://www.dailymail.co.uk/sciencetech/article-2542583/Scientists-record-fastest-time-human-image-takes-just-13-milliseconds.html)
+    * [How Fast is Your Brain?](http://thephenomenalexperience.com/content/how-fast-is-your-brain)
+    * [Human Brain 30 Times Faster than Best Supercomputers](https://spectrum.ieee.org/tech-talk/computing/networks/estimate-human-brain-30-times-faster-than-best-supercomputers)
 
-    ```diff
-        + this will be highlighted in green
-        - this will be highlighted in red
-    ```
-- 
+Alright, enough of these out-of-dated articles! I guess my point is that you think faster than a computer,
+and that is why it is important to learn when to **BREAK** your thought process before you move on to the next,
+the coding language will only take your thoughts one-by-one.
+
 ## Question Practice: 
 
-* Pseudocode steps that you would take for making a coffee:
+* Pseudocode steps that you would take for making a coffee.
 * Pseudocode steps that you would take for putting an elephant into a fridge.
-
 * Pseudo code Two Sum:
 ```javascript
     Array.prototype.twoSum = function (target) {
