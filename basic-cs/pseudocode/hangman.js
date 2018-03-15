@@ -21,69 +21,85 @@ let hangmanHash = {};
 let chances = 10;
 let gameOver = false;
 let userInputLog = [];
+let rl;
 
 // This function creates the output for hangmanOutput according to it's length
 function initialize(answer) {
-        for (var i = 0; i < hangmanAnswer.length; i++) {
-            hangmanOutput.push("_");
-            if (hangmanHash[hangmanAnswer[i]]) {
-               hangmanHash[hangmanAnswer[i]].push(i);
-            } else {
-                hangmanHash[hangmanAnswer[i]] = [i];
-            }
+    for (let i = 0; i < hangmanAnswer.length; i++) {
+        hangmanOutput.push("_");
+        if (hangmanHash[hangmanAnswer[i]]) {
+            hangmanHash[hangmanAnswer[i]].push(i);
+        } else {
+            hangmanHash[hangmanAnswer[i]] = [i];
         }
+    }
 }
 
 // Prompt for user input
 function getUserInput() {
-    var rl = readline.createInterface(process.stdin, process.stdout),
+    rl = readline.createInterface(process.stdin, process.stdout),
         prefix = 'Hangman Game Guess> ';
 
     rl.on('line', function (line) {
         var firstLetter = line.trim().slice(0, 1).toLowerCase();
-        if (hangmanHash[firstLetter]) {
-            parseUserInput(firstLetter);
-            staticBoard();
+        if (!gameOver) {
+            if (hangmanHash[firstLetter]) {
+                parseUserInput(firstLetter);
+                staticBoard(firstLetter);
+                
+            } else {
+                chances--;
+                staticBoard(firstLetter);
+            }
         } else {
-            chances--;
-            staticBoard();
+            console.log("Game Over!");
+            rl.close();
         }
+
         rl.setPrompt(prefix, prefix.length);
         rl.prompt();
     }).on('close', function () {
-        console.log('Have a great day!');
+        console.log('You terminated the game!');
         process.exit(0);
     });
     console.log('Guess a letter! (Click ctrl+c to terminate game)');
     rl.setPrompt(prefix, prefix.length);
     rl.prompt();
+
 }
 
 // Replace letter with the letter 
 function parseUserInput(letter) {
-    var indices = hangmanHash[letter];
-    indices.forEach((idx) => hangmanOutput[idx] = letter)
+    let indices = hangmanHash[letter];
+    indices.forEach(idx => hangmanOutput[idx] = letter);
 }
 
 // Show my current stats
-function staticBoard() {
-    // console.log("Your Current Input: " + currentInput);
-    console.log("-----------------------------------")
+function staticBoard(currentInput) {
+    console.log("Your Current Input: " + currentInput);
+    console.log("-----------------------------------");
     console.log("Chances left: " + chances);
-    console.log("Current Result: " + hangmanOutput)
-    console.log("-----------------------------------")
+    console.log("Current Result: " + hangmanOutput.join(" "));
+    console.log((hangmanOutput.join(" ") === hangmanAnswer));
+    console.log("-----------------------------------");
+    console.log(" ");
+    console.log(" ");
+    checkGameStatus();
+}
+
+function checkGameStatus(){
+    if (chances === 0) {
+        gameOver = true;
+    } 
 }
 
 // Initialize all my game logic
 function hangman() {
-    console.log("this is hangman");
+    console.log("...initializing hangman");
     initialize();
-    var input = getUserInput();
-    // if (input) {
-    //     initialize(input);
-    //     console.log("Hangman output: " + hangmanOutput);
-    //     console.log("Hangman length: " + hangmanOutput.length);
-    // }
+    staticBoard();
+    getUserInput();
+    checkGameStatus();
 }
 
 hangman();
