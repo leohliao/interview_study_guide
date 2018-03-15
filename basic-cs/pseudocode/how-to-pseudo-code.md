@@ -23,7 +23,9 @@ Outlines of what pseudo are generally used for:
    * **Explaining / Communicating your computer process.** 
    * **Design code under collaborative development group to solve complex problems.** 
 
-**_Pseudocode should be a creative process which involves in design, architect, and reasoning, where as writing actual code should be a drafting, crafting, and problem-solving, _**
+**Pseudocode should be a creative process which involves in design, architect, and reasoning, where as writing actual codes should be a drafting and crafting process.**
+
+**Pseudocode is the concept design, drawing silhouettes, sketchs from your idea, where as writing actual codes is refining lines, clean up, rendering and etc.**
 
 ### Steps
 - **Analyze the questions, try to get as much information as you can think of**
@@ -92,11 +94,13 @@ the coding language will only take your thoughts one-by-one.
     // ... more codes
 ```
 **REMEMBER!!**
-  - You are your own boss, just **`feel free to move the sequence of the codes to anywhere`** that makes sense to your code.
-  - Each line of pseudo should define **`ONLY ONE`** action, if there is more than 2 actions happening in your sentence, break it down!
-  - Write something that is **`readable to yourself and to other people`**, if other people is having trouble understanding your pseudocode, you might want to improve that.
-  - Make good use of **`indentation`**, this will make your code clean and easier to debug as you start writing large amount of codes.
-  - When you write pseudocode, think of it as trying to explain your work process to a child, or writing a receipe to people who never cook...whatever, you name it!
+```
+    * You are your own boss, just **`feel free to move the sequence of the codes to anywhere`** that makes sense to your code.
+    * Each line of pseudo should define **`ONLY ONE`** action, if there is more than 2 actions happening in your sentence, break it down!
+    * Write something that is **`readable to yourself and to other people`**, if other people is having trouble understanding your pseudocode, you might want to improve that.
+    * Make good use of **`indentation`**, this will make your code clean and easier to debug as you start writing large amount of codes.
+    * When you write pseudocode, think of it as trying to explain your work process to a child, or writing a receipe to people who never cook...whatever, you name it!
+```
 
 - **Once you are done writing your pseudocode, take a moment of breath, then look over your pseudocodes again and see if you are missing anything; edit, add, delete, whatever actions**
   - If you are working in pairs, walk through your logic with your friend, see if they understand your approach.
