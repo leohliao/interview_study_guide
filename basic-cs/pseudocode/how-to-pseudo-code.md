@@ -29,14 +29,14 @@ Outlines of what pseudo are generally used for:
 >**Pseudocode is the _concept design, drawing silhouettes, sketchs_ from your idea, where as writing actual codes is refining lines, clean up, rendering and etc.**
 
 ### Steps
-- **Analyze the questions, try to get as much information as you can think of**
+#### 1. **Analyze the questions, try to get as much information as you can think of**:
 Think over the questions 1 more time, ask yourself the following questions first:
-    * **What is the input of this program for?** For example, am I dealing with array, strings or integer?
-    * **What is the output of this program for?** For example, should I return false? a string? a number?
-    * **What are the test cases that I should use for this program?** For example, when should I break my game logic and make it stop?
-  **Draw it out with pen and paper (aka whiteboarding) if you can!!!** **_STRONGLY RECOMMENDED!!_**
+  * **What is the input of this program for?** For example, am I dealing with array, strings or integer?
+  * **What is the output of this program for?** For example, should I return false? a string? a number?
+  * **What are the test cases that I should use for this program?** For example, when should I break my game logic and make it stop?
+  * **Draw it out with pen and paper (aka whiteboarding) if you can!!!** **_STRONGLY RECOMMENDED!!_**
 
-- **Declare variables that you need for this program.** 
+#### 2. **Declare variables that you need for this program.** 
 Once you have deeper understandings with the questions, then next step you can think about is what kind of data you will need in order to help you successfully output your solution.
 
 For example, you probably need a different variable to carry your final output, you probably need a variable to temporarily store your calculations. You probably need a variable which store information you need:
@@ -73,7 +73,7 @@ Alright, enough of these out-of-dated articles! I guess my point is that you thi
 and that is why it is important to learn when to **`BREAK`** your thought process before you move on to the next,
 the coding language will only take your thoughts one-by-one.
 
-- **Start thinking through your logic. Write them out in sentences, each line should only be responsible for an action,**
+#### 3. **Start thinking through your logic. Write them out in sentences, each line should only be responsible for an action,**
 ```javascript
    /hangman.js
    
@@ -105,10 +105,10 @@ the coding language will only take your thoughts one-by-one.
   - When you write pseudocode, think of it as trying to explain your work process to a child, or writing a receipe to people who never cook...whatever, you name it!
 
 
-- **Once you are done writing your pseudocode, take a moment of breath, then look over your pseudocodes again and see if you are missing anything; edit, add, delete, whatever actions**
+#### 4. **Once you are done writing your pseudocode, take a moment of breath, then look over your pseudocodes again and see if you are missing anything; edit, add, delete, whatever actions**
   - If you are working in pairs, walk through your logic with your friend, see if they understand your approach.
   
-- :+1:**READY TO WRITE CODES!**:+1:
+#### 5. :+1:**READY TO WRITE CODES!**:+1:
   - Although you have all the pseudocodes done, that won't necessary means that you should write everything out,
   
 
