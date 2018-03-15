@@ -24,7 +24,7 @@
 ## Article: 
 [Promise.prototype.finally](http://thecodebarbarian.com/using-promise-finally-in-node-js.html)
 
-[Psuedo Code](/basic-cs/how-to-pseudo-code.md)
+[Psuedo Code](/basic-cs/pseudocode/how-to-pseudo-code.md)
 
 # Disclosure:
 - This repo is solely used for the purpose of studying. 
