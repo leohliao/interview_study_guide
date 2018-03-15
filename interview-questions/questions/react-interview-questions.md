@@ -1,0 +1,38 @@
+# React Interview Questions
+
+Below is a list of common React interview questions.
+
+- [How does React work?](/interview-questions/answers/react-answers.md#how-does-react-work)
+- [What are the advantages of using React?](/interview-questions/answers/react-answers.md#what-are-the-advantages-of-using-react)
+- [What is the difference between a Presentational component and a Container component?](/interview-questions/answers/react-answers.md#what-is-the-difference-between-a-presentational-component-and-a-container-component)
+- [What are the differences between a class component and functional component?](/interview-questions/answers/react-answers.md#what-are-the-differences-between-a-class-component-and-functional-component)
+- [What is the difference between state and props?](/interview-questions/answers/react-answers.md#what-is-the-difference-between-state-and-props)
+- [Name the different lifecycle methods?](/interview-questions/answers/react-answers.md#name-the-different-lifecycle-methods)
+- [Where in a React component should you make an AJAX request?](/interview-questions/answers/react-answers.md#where-in-a-react-component-should-you-make-an-ajax-request)
+- [What are controlled components?](/interview-questions/answers/react-answers.md#what-are-controlled-components)
+- [What are refs used for in React?](/interview-questions/answers/react-answers.md#what-are-refs-used-for-in-react)
+- [What is a higher order component?](/interview-questions/answers/react-answers.md#what-is-a-higher-order-component)
+- [What advantages are there in using arrow functions?](/interview-questions/answers/react-answers.md#what-advantages-are-there-in-using-arrow-functions)
+- [Why is it advised to pass a callback function to setState as opposed to an object?](/interview-questions/answers/react-answers.md#why-is-it-advised-to-pass-a-callback-function-to-setState-as-opposed-to-an-object)
+- [What is the alternative of binding `this` in the constructor?](/interview-questions/answers/react-answers.md#what-is-the-alternative-of-binding-this-in-the-constructor)
+- [How would you prevent a component from rendering?](/interview-questions/answers/react-answers.md#how-would-you-prevent-a-component-from-rendering)
+- [When rendering a list what is a key and what is its purpose?](/interview-questions/answers/react-answers.md#when-rendering-a-list-what-is-a-key-and-what-is-its-purpose)
+- [What is the purpose of super(props)?](/interview-questions/answers/react-answers.md#what-is-the-purpose-of-super-props)
+- [What is JSX?](/interview-questions/answers/react-answers.md#what-is-jsx)
+- [What is equivalent of the following using React.createElement?](/interview-questions/answers/react-answers.md#what-is-equivalent-of-the-following-using-React.createElement)
+- [What is `Children`?](/interview-questions/answers/react-answers.md#what-is-children)
+- [What is state in react?](/interview-questions/answers/react-answers.md#what-is-state-in-react)
+- [Why would you eject from create-react-app?](/interview-questions/answers/react-answers.md#why-would-you-eject-from-create-react-app)
+- [What is redux?](/interview-questions/answers/react-answers.md#what-is-redux)
+- [What is a store in redux?](/interview-questions/answers/react-answers.md#what-is-a-store-in-redux)
+- [What is an action?](/interview-questions/answers/react-answers.md#what-is-an-action)
+- [What is a reducer?](/interview-questions/answers/react-answers.md#what-is-a-reducer)
+- [What is redux thunk used for?](/interview-questions/answers/react-answers.md#what-is-redux-thunk-used-for)
+- [What is a pure function?](/interview-questions/answers/react-answers.md#what-is-a-pure-function)
+- [What do you like about React?](/interview-questions/answers/react-answers.md#what-do-you-like-about-react)
+- [What don't you like about React?](/interview-questions/answers/react-answers.md#what-dont-you-like-about-react)
+- [Example projects](/interview-questions/answers/react-answers.md#example-projects)
+
+[Original Post: React Interview Questions by Pau1fitz](https://github.com/Pau1fitz/react-interview)
+
+[Back to Home](/README.md)

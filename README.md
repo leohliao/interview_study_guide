@@ -2,19 +2,31 @@
 
 ## Interview Questions:
 
-### 1. [JavaScript Interview Questions](/interviewQuestions/javascript-interview-questions.md)
-- Tricky JavaScript Question
-### 2. [Coding Interview Questions](/interviewQuestions/coding-questions.md)
-- Can you successfully tell me what the ouput values are?
-### 3. [Web Developer Interview Questions](/interviewQuestions/web-developer-interview-questions.md)
-### 4. [CSS Interview Questions](/interviewQuestions/css-questions.md)
+### [Web Developer Interview Questions](/interview-questions/questions/web-developer-interview-questions.md)
+### [JavaScript Interview Questions](/interview-questions/questions/javascript-interview-questions.md)
+### [HTML Interview Questions](/interview-questions/questions/html-interview-questions.md)
+### [CSS Interview Questions](/interview-questions/questions/css-questions.md)
+### [Coding Interview Questions](/interview-questions/questions/coding--interview-questions.md)
+### [React Interview Questions](/interview-questions/questions/react-interview-questions.md)
+### [Behavioral Interview Questions](/interview-questions/questions/behavioral-interview-questions.md)
 
 
+## Cool Study Site:
+[Padding Me](https://github.com/paddingme/Front-end-Web-Development-Interview-Question)
+
+[Regular Expression Info](https://www.regular-expressions.info/)
+
+[RegexOne](https://regexone.com/)
+
+[RegexEgg](http://www.rexegg.com/)
 
 
+## Article: 
+[Promise.prototype.finally](http://thecodebarbarian.com/using-promise-finally-in-node-js.html)
 
+[Psuedo Code](/basic-cs/pseudocode/how-to-pseudo-code.md)
 
-Disclosure:
+# Disclosure:
 - This repo is solely used for the purpose of studying. 
 This is non-profit and is served only to help people.
 I will not held any responsbilities nor would I have any copyrights for any of the contents and materials in this repo.
@@ -22,10 +34,13 @@ I will not held any responsbilities nor would I have any copyrights for any of t
 please let me know and I will remove anything that violates your contents.
 - Please feel free to share comments and feedback.
 
-Reference:
-
-Please find the following for the lists of resources that I have used for this repo:
+# Reference & Resources:
+Please find the following for the lists of resources that I have used for this repository:
 1. [Front End Developer Interview Questions](https://github.com/h5bp/Front-end-Developer-Interview-Questions)
 2. [Leetcode](https://www.leetcode.com)
 3. [Toptal](https://www.toptal.com/javascript/interview-questions)
 4. [JavaScript.info](https://javascript.info/)
+5. [Front End Interview Handbook](https://github.com/yangshun/front-end-interview-handbook#create-a-for-loop-that-iterates-up-to-100-while-outputting-fizz-at-multiples-of-3-buzz-at-multiples-of-5-and-fizzbuzz-at-multiples-of-3-and-5)
+6. [React Interview Questions](https://github.com/Pau1fitz/react-interview)
+
+  ...and more

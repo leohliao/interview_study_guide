@@ -2,10 +2,19 @@
 
 
 const searchNestedObject = function(obj, target) {
-  return obj;
-} 
+  // console.log("inside the great function")
+  // return obj;
+  for (let key in obj) {
+    if (typeof obj[key] === 'object') {
+      return searchNestedObject(obj[key], target);
+    } else if (obj[key] === target) {
+      return true;
+    }
+  }
+  return false;  
+};
 
-object = {
+let object = {
   'title': "some title",
   'channel_id':'123we',
   'options': {
@@ -14,6 +23,6 @@ object = {
                 'title': 'Moana',
                 'options': "Very cool"
   }
-}
+};
 
 console.log(searchNestedObject(object, "Moana"));
