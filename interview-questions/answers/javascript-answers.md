@@ -10,7 +10,7 @@
 <div id="answer-02"></div>
 
 ### How do you clone an object?
-    ```javascript
+```javascript
     let obj = {
         a: 1,
         b: 2,
@@ -28,7 +28,7 @@
     let shallow_dup1 = Object.clone(obj) // shallow clone, which means nested objects ain't copied.
     let deep_dup1 = Object.assign({}, obj); // deep clone
     let deep_dup2 = JSON.parse(JSON.stringify(obj)) // faster
-    ``` 
+ ``` 
   [See Medium: Objects in JS: object.assign deep copy](https://medium.com/@tkssharma/objects-in-javascript-object-assign-deep-copy-64106c9aefab)
 
 <div id="answer-03"></div>
