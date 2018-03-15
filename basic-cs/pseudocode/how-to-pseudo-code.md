@@ -73,6 +73,7 @@ Alright, enough of these out-of-dated articles! I guess my point is that you thi
 and that is why it is important to learn when to **`BREAK`** your thought process before you move on to the next,
 the coding language will only take your thoughts one-by-one.
 
+
 #### 3. **Start thinking through your logic. Write them out in sentences, each line should only be responsible for an action,**
 ```javascript
    /hangman.js
@@ -104,16 +105,15 @@ the coding language will only take your thoughts one-by-one.
     
   - When you write pseudocode, think of it as trying to explain your work process to a child, or writing a receipe to people who never cook...whatever, you name it!
 
-
 #### 4. **Once you are done writing your pseudocode, take a moment of breath, then look over your pseudocodes again and see if you are missing anything; edit, add, delete, whatever actions**
   - If you are working in pairs, walk through your logic with your friend, see if they understand your approach.
+  
   
 #### 5. :+1:**READY TO WRITE CODES!**:+1:
   - Although you have all the pseudocodes done, that won't necessary means that you should write everything out,
   
 
 ## Question Practice: 
-
 * Pseudocode steps that you would take for making a coffee.
 * Pseudocode steps that you would take for putting an elephant into a fridge.
 * Pseudocode steps that you would take for putting a giraffe into a fridge.
