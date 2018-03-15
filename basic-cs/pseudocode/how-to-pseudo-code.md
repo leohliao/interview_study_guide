@@ -76,7 +76,7 @@ the coding language will only take your thoughts one-by-one.
 
 #### 3. **Start thinking through your logic. Write them out in sentences, each line should only be responsible for an action,**
 ```javascript
-   /hangman.js
+   // /hangman.js
    
   // declare a variable for showing output, default value is "_ _ _ _ _ _ _ _ _ _"
   // declare a variable for answer, default value is "javascript" 
