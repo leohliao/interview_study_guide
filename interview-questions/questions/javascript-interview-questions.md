@@ -36,9 +36,6 @@
 * [Make this work:](/interview-questions/answers/javascript-answers.md#answer-35)
     ```javascript
     duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
-    function duplicate(arr) {
-      return arr.concat(arr)
-    }
     ```
 * [Why is it called a Ternary operator, what does the word "Ternary" indicate?](/interview-questions/answers/javascript-answers.md#answer-36)
 * [What is `"use strict";`? what are the advantages and disadvantages to using it?](/interview-questions/answers/javascript-answers.md#answer-37)
