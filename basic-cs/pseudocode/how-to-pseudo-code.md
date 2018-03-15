@@ -60,9 +60,9 @@ For example, you probably need a different variable to carry your final output, 
 ```
 
 Variables are declared! Hurray!! now it's time to do some logical thinking. Before we get into that, you must first realize how fast your brains are compare to computer:
-    - [You brain really IS faster than you think: It take just 13 milliseconds to see an image](http://www.dailymail.co.uk/sciencetech/article-2542583/Scientists-record-fastest-time-human-image-takes-just-13-milliseconds.html)
-    - [How Fast is Your Brain?](http://thephenomenalexperience.com/content/how-fast-is-your-brain)   
-    - [Human Brain 30 Times Faster than Best Supercomputers](https://spectrum.ieee.org/tech-talk/computing/networks/estimate-human-brain-30-times-faster-than-best-supercomputers)
+  * [You brain really IS faster than you think: It take just 13 milliseconds to see an image](http://www.dailymail.co.uk/sciencetech/article-2542583/Scientists-record-fastest-time-human-image-takes-just-13-milliseconds.html)
+  * [How Fast is Your Brain?](http://thephenomenalexperience.com/content/how-fast-is-your-brain)   
+  * [Human Brain 30 Times Faster than Best Supercomputers](https://spectrum.ieee.org/tech-talk/computing/networks/estimate-human-brain-30-times-faster-than-best-supercomputers)
 
 Alright, enough of these out-of-dated articles! I guess my point is that you think faster than a computer,
 and that is why it is important to learn when to **`BREAK`** your thought process before you move on to the next,
@@ -90,11 +90,12 @@ the coding language will only take your thoughts one-by-one.
     // ... more codes
 ```
 **REMEMBER!!**
-  - You are your own boss, just **feel free to move the sequence of the codes to anywhere** that makes sense to your code.
-  - Each line of pseudo should define **ONLY ONE** action, if there is more than 2 actions happening in your sentence, break it down!
-  - Write something that is **readable to yourself and to other people**, if other people is having trouble understanding your pseudocode, you might want to improve that.
-  - Make good use of **indentation**, this will make your code clean and easier to debug as you start writing large amount of codes.
+  - You are your own boss, just **`feel free to move the sequence of the codes to anywhere`** that makes sense to your code.
+  - Each line of pseudo should define **`ONLY ONE`** action, if there is more than 2 actions happening in your sentence, break it down!
+  - Write something that is **`readable to yourself and to other people`**, if other people is having trouble understanding your pseudocode, you might want to improve that.
+  - Make good use of **`indentation`**, this will make your code clean and easier to debug as you start writing large amount of codes.
 
+-
 
 ## Question Practice: 
 
