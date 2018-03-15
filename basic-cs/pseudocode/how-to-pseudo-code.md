@@ -61,7 +61,7 @@ For example, you probably need a different variable to carry your final output, 
     * [Human Brain 30 Times Faster than Best Supercomputers](https://spectrum.ieee.org/tech-talk/computing/networks/estimate-human-brain-30-times-faster-than-best-supercomputers)
 
 Alright, enough of these out-of-dated articles! I guess my point is that you think faster than a computer,
-and that is why it is important to learn when to `BREAK` your thought process before you move on to the next,
+and that is why it is important to learn when to **`BREAK`** your thought process before you move on to the next,
 the coding language will only take your thoughts one-by-one.
 
 ## Question Practice: 
