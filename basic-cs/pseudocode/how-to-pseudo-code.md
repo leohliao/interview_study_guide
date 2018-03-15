@@ -10,7 +10,7 @@ So I would like to share some hints and tips about how to do pseudocode.
 ## Understand Pseudocode:
 
 ### What is pseudocode?
-**Pseudocode are verbal outlines of the logic to your solution to a specific coding challenges using English.**
+> **Pseudocode are _verbal outlines_ of the logic to your solution to a specific coding challenges using English.**
 In other words, pseudo code is understandable English, where you can share your thought process with other people.
 
 ### Why is pseudocode useful?
