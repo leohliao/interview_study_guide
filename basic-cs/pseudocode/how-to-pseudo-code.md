@@ -29,10 +29,10 @@ Think over the questions 1 more time, ask yourself the following questions first
     * **What is the input of this program for?** For example, am I dealing with array, strings or integer?
     * **What is the output of this program for?** For example, should I return false? a string? a number?
     * **What are the test cases that I should use for this program?** For example, when should I break my game logic and make it stop?
-    * Drawing it out with pen and paper (aka whiteboarding) if you can!!! **STRONGLY RECOMMENDED!!**
+    * Draw it out with pen and paper (aka whiteboarding) if you can!!! **STRONGLY RECOMMENDED!!**
 
 - **Declare variables that you need for this program.** 
-Once you have deeper understandings with the questions, then next step you should think about is 
+Once you have deeper understandings with the questions, then next step you can think about is what kind of data you will need in order to help you successfully output your solution.
 
 For example, you probably need a different variable to carry your final output, you probably need a variable to temporarily store your calculations. You probably need a variable which store information you need:
 
@@ -43,7 +43,7 @@ For example, you probably need a different variable to carry your final output, 
         }
 
         function howManyOddNumbers(num) {
-            var oddCounts = 0  // for storing calculations
+            var oddCounts = 0  // for storing numbers of tracking
             for (var i=0; i < num; i++ ){
                 if (i % 2 === 0) {
                     oddCounts++;
@@ -59,8 +59,8 @@ For example, you probably need a different variable to carry your final output, 
         }
 ```
 
-Variables are declared! Hurray, now it's time to do some logical thinking. Before we get into that, you must first realize how fast your brains are
-    * [You brain really IS faster than you think: It take just 13 milliseconds to see an image](http://www.dailymail.co.uk/sciencetech/article-2542583/Scientists-record-fastest-time-human-image-takes-just-13-milliseconds.html
+Variables are declared! Hurray!! now it's time to do some logical thinking. Before we get into that, you must first realize how fast your brains are compare to computer:
+    * [You brain really IS faster than you think: It take just 13 milliseconds to see an image](http://www.dailymail.co.uk/sciencetech/article-2542583/Scientists-record-fastest-time-human-image-takes-just-13-milliseconds.html)
     * [How Fast is Your Brain?](http://thephenomenalexperience.com/content/how-fast-is-your-brain)   
     * [Human Brain 30 Times Faster than Best Supercomputers](https://spectrum.ieee.org/tech-talk/computing/networks/estimate-human-brain-30-times-faster-than-best-supercomputers)
 
