@@ -354,6 +354,9 @@ jenn.greeting(); //'Hello, my name is Jenn'
 ### Make this work:
 ```javascript
 duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
+    function duplicate(arr) {
+      return arr.concat(arr)
+    }
 ```
 
 <div id="answer-36"   ></div>
