@@ -29,10 +29,9 @@ Outlines of what pseudo are generally used for:
     * **What are the test cases that I should use for this program?** For example, when should I break my game logic and make it stop?
     * Drawing it out with pen and paper (aka whiteboarding) if you can!!! **STRONGLY RECOMMENDED!!**
 
-- Once you have deeper understandings with the questions, then next step you should think about is :
-    * **Declare variables that you need for this program.** 
-    For example, you probably need a different variable to carry your final output, you probably need a variable to temporarily store your calculations.
-    You probably need a variable which store information you need:
+- Once you have deeper understandings with the questions, then next step you should think about is **Declare variables that you need for this program.** 
+
+For example, you probably need a different variable to carry your final output, you probably need a variable to temporarily store your calculations. You probably need a variable which store information you need:
 
     ```javascript
         function addTwoNum(a, b) { 
@@ -62,7 +61,7 @@ Outlines of what pseudo are generally used for:
     * [Human Brain 30 Times Faster than Best Supercomputers](https://spectrum.ieee.org/tech-talk/computing/networks/estimate-human-brain-30-times-faster-than-best-supercomputers)
 
 Alright, enough of these out-of-dated articles! I guess my point is that you think faster than a computer,
-and that is why it is important to learn when to **BREAK** your thought process before you move on to the next,
+and that is why it is important to learn when to `BREAK` your thought process before you move on to the next,
 the coding language will only take your thoughts one-by-one.
 
 ## Question Practice: 
