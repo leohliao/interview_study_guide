@@ -33,7 +33,8 @@ Outlines of what pseudo are generally used for:
 
 For example, you probably need a different variable to carry your final output, you probably need a variable to temporarily store your calculations. You probably need a variable which store information you need:
 
-    ```javascript
+```javascript
+
         function addTwoNum(a, b) { 
             var finalOutput = a + b; // for storing final result;
             return final;
@@ -54,7 +55,8 @@ For example, you probably need a different variable to carry your final output, 
             var cipheredOutput = ""; // for storing my decoded output
             // some codes here...
         }
-    ```
+
+```
 -  Variables are declared! Hurray, now it's time to do some logical thinking. Before we get into that, you must first realize how fast your brains are:
     * [You brain really IS faster than you think: It take just 13 milliseconds to see an image](http://www.dailymail.co.uk/sciencetech/article-2542583/Scientists-record-fastest-time-human-image-takes-just-13-milliseconds.html)
     * [How Fast is Your Brain?](http://thephenomenalexperience.com/content/how-fast-is-your-brain)
