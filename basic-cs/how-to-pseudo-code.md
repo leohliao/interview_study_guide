@@ -33,9 +33,10 @@ Outlines of what pseudo are generally used for:
     * **Declare variables that you need for this program.** 
     For example, you probably need a different variable to carry your final output, you probably need a variable to temporarily store your calculations.
     You probably need a variable which store information you need:
+
     ```javascript
         function addTwoNum(a, b) { 
-            var finalOutput = a + b // for final result;
+            var finalOutput = a + b; // for storing final result;
             return final;
         }
 
@@ -49,10 +50,15 @@ Outlines of what pseudo are generally used for:
             return oddCounts;
         }
 
-        function cesarCipher("sweet") {
+        function ceasarCipher("sweet") {
             var alpha = "abcdefghijklmnopqrstuvwyz"; // for storing alphabetical orders
             // some codes here...
         }
+    ```
+
+    ```diff
+        + this will be highlighted in green
+        - this will be highlighted in red
     ```
 - 
 ## Question Practice: 
