@@ -23,13 +23,15 @@ Outlines of what pseudo are generally used for:
    * **Explaining / Communicating your computer process.** 
    * **Design code under collaborative development group to solve complex problems.** 
 
+**_Pseudocode should be a creative process which involves in design, architect, and reasoning, where as writing actual code should be a drafting, crafting, and problem-solving, _**
+
 ### Steps
 - **Analyze the questions, try to get as much information as you can think of**
 Think over the questions 1 more time, ask yourself the following questions first:
     * **What is the input of this program for?** For example, am I dealing with array, strings or integer?
     * **What is the output of this program for?** For example, should I return false? a string? a number?
     * **What are the test cases that I should use for this program?** For example, when should I break my game logic and make it stop?
-    * Draw it out with pen and paper (aka whiteboarding) if you can!!! **STRONGLY RECOMMENDED!!**
+  **Draw it out with pen and paper (aka whiteboarding) if you can!!!** **_STRONGLY RECOMMENDED!!_**
 
 - **Declare variables that you need for this program.** 
 Once you have deeper understandings with the questions, then next step you can think about is what kind of data you will need in order to help you successfully output your solution.
@@ -70,10 +72,10 @@ the coding language will only take your thoughts one-by-one.
 
 - **Start thinking through your logic. Write them out in sentences, each line should only be responsible for an action,**
 
+/hangman.js
 ```javascript
-  ~ hangman.js ~
 
-  // declare a variable for showing output, default value is "_ _ _ _ _ _ _ _ _ _" depends on the length of the answers
+  // declare a variable for showing output, default value is "_ _ _ _ _ _ _ _ _ _"
   // declare a variable for answer, default value is "javascript" 
   // declare a variable for tracking number of tries for user
   // declare a variable for tracking whether game is over or not
@@ -94,14 +96,21 @@ the coding language will only take your thoughts one-by-one.
   - Each line of pseudo should define **`ONLY ONE`** action, if there is more than 2 actions happening in your sentence, break it down!
   - Write something that is **`readable to yourself and to other people`**, if other people is having trouble understanding your pseudocode, you might want to improve that.
   - Make good use of **`indentation`**, this will make your code clean and easier to debug as you start writing large amount of codes.
+  - When you write pseudocode, think of it as trying to explain your work process to a child, or writing a receipe to people who never cook...whatever, you name it!
 
--
+- **Once you are done writing your pseudocode, take a moment of breath, then look over your pseudocodes again and see if you are missing anything; edit, add, delete, whatever actions**
+  - If you are working in pairs, walk through your logic with your friend, see if they understand your approach.
+  
+- :+1:**READY TO WRITE CODES!**:+1:
+  - Although you have all the pseudocodes done, that won't necessary means that you should write everything out,
+  
 
 ## Question Practice: 
 
 * Pseudocode steps that you would take for making a coffee.
 * Pseudocode steps that you would take for putting an elephant into a fridge.
 * Pseudocode steps that you would take for putting a giraffe into a fridge.
+* Pseudocode steps that you would take for comparing 3 numbers.
 * Pseudo code Two Sum:
 ```javascript
     Array.prototype.twoSum = function (target) {
