@@ -24,14 +24,37 @@ Outlines of what pseudo are generally used for:
 
 ### Steps
 - Think over the questions 1 more time, ask yourself the following questions first:
-    * What is the input of this program for? For example, am I dealing with array, strings or integer?
-    * What is the output of this program for? For example, should I return false? a string? a number?
-    * What are the test cases that I should use for this program? For example, when should I break my game logic and make it stop?
-    * Drawing it out with pen and paper (aka whiteboarding) if you can!!! STRONGLY RECOMMENDED
+    * **What is the input of this program for?** For example, am I dealing with array, strings or integer?
+    * **What is the output of this program for?** For example, should I return false? a string? a number?
+    * **What are the test cases that I should use for this program?** For example, when should I break my game logic and make it stop?
+    * Drawing it out with pen and paper (aka whiteboarding) if you can!!! **STRONGLY RECOMMENDED!!**
 
+- Once you have deeper understandings with the questions, then next step you should think about is :
+    * **Declare variables that you need for this program.** 
+    For example, you probably need a different variable to carry your final output, you probably need a variable to temporarily store your calculations.
+    You probably need a variable which store information you need:
+    ```javascript
+        function addTwoNum(a, b) { 
+            var finalOutput = a + b // for final result;
+            return final;
+        }
 
-- Once you 
+        function howManyOddNumbers(num) {
+            var oddCounts = 0  // for storing calculations
+            for (var i=0; i < num; i++ ){
+                if (i % 2 === 0) {
+                    oddCounts++;
+                }
+            }
+            return oddCounts;
+        }
 
+        function cesarCipher("sweet") {
+            var alpha = "abcdefghijklmnopqrstuvwyz"; // for storing alphabetical orders
+            // some codes here...
+        }
+    ```
+- 
 ## Question Practice: 
 
 * Pseudocode steps that you would take for making a coffee:
