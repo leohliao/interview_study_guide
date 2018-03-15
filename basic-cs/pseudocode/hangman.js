@@ -1,8 +1,8 @@
 const readline = require('readline');
 
-// Declare a variable for my showing output, default should be showing only -----
-// Declare a variable to track whether games win or not
-// Declare a variable for my final answer;
+// Declare a variable for my showing output, default should be showing only udnerscore
+// Declare a variable to track whether game wins
+// Declare a variable for actual;
 // Declare a variable for tracking how many chances I have
 
 // initialize an output with the length of the answer
@@ -14,72 +14,76 @@ const readline = require('readline');
        // else you lose a change for guess
     // if user input is not a letter, ask to input again and you lose a chance for guess
 
-let hangmanOutput = "";
+
+let hangmanOutput = [];
 let hangmanAnswer = "javascript";
+let hangmanHash = {};
+let chances = 10;
 let gameOver = false;
+let userInputLog = [];
 
 // This function creates the output for hangmanOutput according to it's length
 function initialize(answer) {
-  if (typeof answer !== "string") {
-    return "Error input";
-  } else {
-    for (var i = 0; i < answer.length; i++) {
-      hangmanOutput += "_";
-    }
-  }
-  console.log("initializing..." + answer);
+        for (var i = 0; i < hangmanAnswer.length; i++) {
+            hangmanOutput.push("_");
+            if (hangmanHash[hangmanAnswer[i]]) {
+               hangmanHash[hangmanAnswer[i]].push(i);
+            } else {
+                hangmanHash[hangmanAnswer[i]] = [i];
+            }
+        }
 }
 
 // Prompt for user input
-function getUserInput (){
+function getUserInput() {
     var rl = readline.createInterface(process.stdin, process.stdout),
-      prefix = 'Hangman Game Guess> ';
+        prefix = 'Hangman Game Guess> ';
 
     rl.on('line', function (line) {
-      switch (line.trim()) {
-        case 'hello':
-          console.log('world!');
-          break;
-        default:
-          console.log('Say what? I might have heard `' + line.trim() + '`');
-          break;
-      }
-      rl.setPrompt(prefix, prefix.length);
-      rl.prompt();
+        var firstLetter = line.trim().slice(0, 1).toLowerCase();
+        if (hangmanHash[firstLetter]) {
+            parseUserInput(firstLetter);
+            staticBoard();
+        } else {
+            chances--;
+            staticBoard();
+        }
+        rl.setPrompt(prefix, prefix.length);
+        rl.prompt();
     }).on('close', function () {
-      console.log('Have a great day!');
-      process.exit(0);
+        console.log('Have a great day!');
+        process.exit(0);
     });
     console.log('Guess a letter! (Click ctrl+c to terminate game)');
     rl.setPrompt(prefix, prefix.length);
     rl.prompt();
 }
 
-// Check to see if the answer is correct
-function checkAnswer(letter) {
-  var isALetter = typeof letter;
-  if ((hangmanAnswer.indexOf(letter) > -1) && (isALetter)) {
-    return true;
-  } else {
-    return false;
-  }
+// Replace letter with the letter 
+function parseUserInput(letter) {
+    var indices = hangmanHash[letter];
+    indices.forEach((idx) => hangmanOutput[idx] = letter)
 }
 
 // Show my current stats
 function staticBoard() {
-  console.log("Your Current Word ");
-  console.log("Chances left: ");
+    // console.log("Your Current Input: " + currentInput);
+    console.log("-----------------------------------")
+    console.log("Chances left: " + chances);
+    console.log("Current Result: " + hangmanOutput)
+    console.log("-----------------------------------")
 }
 
 // Initialize all my game logic
 function hangman() {
-  console.log("this is hangman");
-  var input = getUserInput();
-  if (input) {
-    initialize(input);
-    console.log("Hangman output: " + hangmanOutput);
-    console.log("Hangman length: " + hangmanOutput.length);
-  }
+    console.log("this is hangman");
+    initialize();
+    var input = getUserInput();
+    // if (input) {
+    //     initialize(input);
+    //     console.log("Hangman output: " + hangmanOutput);
+    //     console.log("Hangman length: " + hangmanOutput.length);
+    // }
 }
 
 hangman();
