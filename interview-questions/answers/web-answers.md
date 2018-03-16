@@ -128,7 +128,7 @@
 ### What is the difference between a unit test and a functional/integration test?
 ### What is the purpose of a code style linting tool?
 
-[Back to Web Developer Interview Questions](/interviewQuestions/web-developer-interview-questions.md)
+[Back to Web Developer Interview Questions](/interviewQuestions/questions/web-developer-interview-questions.md)
 
 [Back to Home](/README.md)
 
