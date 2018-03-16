@@ -67,6 +67,7 @@
 * [How can you share code between files?](/interview-questions/answers/javascript-answers.md#answer-63)
 * [Why you might want to create static class members?](/interview-questions/answers/javascript-answers.md#answer-64)
 * [What is the difference between Function and Method?](/interview-questions/answers/javascript-answers.md#answer-65)
+* [What is difference between `parseInt()` and `Number()`?](/interview-questions/answers/javascript-answers.md#answer-66)
 
 [Back to Home](/README.md)
 
