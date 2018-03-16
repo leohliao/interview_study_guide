@@ -8,7 +8,10 @@
     [StackOverflow: How do I empty an array in JS?](https://stackoverflow.com/questions/1232040/how-do-i-empty-an-array-in-javascript)
  
 ### <div id="js-a-02">How do you clone an object?</div>
-  - 
+  - `Object.clone(obj)` : shallow clone
+  - `Object.assign({}, obj)` : deep clone
+  - `JSON.parse(JSON.stringify(obj))`: deep clone
+  
 ```javascript
     let obj = {
         a: 1,
@@ -32,7 +35,7 @@
    [See Medium: Objects in JS: object.assign deep copy](https://medium.com/@tkssharma/objects-in-javascript-object-assign-deep-copy-64106c9aefab)
 
 ### <div id="js-a-03">What is difference between `proto` vs `__proto__`?</div>
-  **`Object.prototype.`**
+  **`Object.prototype`**
   - one
   - two
   - three
