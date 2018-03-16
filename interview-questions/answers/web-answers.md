@@ -96,8 +96,8 @@
 - DevTools in browsers such as Firefox and Chrome provides decent tools for your to debug and improve website performance.
 - [Dynatrace](https://www.dynatrace.com/)
 
-* [Quora: What are the tools used for finding bugs in web applications websites](https://www.quora.com/What-are-the-tools-used-for-finding-bugs-in-web-applications-websites)
-* [Open Classroom: Optimize your website with DevTools](https://openclassrooms.com/courses/optimize-your-website-with-devtools)
+[Quora: What are the tools used for finding bugs in web applications websites](https://www.quora.com/What-are-the-tools-used-for-finding-bugs-in-web-applications-websites)
+[Open Classroom: Optimize your website with DevTools](https://openclassrooms.com/courses/optimize-your-website-with-devtools)
 
 ### What are some ways you may improve your website's scrolling performance?
 
