@@ -13,14 +13,14 @@
 
 # General Knowledge
 
-## Study Guides:
+### Study Guides:
 
 [How to Pseudocode Efficiently](/basic-cs/pseudocode/how-to-pseudo-code.md)
 
 [Software Design Pattern](/basic-cs/software-design-pattern.md)
 
 
-## Cool Study Site:
+### Cool Study Site:
 [Padding Me](https://github.com/paddingme/Front-end-Web-Development-Interview-Question)
 
 [Regular Expression Info](https://www.regular-expressions.info/)
@@ -30,7 +30,7 @@
 [RegexEgg](http://www.rexegg.com/)
 
 
-## Article: 
+### Article: 
 [Promise.prototype.finally](http://thecodebarbarian.com/using-promise-finally-in-node-js.html)
 
 
