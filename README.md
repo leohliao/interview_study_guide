@@ -2,13 +2,22 @@
 
 ## Interview Questions:
 
-### [Web Developer Interview Questions](/interview-questions/questions/web-developer-interview-questions.md)
-### [JavaScript Interview Questions](/interview-questions/questions/javascript-interview-questions.md)
-### [HTML Interview Questions](/interview-questions/questions/html-interview-questions.md)
-### [CSS Interview Questions](/interview-questions/questions/css-questions.md)
-### [Coding Interview Questions](/interview-questions/questions/coding--interview-questions.md)
-### [React Interview Questions](/interview-questions/questions/react-interview-questions.md)
-### [Behavioral Interview Questions](/interview-questions/questions/behavioral-interview-questions.md)
+#### [Web Developer Interview Questions](/interview-questions/questions/web-developer-interview-questions.md)
+#### [JavaScript Interview Questions](/interview-questions/questions/javascript-interview-questions.md)
+#### [HTML Interview Questions](/interview-questions/questions/html-interview-questions.md)
+#### [CSS Interview Questions](/interview-questions/questions/css-questions.md)
+#### [Coding Interview Questions](/interview-questions/questions/coding--interview-questions.md)
+#### [React Interview Questions](/interview-questions/questions/react-interview-questions.md)
+#### [Behavioral Interview Questions](/interview-questions/questions/behavioral-interview-questions.md)
+
+
+# General Knowledge
+
+## Study Guides:
+
+[How to Pseudocode Efficiently](/basic-cs/pseudocode/how-to-pseudo-code.md)
+
+[Software Design Pattern](/basic-cs/software-design-pattern.md)
 
 
 ## Cool Study Site:
@@ -24,7 +33,6 @@
 ## Article: 
 [Promise.prototype.finally](http://thecodebarbarian.com/using-promise-finally-in-node-js.html)
 
-[Psuedo Code](/basic-cs/pseudocode/how-to-pseudo-code.md)
 
 # Disclosure:
 - This repo is solely used for the purpose of studying. 
