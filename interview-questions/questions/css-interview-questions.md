@@ -1,28 +1,28 @@
 # Common CSS Interview Questions
 
-#### Q001. What are the three main ways to add CSS to a webpage? Advantages and disadvantages?
+What are the three main ways to add CSS to a webpage? Advantages and disadvantages?
 - **Inline CSS**: written directly into the HTML element as a style attribute. Able to override other style specifications. Only works if there are a limited number of style definitions.
 - **External Style Sheets**: separate style from content and control multiple HTML documents from a single separate file. However, it must be downloaded first in order for the HTML file to render properly.
 - **Embedded CSS**: written as <style> tags inside the <head> section of an HTML document. Loads with the HTML document unlike the external style sheets. However, any other HTML documents would not inherit the styling within these tags.
 
-#### Q002. What are CSS media queries and what are they used for?
+What are CSS media queries and what are they used for?
 - Used to make reponsive web design possible, can apply CSS styles depending on the device
 - Able to adjust style depending on the height, width, orientation, display type
 
-#### Q003. What is CSS selector specificity and how does it work?
+What is CSS selector specificity and how does it work?
 - patterns used to select the element(s) you want to style.
 * What's the difference between "resetting" and "normalizing" CSS? Which would you choose, and why?
 
-#### Q004. Describe Floats and how they work.
+Describe Floats and how they work.
 - Float is a CSS positioning property. To understand its purpose and origin, we can look to print design. In a print layout, images may be set into the page such that text wraps around them as needed. This is commonly and appropriately called "text wrap".
 
-#### Q005. Describe z-index and how stacking context is formed.
+Describe z-index and how stacking context is formed.
 - Z-index controls the vertical stacking order of elements that overlap.
 - Stacking context is a three-dimensional conceptualization of HTML elements an imaginary z-axis relative to the user. Stacking contexts are treated as a single unit in the parent stacking context.
-#### Q006. Describe BFC(Block Formatting Context) and how it works.
+Describe BFC(Block Formatting Context) and how it works.
 - The region in which the layout of block boxes occurs and in which floats interact with other elements. The positioning and clearning of floats apply only to the elements in the same block formatting context.
 
-#### Q007. What are the various clearing techniques and which is appropriate for what context?
+What are the various clearing techniques and which is appropriate for what context?
 - The problem with floated object is that they don't add to the height of the object they reside in properly. To solve this problem, we clear the float.
 - First way (Old School Method): `.clear {clear:both;}`
 - Second way (Overflow): `.clear {overflow:hidden;}`
@@ -55,13 +55,12 @@
 * Have you ever worked with retina graphics? If so, when and what techniques did you use?
 * Is there any reason you'd want to use `translate()` instead of *absolute positioning*, or vice-versa? And why?
 
-# CSS Questions:
 
-#### Q001. What is CSS selector specificity and how does it work?
+What is CSS selector specificity and how does it work?
 - patterns used to select the element(s) you want to style.
 * What's the difference between "resetting" and "normalizing" CSS? Which would you choose, and why?
 
-#### Q002. Describe Floats and how they work.
+Describe Floats and how they work.
 - Float is a CSS positioning property. To understand its purpose and origin, we can look to print design. In a print layout, images may be set into the page such that text wraps around them as needed. This is commonly and appropriately called "text wrap".
 
 * Describe z-index and how stacking context is formed.
