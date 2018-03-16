@@ -94,7 +94,9 @@
 - It differentiate from bad practice by:
     - It is a common practice that initially looks like an appropriate solution by ends up having bad consequences that outweigh any benefits.
     - There’s another solution that is known, repeatable, and effective.
-    
+- For example, in object-oriented programming, the idea is to separate the software into small pieces called objects. An anti-pattern in object-oriented programming is a God object which performs a lot of functions which would be better separated into different objects.
+ 
+[StackOverflow: What is an Anti-pattern](https://stackoverflow.com/questions/980601/what-is-an-anti-pattern)   
 [Agile Alliance: What is an antipattern?](https://www.agilealliance.org/glossary/antipattern)
 
 # Performance Questions:
