@@ -89,8 +89,13 @@
 - `do/while` : also goes through a block of code while a specified condition is true
    
 ### What is anti-pattern?
-- An `anti-pattern` is a common response to a recurring problem that is usually ineffective and risks being highly counterproductive.
-
+> An `anti-pattern` is a common response to a recurring problem that is usually ineffective and risks being highly counterproductive.
+- Antipatterns are common solutions to common problems where the solution is ineffective and may result in undesired consequences.
+- It differentiate from bad practice by:
+    - It is a common practice that initially looks like an appropriate solution by ends up having bad consequences that outweigh any benefits.
+    - There’s another solution that is known, repeatable, and effective.
+    
+[Agile Alliance: What is an antipattern?](https://www.agilealliance.org/glossary/antipattern)
 
 # Performance Questions:
 
