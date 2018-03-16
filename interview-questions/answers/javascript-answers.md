@@ -722,17 +722,20 @@ function fizz() {
 ### <div id="js-a-66">What is difference between `parseInt()` and `Number()` ?</div>
   - `parseInt()` will parses up to the first non-digit numbers inside string.
   - `Number()` will convert whole string into numbers.
-  -  NOTE: parseInt("") will return NaN, whereas Number("") will return 0.
+  
   ```javascript
     parseInt("123hui") // returns 123
     Number("123hui") // return NaN
   ```
- [Stackoverflow: What is the difference between parseInt(string) and Number(string) in JavaScript?](https://stackoverflow.com/questions/4564158/what-is-the-difference-between-parseintstring-and-numberstring-in-javascript)
+   -  NOTE: parseInt("") will return NaN, whereas Number("") will return 0.
+   
+   [Stackoverflow: What is the difference between parseInt(string) and Number(string) in JavaScript?](https://stackoverflow.com/questions/4564158/what-is-the-difference-between-parseintstring-and-numberstring-in-javascript)
  
 ### <div id="js-a-67">What are ways to Enumerate properties of an Object?</div>
   - `for...in loops`: This method traverses all enumerable properties of an object and its prototype chain
   - `Object.keys(o)`: This method returns an array with all the own (not in the prototype chain) enumerable properties' names ("keys") of an object o.
   - `Object.getOwnPropertyNames(o)`: This method returns an array containing all own properties' names (enumerable or not) of an object o.
+  
   [Medium: Objects in JS: object.assign deep copy](https://medium.com/@tkssharma/objects-in-javascript-object-assign-deep-copy-64106c9aefab)
 
 [Back to JavacScript Interview Questions](/interviewQuestions/javascript-interview-questions.md)
