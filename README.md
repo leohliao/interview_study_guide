@@ -5,7 +5,7 @@
 #### [Web Developer Interview Questions](/interview-questions/questions/web-developer-interview-questions.md)
 #### [JavaScript Interview Questions](/interview-questions/questions/javascript-interview-questions.md)
 #### [HTML Interview Questions](/interview-questions/questions/html-interview-questions.md)
-#### [CSS Interview Questions](/interview-questions/questions/css-questions.md)
+#### [CSS Interview Questions](/interview-questions/questions/css-interview-questions.md)
 #### [Coding Interview Questions](/interview-questions/questions/coding--interview-questions.md)
 #### [React Interview Questions](/interview-questions/questions/react-interview-questions.md)
 #### [Behavioral Interview Questions](/interview-questions/questions/behavioral-interview-questions.md)
