@@ -78,7 +78,32 @@
 
 ### How to test whether a value is NaN?
   - `isNaN(value)`: method to check to see if a value is NaN. 
-  ANSWER
+  ```javascript
+    isNaN('abcd');  //  true
+    isNaN('2.0');  //  false
+    isNaN(2.0);  //  false
+  ```
+  
+  - Since NaN is the only JavaScript value that is treated as unequal to itself, you can always test if a value is NaN by checking it for equality to itself:
+  ```javascript
+    var a = NaN;
+    a !== a; // true 
+
+    var b = "foo";
+    b !== b; // false 
+
+    var c = undefined; 
+    c !== c; // false
+
+    var d = {};
+    d !== d; // false
+
+    var e = { valueOf: "foo" }; 
+    e !== e; // false
+  ```
+[StackOverflow: How do you check that a number is NaN in JavaScript](https://stackoverflow.com/questions/2652319/how-do-you-check-that-a-number-is-nan-in-javascript)
+ 
+[A Drip of JavaScript: The Problem with Testing for NaN in JavaScript](http://adripofjavascript.com/blog/drips/the-problem-with-testing-for-nan-in-javascript.html)
 
 <div id="answer-07"></div>
 
