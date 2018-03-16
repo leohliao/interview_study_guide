@@ -693,7 +693,9 @@ function fizz() {
     };
     ```
   [Stackoverflow: Method vs Functions, and other questions](https://stackoverflow.com/questions/15285293/method-vs-functions-and-other-questions)
-  
+
+<div id="answer-66"></div>
+
 ### what is difference between `parseInt()` and `Number()` ?
   - `parseInt()` will parses up to the first non-digit numbers inside string.
   - `Number()` will convert whole string into numbers.
