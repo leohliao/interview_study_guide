@@ -5,14 +5,14 @@
   - Method 3: `array.splice(0,array.length)`
   - Method 4: `while (array.length > 0) { array.pop(); }`
   
-    [StackOverflow: How do I empty an array in JS?](https://stackoverflow.com/questions/1232040/how-do-i-empty-an-array-in-javascript)
+[StackOverflow: How do I empty an array in JS?](https://stackoverflow.com/questions/1232040/how-do-i-empty-an-array-in-javascript)
  
 ### <div id="js-a-02">How do you clone an object?</div>
   - `Object.clone(obj)` : shallow clone
   - `Object.assign({}, obj)` : deep clone
   - `JSON.parse(JSON.stringify(obj))`: deep clone
   
-```javascript
+  ```javascript
     let obj = {
         a: 1,
         b: 2,
@@ -30,7 +30,7 @@
     let shallow_dup1 = Object.clone(obj) // shallow clone, which means nested objects ain't copied.
     let deep_dup1 = Object.assign({}, obj); // deep clone
     let deep_dup2 = JSON.parse(JSON.stringify(obj)) // faster
- ``` 
+  ``` 
  
    [See Medium: Objects in JS: object.assign deep copy](https://medium.com/@tkssharma/objects-in-javascript-object-assign-deep-copy-64106c9aefab)
 
