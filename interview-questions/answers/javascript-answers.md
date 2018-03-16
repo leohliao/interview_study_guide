@@ -5,7 +5,8 @@
   - Method 2: `array.length = 0`
   - Method 3: `array.splice(0,array.length)`
   - Method 4: `while (array.length > 0) { array.pop(); }`
-    [See StackOverflow: How do I empty an array in JS?](https://stackoverflow.com/questions/1232040/how-do-i-empty-an-array-in-javascript)
+  
+  [StackOverflow: How do I empty an array in JS?](https://stackoverflow.com/questions/1232040/how-do-i-empty-an-array-in-javascript)
  
 <div id="answer-02"></div>
 
