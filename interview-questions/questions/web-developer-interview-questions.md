@@ -33,12 +33,19 @@
 * [How would you inspect a hover state of an element in the devtools?](/interview-questions/answers/web-answers.md#how-would-you-inspect-a-hober-state-of-an-element-in-the-devtools)
 * [What is the difference between "==" and "===" operators in JavaScript?](/interview-questions/answers/web-answers.md#what-is-the-difference-between-==-and-===-operators-in-javascript)
 * [What kinds of loops are in JavaScript?](/interview-questions/answers/web-answers.md#what-kinds-of-loops-are-in-javascript)
+* [What is anti-pattern?](/interview-questions/answers/web-answers.md#what-is-ant-pattern)
 
 # Performance Questions:
 
-* What tools would you use to find a performance bug in your code?
-* What are some ways you may improve your website's scrolling performance?
-* Explain the difference between layout, painting and compositing.
+* [What tools would you use to find a performance bug in your code?](/interview-questions/answers/web-answers.md#what-tools-would-you-use-to-find-a-performance-bug-in-your-cell)
+- DevTools in browsers such as Firefox and Chrome provides decent tools for your to debug and improve website performance.
+- [Dynatrace](https://www.dynatrace.com/)
+
+* [Quora: What are the tools used for finding bugs in web applications websites](https://www.quora.com/What-are-the-tools-used-for-finding-bugs-in-web-applications-websites)
+* [Open Classroom: Optimize your website with DevTools](https://openclassrooms.com/courses/optimize-your-website-with-devtools)
+
+* [What are some ways you may improve your website's scrolling performance?](/interview-questions/answers/web-answers.md#what-are-some-ways-you-may-improvee-your-websites-scrolling-performance)
+* [Explain the difference between layout, painting and compositing.](/interview-questions/answers/web-answers.md#explain-the-difference-between-layout-paiting-and-compositing)
 
 # Network Questions:
 
