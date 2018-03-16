@@ -1,16 +1,14 @@
 
-
-### <div id="answer-01">How would you empty the array?</div>
+### <div id="js-a-01">How would you empty the array?</div>
   - Method 1: `array = []`
   - Method 2: `array.length = 0`
   - Method 3: `array.splice(0,array.length)`
   - Method 4: `while (array.length > 0) { array.pop(); }`
   
-  [StackOverflow: How do I empty an array in JS?](https://stackoverflow.com/questions/1232040/how-do-i-empty-an-array-in-javascript)
+    [StackOverflow: How do I empty an array in JS?](https://stackoverflow.com/questions/1232040/how-do-i-empty-an-array-in-javascript)
  
-
-
-### <div id="answer-02">How do you clone an object?</div>
+### <div id="js-a-02">How do you clone an object?</div>
+  - 
 ```javascript
     let obj = {
         a: 1,
@@ -30,11 +28,10 @@
     let deep_dup1 = Object.assign({}, obj); // deep clone
     let deep_dup2 = JSON.parse(JSON.stringify(obj)) // faster
  ``` 
-  [See Medium: Objects in JS: object.assign deep copy](https://medium.com/@tkssharma/objects-in-javascript-object-assign-deep-copy-64106c9aefab)
+ 
+   [See Medium: Objects in JS: object.assign deep copy](https://medium.com/@tkssharma/objects-in-javascript-object-assign-deep-copy-64106c9aefab)
 
-<div id="answer-03"></div>
-
-### What is difference between `proto` vs `__proto__`?
+### <div id="js-a-03">What is difference between `proto` vs `__proto__`?</div>
   **`Object.prototype.`**
   - one
   - two
@@ -720,9 +717,9 @@ function fizz() {
     ```
   [Stackoverflow: Method vs Functions, and other questions](https://stackoverflow.com/questions/15285293/method-vs-functions-and-other-questions)
 
-<div id="answer-66"></div>
 
-### what is difference between `parseInt()` and `Number()` ?
+
+### <div id="js-a-66">What is difference between `parseInt()` and `Number()` ?</div>
   - `parseInt()` will parses up to the first non-digit numbers inside string.
   - `Number()` will convert whole string into numbers.
   -  NOTE: parseInt("") will return NaN, whereas Number("") will return 0.
@@ -731,5 +728,11 @@ function fizz() {
     Number("123hui") // return NaN
   ```
  [Stackoverflow: What is the difference between parseInt(string) and Number(string) in JavaScript?](https://stackoverflow.com/questions/4564158/what-is-the-difference-between-parseintstring-and-numberstring-in-javascript)
+ 
+### <div id="js-a-67">What are ways to Enumerate properties of an Object?</div>
+  - `for...in loops`: This method traverses all enumerable properties of an object and its prototype chain
+  - `Object.keys(o)`: This method returns an array with all the own (not in the prototype chain) enumerable properties' names ("keys") of an object o.
+  - `Object.getOwnPropertyNames(o)`: This method returns an array containing all own properties' names (enumerable or not) of an object o.
+  [Medium: Objects in JS: object.assign deep copy](https://medium.com/@tkssharma/objects-in-javascript-object-assign-deep-copy-64106c9aefab)
 
 [Back to JavacScript Interview Questions](/interviewQuestions/javascript-interview-questions.md)
