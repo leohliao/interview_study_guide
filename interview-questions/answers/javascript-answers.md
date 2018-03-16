@@ -1,6 +1,6 @@
-<div id="answer-01"></div>
 
-### How would you empty the array?
+
+### <div id="answer-01">How would you empty the array?</div>
   - Method 1: `array = []`
   - Method 2: `array.length = 0`
   - Method 3: `array.splice(0,array.length)`
@@ -8,9 +8,9 @@
   
   [StackOverflow: How do I empty an array in JS?](https://stackoverflow.com/questions/1232040/how-do-i-empty-an-array-in-javascript)
  
-<div id="answer-02"></div>
 
-### How do you clone an object?
+
+### <div id="answer-02">How do you clone an object?</div>
 ```javascript
     let obj = {
         a: 1,
