@@ -74,13 +74,13 @@
  
 [Back to JavacScript Interview Questions](/interview-questions/questions/javascript-interview-questions.md)
 
-<div id="answer-06"   ></div>
+<div id="answer-06"></div>
 
 ### How to test whether a value is NaN?
   - `isNaN(value)`: method to check to see if a value is NaN. 
   ANSWER
 
-<div id="answer-07"   ></div>
+<div id="answer-07"></div>
 
 ### Explain event delegation:
   - **Event Delegation** is a behavior where when you select an element, 
@@ -693,6 +693,15 @@ function fizz() {
     };
     ```
   [Stackoverflow: Method vs Functions, and other questions](https://stackoverflow.com/questions/15285293/method-vs-functions-and-other-questions)
-
+  
+### what is difference between `parseInt()` and `Number()` ?
+  - `parseInt()` will parses up to the first non-digit numbers inside string.
+  - `Number()` will convert whole string into numbers.
+  -  NOTE: parseInt("") will return NaN, whereas Number("") will return 0.
+  ```javascript
+    parseInt("123hui") // returns 123
+    Number("123hui") // return NaN
+  ```
+ [Stackoverflow: What is the difference between parseInt(string) and Number(string) in JavaScript?](https://stackoverflow.com/questions/4564158/what-is-the-difference-between-parseintstring-and-numberstring-in-javascript)
 
 [Back to JavacScript Interview Questions](/interviewQuestions/javascript-interview-questions.md)
