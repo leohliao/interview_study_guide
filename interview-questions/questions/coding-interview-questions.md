@@ -149,4 +149,24 @@ In the outer function, both this and self refer to myObject and therefore both c
 
 In the inner function, though, this no longer refers to myObject. As a result, this.foo is undefined in the inner function, whereas the reference to the local variable self remains in scope and is accessible there.
 
+
+#### What will this ouptut to?
+```javascript
+ var outerFunction = function() {
+      var x = 5;
+      var nestedFunction = function() {
+        var y = 7;
+        console.log("X: " + x); // What will this print?
+        console.log("Y: " + y); // What will this print?
+        var z = 10;
+        console.log("Z (inside): " + z); // What will this print?
+      };
+      return nestedFunction;
+    };
+
+    var myFunction = outerFunction();
+    myFunction();
+    console.log("Z (outside): " + z); // What will this print?
+```
+
 [Back to Home](/README.md)
