@@ -177,16 +177,101 @@ In the inner function, though, this no longer refers to myObject. As a result, t
       age: 15,
 
       printInfo: function() {
-        console.log(this); // What will this print? ("Object")
-        console.log("Name:", this.name, "Color:", this.color, "Age:", this.age); // What will this print? ("Name: Gus Color: gray Age: 15")
+        console.log(this); // What will this print? 
+        console.log("Name:", this.name, "Color:", this.color, "Age:", this.age); // What will this print? 
         var nestedFunction = function() {
           console.log("inside nestedFunction()");
-          console.log(this); // What will this print? ("Window")
-          console.log("Name:", this.name, "Color:", this.color, "Age:", this.age); // What will this print? ("Name:  Color: undefined Age: undefined")
+          console.log(this); // What will this print? 
+          console.log("Name:", this.name, "Color:", this.color, "Age:", this.age); // What will this print?
         };
         nestedFunction();
       }
     };
     cat.printInfo(); // calls the printInfo function. Which subsequently calls the nestedFunction()
 ```
+
+#### What will this output to?
+```javascript
+ // Example One: Global Scope
+    // -------------------------------------------
+    var a = 1;
+    function one() {
+      alert("One: " + a);
+    }
+    one(); // What will get alerted?
+    // Example Two: Local Scope
+    // -------------------------------------------
+    function twotop() {
+      function two(a) {
+        alert("Two: " + a);
+      }
+      two(a);
+    }
+    twotop(); // What will get alerted?
+
+    // Example Three: Local Scope
+    // -------------------------------------------
+    var a = 5;
+    function three() {
+
+      var a = 3;
+      alert("Three: " + a);
+    }
+    three(); // What will get alerted?
+    // Example Four: Local Scope
+    // -------------------------------------------
+    function first() {
+      var a = 5;
+      function second() {
+        var a = 3;
+        function third() {
+          alert("Four: " + a);
+        }
+        third();
+      }
+      second();
+      alert("Five: " + a);
+    }
+    first(); // What will get alerted?
+```
+
+#### What this output to ?
+```javascript
+// Run this program. Then turn to the person next to you and answer the following questions:
+    // 1. What is the difference (in output) between Situation 1 and Situation 2?
+    // 2. Why are the alert messages different? (Hint: Look for syntax differences)
+
+    // Situation 1
+    // ------------------------------------------
+    var myVar1 = 1;
+
+    function a1() {
+      myVar1 = 5 - 3;
+      b1();
+      alert("Q1 | a: " + myVar1);
+    }
+
+    function b1() {
+      alert("Q1 | b: " + myVar1);
+    }
+    a1();
+
+
+    // Situation 2
+    // ------------------------------------------
+    var myVar2 = 1;
+
+    function a2() {
+      var myVar2 = 5 - 3;
+      b2();
+      alert("Q2 | a: " + myVar2);
+    }
+
+    function b2() {
+      alert("Q2 | b: " + myVar2);
+    }
+    a2();
+```
+
+
 [Back to Home](/README.md)
