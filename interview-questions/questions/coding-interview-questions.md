@@ -237,10 +237,6 @@ In the inner function, though, this no longer refers to myObject. As a result, t
 
 #### What this output to ?
 ```javascript
-// Run this program. Then turn to the person next to you and answer the following questions:
-    // 1. What is the difference (in output) between Situation 1 and Situation 2?
-    // 2. Why are the alert messages different? (Hint: Look for syntax differences)
-
     // Situation 1
     // ------------------------------------------
     var myVar1 = 1;
