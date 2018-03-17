@@ -169,4 +169,24 @@ In the inner function, though, this no longer refers to myObject. As a result, t
     console.log("Z (outside): " + z); // What will this print?
 ```
 
+#### What will this output to?
+```javascript
+ var cat = {
+      name: "Gus",
+      color: "gray",
+      age: 15,
+
+      printInfo: function() {
+        console.log(this); // What will this print? ("Object")
+        console.log("Name:", this.name, "Color:", this.color, "Age:", this.age); // What will this print? ("Name: Gus Color: gray Age: 15")
+        var nestedFunction = function() {
+          console.log("inside nestedFunction()");
+          console.log(this); // What will this print? ("Window")
+          console.log("Name:", this.name, "Color:", this.color, "Age:", this.age); // What will this print? ("Name:  Color: undefined Age: undefined")
+        };
+        nestedFunction();
+      }
+    };
+    cat.printInfo(); // calls the printInfo function. Which subsequently calls the nestedFunction()
+```
 [Back to Home](/README.md)
