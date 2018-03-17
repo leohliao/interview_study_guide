@@ -38,24 +38,23 @@ function initialize(answer) {
 // Prompt for user input
 function getUserInput() {
     rl = readline.createInterface(process.stdin, process.stdout),
-        prefix = 'Hangman Game Guess> ';
-
+    prefix = 'Hangman Game Guess> ';
     rl.on('line', function (line) {
         var firstLetter = line.trim().slice(0, 1).toLowerCase();
         if (!gameOver) {
             if (hangmanHash[firstLetter]) {
                 parseUserInput(firstLetter);
                 staticBoard(firstLetter);
-                
+                checkGameStatus();
             } else {
                 chances--;
                 staticBoard(firstLetter);
+                checkGameStatus();
             }
         } else {
             console.log("Game Over!");
             rl.close();
         }
-
         rl.setPrompt(prefix, prefix.length);
         rl.prompt();
     }).on('close', function () {
@@ -76,19 +75,20 @@ function parseUserInput(letter) {
 
 // Show my current stats
 function staticBoard(currentInput) {
+    var output = hangmanOutput.indexOf("_") ? hangmanOutput.join(" ") : hangmanOutput.join(" ");
+    checkGameStatus();
     console.log("Your Current Input: " + currentInput);
     console.log("-----------------------------------");
     console.log("Chances left: " + chances);
-    console.log("Current Result: " + hangmanOutput.join(" "));
-    console.log((hangmanOutput.join(" ") === hangmanAnswer));
+    console.log("Current Result: " + output);
+    console.log();
     console.log("-----------------------------------");
     console.log(" ");
     console.log(" ");
-    checkGameStatus();
 }
 
 function checkGameStatus(){
-    if (chances === 0) {
+    if (chances === 0 || (hangmanOutput.join("") === hangmanAnswer)) {
         gameOver = true;
     } 
 }
