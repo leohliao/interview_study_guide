@@ -56,9 +56,9 @@
 
     [See MDN Proto](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto)
  
-<div id="answer-04"   ></div>
 
-### Explain how prototypal inheritance works?
+
+### <div id="answer-04">Explain how prototypal inheritance works?</div>
   - **A prototype is a working object instance and objects inherit directly from other objects.**
   - Instances allows for easy selective inheritance and a flat [[Prototype]] delegation hierarchy. 
   - Class taxonomies are not an automatic side-effect of prototypal OO.
@@ -67,17 +67,13 @@
   - __proto__ : when an object is created in JAvaScript, JavaScript Engine adds a __proto__ property to the newly created object; it points to the prototype object of the constructor function. 
   [See TianyuDuan: Prototypal Inheritance](https://github.com/tianyuduan/JS30/blob/master/PrototypalInheritance/prototype.md)
  
-<div id="answer-05"   ></div>
-
-### How to merge two JavaScript Objects?
+### <div id="answer-05">How to merge two JavaScript Objects?</div>
   - Use `Object.assign({}, obj)`
   - if you choose to use `merge`, remember to mention that you need to import from `lodash`.
  
 [Back to JavacScript Interview Questions](/interview-questions/questions/javascript-interview-questions.md)
 
-<div id="answer-06"></div>
-
-### How to test whether a value is NaN?
+### <div id="answer-06">How to test whether a value is NaN?</div>
   - `isNaN(value)`: method to check to see if a value is NaN. 
   ```javascript
     isNaN('abcd');  //  true
@@ -106,9 +102,7 @@
  
 [A Drip of JavaScript: The Problem with Testing for NaN in JavaScript](http://adripofjavascript.com/blog/drips/the-problem-with-testing-for-nan-in-javascript.html)
 
-<div id="answer-07"></div>
-
-### Explain event delegation:
+### <div id="answer-07">Explain event delegation.</div>
   - **Event Delegation** is a behavior where when you select an element, 
   additional elements under similar hierarchy will also be selected. 
   - **Capturing** and **Bubbling** allow to implement one of most powerful event handling patterns called event delegation.
@@ -117,21 +111,15 @@
 
   [See JavaScript Info: Event Delegation](https://javascript.info/event-delegation)
 
-<div id="answer-08"   ></div>
-
-### Explain how `this` works in JavaScript?
+### <div id="answer-08">Explain how `this` works in JavaScript?</div>
   - The value of `this` is determined by how a function is called. It CANNOT be set by assignment during execution, and it may be different each time the function is called.
   - `This` works slightly differently during `strict` mode and `non-strict` mode.
 
-<div id="answer-09"   ></div>
-
-### What do you think of AMD vs CommonJS?
+### <div id="answer-09">What do you think of AMD vs CommonJS?</div>
   - `AMD`: Asynchronous Module Definition - is another specification for modules. For example: ReS. It is generally more used in client-side(in-browser) JavaScript development due to this. 
   [JavaScript Module Systems Showdown](https://auth0.com/blog/javascript-module-systems-showdown/)
  
-<div id="answer-10"   ></div>
-
-### Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
+### <div id="answer-10">Explain why the following doesn't work as an IIFE: `function foo(){ }();`.</div>
   - `IIFE` - **Immediately Invoked Function Expressions**
   - This reduces a lexical scope using JavaScript's function scoping. 
   - This example doesn't work because it needs a wrapper. 
@@ -139,9 +127,7 @@
   - The JavaScript parser reads `function foo(){ }(); `as `function foo(){ }` and `()`;, 
   where the former is a function declaration and the latter (a pair of brackets) is an attempt at calling a function but there is no name specified, hence it throws Uncaught SyntaxError: Unexpected token.
   
-<div id="answer-11"   ></div>
-
-### What needs to be changed to properly make it an IIFE?
+### <div id="answer-11">What needs to be changed to properly make it an IIFE?</div>
   - Here are two ways to fix it that involves adding more brackets: `(function foo(){ })()` and `(function foo(){ }())`. These functions are not exposed in the global scope and you can even omit its name if you do not need to reference itself within the body.
   - Proper way to make it IIFE is:
   ```javascript
@@ -151,17 +137,12 @@
   ```javascript
   (function foo(){ }());
   ```
-
-<div id="answer-12"   ></div>
-
-### What is the difference between a variable that is: `null`, `undefined` or `undeclared`?
+### <div id="answer-12">What is the difference between a variable that is: `null`, `undefined` or `undeclared`?</div>
   - `null` - is primitive type; can be assigned to variable; has no value.
   - `undefined` - variable is declared, but has yet to be assigned a value. 
   - `undeclared` - variable is not declared at all --> will return Reference error
  
-<div id="answer-13"   ></div>
-
-### How would you go about checking for any of these states?
+### <div id="answer-13">How would you go about checking for any of these states?</div>
 - Although there are many approaches to check for these states. I would say the key thing is to be able to console.log the output at certain point in your code. The following offer several good ways: 
 ```javascript
 var foo;
@@ -231,7 +212,7 @@ you can use a function as a callback if you do not need to repeatedly use the sa
     }
   ```
  
-<div id="answer-17"   ></div>
+<div id="answer-17"></div>
 
 ### How do you organize your code? (module pattern, classical inheritance?)
 ** Check the answers one more time **
