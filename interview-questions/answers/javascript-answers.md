@@ -439,16 +439,16 @@ function fizz() {
   [Medium: Mutable and Mutable Side of Python](https://medium.com/@meghamohan/mutable-and-immutable-side-of-python-c2145cf72747)
 
 ### <div id="answer-48">What is an example of an immutable object in JavaScript?</div>
-  - String and Number
- 
-
+  - `String` and `Number` are both immutable. 
+  - **NOTE** Only Objects and Array are mutable, not primitive values.
+  [MDN: Mutable](https://developer.mozilla.org/en-US/docs/Glossary/Mutable)
 
 ### <div id="answer-49">What are the pros and cons of immutability?</div>
- 
+  - Empty
 
 
 ### <div id="answer-50">How can you achieve immutability in your own code?</div>
-
+  - Empty
 
 
 ### <div id="answer-51">Explain the difference between synchronous and asynchronous functions.</div>
@@ -458,13 +458,14 @@ function fizz() {
 
 
 ### <div id="answer-52">What is event loop?</div>
+  - Empty 
 
 ### What is the difference between call stack and task queue?
- 
+  - Empty
 
 
 ### <div id="answer-53">Explain the differences on the usage of `foo` between `function foo() {}` and </div>`var foo = function() {}`
- 
+  - Empty
 
 
 ### <div id="answer-54">What are the differences between variables created using `let`, `var` or `const`?</div>
