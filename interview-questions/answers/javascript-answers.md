@@ -151,9 +151,7 @@ console.log(foo === undefined); // true
 console.log(typeof foo === 'undefined'); // true
 ```
  
-<div id="answer-14"   ></div>
-
-### What is a closure, and how/why would you use one?
+### <div id="answer-14">What is a closure, and how/why would you use one?</div>
 - Closure determines whether a function(inner) has access to certain variables in the outer one.
 - Closure has access to variables in three scopes:
   - 1. variable of its own scope
@@ -187,9 +185,9 @@ console.log(typeof foo === 'undefined'); // true
   globalVar = xyz
   ```
  
-<div id="answer-15"   ></div>
 
-### Can you describe the main difference between a `forEach` loop and a `.map()` loop and why you would pick one versus the other?
+
+### <div id="answer-15">Can you describe the main difference between a `forEach` loop and a `.map()` loop and why you would pick one versus the other?</div>
 - They are both iteration methods.
 - `forEach()` - executes a provided function once for each array element.
 - `forEach()` - may be preferable when you’re not trying to change the data in your array, but instead want to just do something with it — like saving it to a database or logging it out:
@@ -198,9 +196,9 @@ console.log(typeof foo === 'undefined'); // true
 
 - [JavaScript — Map vs. ForEach](https://codeburst.io/javascript-map-vs-foreach-f38111822c0f)
  
-<div id="answer-16"   ></div>
 
-### What's a typical use case for anonymous functions?
+
+### <div id="answer-16">What's a typical use case for anonymous functions?</div>
 ** Check the answers one more time **
 - Generally speaking, an anonymous function is not a preferred practice in your coding.
 However, a typical use case of anonymous function is callback, 
@@ -212,9 +210,9 @@ you can use a function as a callback if you do not need to repeatedly use the sa
     }
   ```
  
-<div id="answer-17"></div>
 
-### How do you organize your code? (module pattern, classical inheritance?)
+
+### <div id="answer-17">How do you organize your code? (module pattern, classical inheritance?)</div>
 ** Check the answers one more time **
 ** I feel like this is a good place to also talk about programing paradigm. **
 - From an OOP (Object Oriented Programming perspective), it is recommend that you group similar functions of codes together as a group, which means this can become a module, then the way to access each module is by exporting it, 
@@ -223,30 +221,25 @@ and importing it if you need to access them from another function.
 however, since in JavaScript you can also use prototype inheritance,
 it is a better practice to use prototype inheritance over class so that you won't modified the original constructor.
  
-<div id="answer-18"   ></div>
 
-### What's the difference between host objects and native objects?
+### <div id="answer-18">What's the difference between host objects and native objects?</div>
 - `Host objects` - objects supplied by the host environment to complete the execution environment. Ex: (assuming browser environment) window, document, location, etc.
 - `Native objects` - standard built-in objects provided by Javascript. Ex: Date, Math, Object (constructor)
 
-<div id="answer-19"   ></div>
-
-### Difference between: `function Person(){}`, `var person = Person()`, and `var person = new Person()`?
+### <div id="answer-19">Difference between: `function Person(){}`, `var person = Person()`, and `var person = new Person()`? </div>
 - They are all ways to declare a function.
 - `function Person(){}` - function declaration, function is declared but is not executed
 - `var person = Person()` - function expression, the variable `var person` has been defined and contains a value reference to a Person function. Javascript expressions always return a value.
 - `var person = new Person()` - function constructor, when we add the keyword 'new', we are instantiating a new object of the Person class constructor.
  
-<div id="answer-20"   ></div>
-
-### What's the difference between `.call` and `.apply`?
+### <div id="answer-20">What's the difference between `.call` and `.apply`?</div>
 They differ in how they handle function arguments:
 - `.call` - requires the arguments to be listed individually.
 - `.apply` - allows you to invoke the function with `arguments` array as the second argument.
  
-<div id="answer-21"   ></div>
 
-### Explain `Function.prototype.bind`.
+
+### <div id="answer-21">Explain `Function.prototype.bind`.</div>
 - This is same as explaining what bind() is. 
 **From MDN:**
 The bind() method creates a new function that, when called, has its `this` keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called. **
@@ -270,33 +263,24 @@ jenn.greeting(); //'Hello, my name is Jenn'
 
 [MDN Global Objects](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_objects/Function/bind)
  
- 
-<div id="answer-22"   ></div>
-
-### When would you use `document.write()`?
+### <div id="answer-22">When would you use `document.write()`?</div>
 `document.write` -  is executed after the page has been loaded. It will clear the contents of the whole page and rewrite them with something you define.
 - It was an old way of adding elements to a webpage; it only works while the page is loading
 - Used when including third party code (ads or Google Analytics)
 - Because there's no DOM modification, it works fast. If a lot of text needs to be added into HTML dynamically and the page is still loading, it may help to use `document.write()`
  
-<div id="answer-23"   ></div>
-
-### What's the difference between feature detection, feature inference, and using the UA string?
+### <div id="answer-23">What's the difference between feature detection, feature inference, and using the UA string?</div>
 - These are three ways to determine if a particular web technology feature exists in a user's browser or environment.
 - `Feature detection` - a way of determining if a feature exists in the browser
 - `Feature inference` - a feature is determined to exist and the next web technology feature to be implemented is assumed to exist as well.
 - `UA String` - User Agent String; a string of text of data that each browser sends and can be accessed via navigator.userAgent. This string text contains information about the browser environment that is being targeted.
  
-<div id="answer-24"   ></div>
-
-### Explain Ajax in as much detail as possible.
+### <div id="answer-24">Explain Ajax in as much detail as possible.</div>
 - Asynchronous Javascript + XML
 - The use of XMLHttpRequest object to communicate with servers; information can be sent in different formats such as JSON, XML, HTML.
 - Its asynchronous nature allows it to communicate with server, exchange data, and update the page without refreshing the page.
- 
-<div id="answer-25"   ></div>
 
-### What are the advantages and disadvantages of using Ajax?
+### <div id="answer-25">What are the advantages and disadvantages of using Ajax?</div>
 **Advantages**:
 - Reduces traffic between the client and the server
 - Response time is faster, increasing performance and speed (optimization)
@@ -308,57 +292,54 @@ jenn.greeting(); //'Hello, my name is Jenn'
 - Browser incompatibility because AJAX depends on Javascript which is implemented differently across different browsers
 - Pages that are dynamically created using AJAX request do not automatically register with the browser's history, so hitting the back button may not return to an earlier state of the page.
 
-<div id="answer-26"   ></div>
-
-### Explain how JSONP works (and how it's not really Ajax).
+### <div id="answer-26">Explain how JSONP works (and how it's not really Ajax).</div>
 - JSON with Padding: a method commonly used to bypass the cross-domain policies in web browsers.
 - AJAX requests are not allowed to a web page that is perceived to be on a server different by the browser.
  
-<div id="answer-27"   ></div>
 
-### Have you ever used JavaScript templating?mk
+### <div id="answer-27">Have you ever used JavaScript templating?</div>
   #### If so, what libraries have you used?
 - Javascript templating is a fast and efficient technique to render client-side templates with Javascript using a JSON data source. The template is HTML markup, peppered with tags that will either insert variables or run programming logic.
 
-<div id="answer-28"   ></div>
 
-### Explain "hoisting".
+
+### <div id="answer-28">Explain "hoisting".</div>
 - A variable can be used before is has been declared.
 - Variables defined while be moved to the top of the file. It will be checked to see if the variable is defined locally.
  
-<div id="answer-29"   ></div>
 
-### Describe event bubbling.
+
+### <div id="answer-29">Describe event bubbling.</div>
 - When an event occurs on an element, it will run the handlers on it, and then on its parents (going from inner to outer).
  
-<div id="answer-30"   ></div>
 
-### What's the difference between an "attribute" and a "property"?
+
+### <div id="answer-30">What's the difference between an "attribute" and a "property"?</div>
 - HTML representation of a DOM element has attributes while those attributes in Javascript are represented as object properties.
  
-<div id="answer-31"   ></div>
 
-### Why is extending built-in JavaScript objects not a good idea?
+
+### <div id="answer-31">Why is extending built-in JavaScript objects not a good idea?</div>
 - A browser may implement your version of the method, silently overriding.
  
-<div id="answer-32"   ></div>
 
-### Difference between document load event and document DOMContentLoaded event?
+
+### <div id="answer-32">Difference between document load event and document DOMContentLoaded event?</div>
 - DOMContentLoaded is fired when the document has been completely loaded and parsed, not waiting for assets like stylesheets and images.
 - Load waits for a fully-loaded page
  
-<div id="answer-33"   ></div>
 
-### What is the difference between `==` and `===`?
+
+### <div id="answer-33">What is the difference between `==` and `===`?</div>
 - `==` will not check for types (tolerant) vs `===` checks for type and value
  
-<div id="answer-34"   ></div>
 
-### Explain the same-origin policy with regards to JavaScript.
+
+### <div id="answer-34">Explain the same-origin policy with regards to JavaScript.</div>
  
-<div id="answer-35"   ></div>
 
-### Make this work:
+
+### <div id="answer-35">Make this work:</div>
 ```javascript
 duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
     function duplicate(arr) {
@@ -366,14 +347,14 @@ duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
     }
 ```
 
-<div id="answer-36"   ></div>
 
-### Why is it called a Ternary operator, what does the word "Ternary" indicate?
+
+### <div id="answer-36">Why is it called a Ternary operator, what does the word "Ternary" indicate?</div>
 - The ternary operator takes THREE operands (arguments)
  
-<div id="answer-37"   ></div>
 
-### What is `"use strict";`? what are the advantages and disadvantages to using it?
+
+### <div id="answer-37">What is `"use strict";`? what are the advantages and disadvantages to using it?</div>
 - The purpose is to indicate that the code should be executed in 'strict mode'.
   **Advantages**
 - Eliminates some Javascript silent errors by changing them to throw errors.
@@ -382,9 +363,9 @@ duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
   **Disadvantages**
 - Browsers not supporting strict mode will run strict mode with different behaviro.
  
-<div id="answer-38"   ></div>
 
-### Create a for loop that iterates up to `100` while outputting **"fizz"** at multiples of `3`, **"buzz"** at multiples of `5` and **"fizzbuzz"** at multiples of `3` and `5`
+
+### <div id="answer-38">Create a for loop that iterates up to `100` while outputting **"fizz"** at </div>multiples of `3`, **"buzz"** at multiples of `5` and **"fizzbuzz"** at multiples of `3` and `5`
 ```javascript
 function fizz() {
   for (let i=1; i++; i < 100) {
@@ -397,99 +378,99 @@ function fizz() {
 }
 ```
  
-<div id="answer-39"   ></div>
 
-### Why is it, in general, a good idea to leave the global scope of a website as-is and never touch it?
+
+### <div id="answer-39">Why is it, in general, a good idea to leave the global scope of a website as-is </div>and never touch it?
 - It is harder to read the code and reason about it when variables seem to appear out of thin air
 - Anyone can update a global variable from any point in the program at any time
 - Javascript defaults all variables to the global scope unless they are explicitly defined.
 
  
-<div id="answer-40"   ></div>
 
-### Why would you use something like the `load` event? Does this event have disadvantages? Do you know any alternatives, and why would you use those?
+
+### <div id="answer-40">Why would you use something like the `load` event? Does this event have </div>disadvantages? Do you know any alternatives, and why would you use those?
 - Useful when you want all content to be finished so if we need to work image of unknown sizes but can be really slow.
 - `$(document).ready()`: fires when HTML has finished loading. We can only interact with the DOM once the HTML is fully loaded. However it is just for jQuery, so has to be included on all of your site.
 - `DOMContentLoaded`: fired when document (DOM hierarchy) is fully loaded and parsed, without waiting for stylesheets and images. This is much faster than the `load` event 
  
-<div id="answer-41"   ></div>
 
-### Explain what a single page app is and how to make one SEO-friendly.
+
+### <div id="answer-41">Explain what a single page app is and how to make one SEO-friendly.</div>
 - Single page applications reduce the amount of page refreshes -- heavier use of AJAX to get data loaded. The process of rendering page happens mostly on the client-side.
 - Careful thought must be put into search engine optimization so content is discoverable by searh engines/social media websites.
 - One solution is to use Fallback pages which are HTML pages that are displayed if the requesting resource does not parse Javascript.
 - Creating a custom 'share' UX elements and functionality including sharable URLs
 - Using pushState: HTML5 includes the ability to manage the path of the URL as seen in the browser
  
-<div id="answer-42"   ></div>
 
-### What is the extent of your experience with Promises and/or their polyfills?
+
+### <div id="answer-42">What is the extent of your experience with Promises and/or their polyfills?</div>
 - Promises are objects which represent the eventual successful complete or failure of an asynchronous operation and its resulting value.
 - A promise has three different states: fulfilled, rejected, or pending.
 - Instead of passing a callback to the promise, we chain a callback using `.then()` to the promise.
  
-<div id="answer-43"   ></div>
 
-### What are the pros and cons of using Promises instead of callbacks?
+
+### <div id="answer-43">What are the pros and cons of using Promises instead of callbacks?</div>
 - Pros: functions can bee added anywhere in the code, subject only to the promise being within scope. functions added after a settled promise will fire immediately.
 - Cons: Promises always require at least one more iteration of the event loop to resolve.
  
-<div id="answer-44"   ></div>
 
-### What are some of the advantages/disadvantages of writing JavaScript code in a language that compiles to JavaScript?
+
+### <div id="answer-44">What are some of the advantages/disadvantages of writing JavaScript code in a </div>language that compiles to JavaScript?
  
-<div id="answer-45"   ></div>
 
-### What tools and techniques do you use debugging JavaScript code?
+
+### <div id="answer-45">What tools and techniques do you use debugging JavaScript code?</div>
 - Browser Developer Tools -- check for any error messages/console.log()
 - breakpoints - using a debugger, current context of the current scope is available
 - Avoid logging reference types - the values of primitive types inside the logged reference may change. 
  
-<div id="answer-46"   ></div>
 
-### What language constructions do you use for iterating over object properties and array items?
+
+### <div id="answer-46">What language constructions do you use for iterating over object properties and </div>array items?
 - for loops
 - array methods like `Array.prototype.forEach()`
 - listing property keys: combine `Object.keys()` or `Object.getOwnPropertyNames()` with `forEach()`
  
-<div id="answer-47"   ></div>
 
-### Explain the difference between mutable and immutable objects.
+
+### <div id="answer-47">Explain the difference between mutable and immutable objects.</div>
 - Mutable object is an object whose state can be modified after it is created - only objects and arrays are mutable in JS.
 - Immutables are objects whose state cannot be changed once the object has been created - Strings and Numbers (Results are allocated to a new block of memory)
  
-<div id="answer-48"   ></div>
 
-### What is an example of an immutable object in JavaScript?
+
+### <div id="answer-48">What is an example of an immutable object in JavaScript?</div>
   - String and Number
  
-<div id="answer-49"   ></div>
 
-### What are the pros and cons of immutability?
+
+### <div id="answer-49">What are the pros and cons of immutability?</div>
  
-<div id="answer-50"   ></div>
 
-### How can you achieve immutability in your own code?
 
-<div id="answer-51"   ></div>
+### <div id="answer-50">How can you achieve immutability in your own code?</div>
 
-### Explain the difference between synchronous and asynchronous functions.
+
+
+### <div id="answer-51">Explain the difference between synchronous and asynchronous functions.</div>
 - Synchronous functions will be executed in the order they are called.
 - Asynchronous functions do not wait, so other events can occur in parallel.
  
-<div id="answer-52"   ></div>
 
-### What is event loop?
+
+### <div id="answer-52">What is event loop?</div>
 
 ### What is the difference between call stack and task queue?
  
-<div id="answer-53"   ></div>
 
-### Explain the differences on the usage of `foo` between `function foo() {}` and `var foo = function() {}`
+
+### <div id="answer-53">Explain the differences on the usage of `foo` between `function foo() {}` and </div>`var foo = function() {}`
  
-<div id="answer-54"   ></div>
 
-### What are the differences between variables created using `let`, `var` or `const`?
+
+### <div id="answer-54">What are the differences between variables created using `let`, `var` or `const`?</div>
   **The biggest difference is the scope of the variable created using each keyword**
   * `var`: 
         - Allows the variable to be hoisted.
@@ -533,29 +514,29 @@ function fizz() {
 
  
  
-<div id="answer-55"   ></div>
 
-### What are the differences between ES6 class and ES5 function constructors?
+
+### <div id="answer-55">What are the differences between ES6 class and ES5 function constructors?</div>
 
  
  
-<div id="answer-56"   ></div>
 
-### Can you offer a use case for the new arrow `=>` function syntax? How does this new syntax differ from other functions?
+
+### <div id="answer-56">Can you offer a use case for the new arrow `=>` function syntax? How does this </div>new syntax differ from other functions?
 - if you use `=>` (Fat Arrow), you do not have to worry about binding.
 
 
  
  
-<div id="answer-57"   ></div>
 
-### What advantage is there for using the arrow syntax for a method in a constructor?
+
+### <div id="answer-57">What advantage is there for using the arrow syntax for a method in a constructor?</div>
 
  
  
-<div id="answer-58"   ></div>
 
-### What is the definition of a higher-order function?
+
+### <div id="answer-58">What is the definition of a higher-order function?</div>
 - A `HIGHER ORDER FUNCTION` is a function that takes a function as an argument, or returns a function.
 
 
@@ -563,21 +544,21 @@ function fizz() {
 
  
  
-<div id="answer-59"   ></div>
 
-### Can you give an example for destructuring an object or an array?
 
- 
- 
-<div id="answer-60"   ></div>
-
-### ES6 Template Literals offer a lot of flexibility in generating strings, can you give an example?
+### <div id="answer-59">Can you give an example for destructuring an object or an array?</div>
 
  
  
-<div id="answer-61"   ></div>
 
-### Can you give an example of a curry function and why this syntax offers an advantage?
+
+### <div id="answer-60">ES6 Template Literals offer a lot of flexibility in generating strings, can you </div>give an example?
+
+ 
+ 
+
+
+### <div id="answer-61">Can you give an example of a curry function and why this syntax offers an </div>advantage?
   ```javascript
   // using spread
   Function.prototype.curry = function (numArgs){
@@ -603,9 +584,9 @@ function fizz() {
   ```
  
  
-<div id="answer-62"   ></div>
 
-### What are the benefits of using `spread syntax` and how is it different from `rest syntax`?
+
+### <div id="answer-62">What are the benefits of using `spread syntax` and how is it different from `rest </div>syntax`?
 - `spread syntax` - offers a quicker and easier way to **create**, **combine** arrays.
   ```javascript
     let toBeSpread = ["one", "two", "three"]; // ["one", "two", "three"]
@@ -619,16 +600,16 @@ function fizz() {
 ```
  
  
-<div id="answer-63"   ></div>
 
-### How can you share code between files?
+
+### <div id="answer-63">How can you share code between files?</div>
 - You can use create a module to wrap the codes into one object, and then import the modules from another file.
 
  
  
-<div id="answer-64"   ></div>
 
-### Why you might want to create static class members?
+
+### <div id="answer-64">Why you might want to create static class members?</div>
 - `static method` - a method that only exists on the class, not on the child objects
 - `instance method` - a method will be available for all object 
   ```javascript
@@ -677,11 +658,7 @@ function fizz() {
   ```
   [Resource: Static and Instance Method in JavaScript](https://abdulapopoola.com/2013/03/30/static-and-instance-methods-in-javascript/)
 
- 
- 
-<div id="answer-65"></div>
-
-### What is the difference between Function and Method?
+### <div id="answer-65">What is the difference between Function and Method?</div>
   - Both functions and methods are functions in JavaScript.
   - In javascript every function is an object. An object is a collection of key:value pairs. If a value is a primitive (integer, string, boolean), or another object, the value is considered a property. If a value is a function, it is called a 'method'.
   - `Function` (not associate with object):
@@ -700,8 +677,6 @@ function fizz() {
     };
     ```
   [Stackoverflow: Method vs Functions, and other questions](https://stackoverflow.com/questions/15285293/method-vs-functions-and-other-questions)
-
-
 
 ### <div id="js-a-66">What is difference between `parseInt()` and `Number()` ?</div>
   - `parseInt()` will parses up to the first non-digit numbers inside string.
