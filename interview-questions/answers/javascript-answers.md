@@ -433,13 +433,10 @@ function fizz() {
 - array methods like `Array.prototype.forEach()`
 - listing property keys: combine `Object.keys()` or `Object.getOwnPropertyNames()` with `forEach()`
  
-
-
 ### <div id="answer-47">Explain the difference between mutable and immutable objects.</div>
 - Mutable object is an object whose state can be modified after it is created - only objects and arrays are mutable in JS.
 - Immutables are objects whose state cannot be changed once the object has been created - Strings and Numbers (Results are allocated to a new block of memory)
- 
-
+  [Medium: Mutable and Mutable Side of Python](https://medium.com/@meghamohan/mutable-and-immutable-side-of-python-c2145cf72747)
 
 ### <div id="answer-48">What is an example of an immutable object in JavaScript?</div>
   - String and Number
