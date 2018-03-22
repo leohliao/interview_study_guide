@@ -578,8 +578,6 @@ function fizz() {
     console.log(instances); // { nobita: 2, doraemon: 3, shizuka: 3, suneo: 2, takeshi: 2, uesugi: 2 }
   ```
 
-
-
 [Medium : Higher Order Functions (Composing Software)](https://medium.com/javascript-scene/higher-order-functions-composing-software-5365cf2cbe99)
 
 ### <div id="answer-59">Can you give an example for destructuring an object or an array?</div>
@@ -733,4 +731,5 @@ function fizz() {
   
   [Medium: Objects in JS: object.assign deep copy](https://medium.com/@tkssharma/objects-in-javascript-object-assign-deep-copy-64106c9aefab)
 
+# End of Page 
 [Back to JavacScript Interview Questions](/interviewQuestions/javascript-interview-questions.md)
