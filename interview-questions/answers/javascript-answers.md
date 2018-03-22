@@ -565,6 +565,18 @@ function fizz() {
   ```
 #### Array.prototype.forEach()
 #### Array.prototype.reduce()
+  ```javascript
+    const doraemonCharacters = ['nobita', 'doraemon', 'shizuka', 'shizuka', 'suneo', 'takeshi', 'nobita', 'uesugi', 'suneo', 'takeshi', 'doraemon', 'uesugi', 'doraemon', 'shizuka' ];
+    const instances = doraemonCharacters.reduce((obj, item) => {
+      if (!obj[item]) {
+        obj[item] = 0;
+      }
+        obj[item]++;
+        return obj;
+    }, {});
+
+    console.log(instances);
+  ```
 
 
 
