@@ -575,7 +575,7 @@ function fizz() {
         return obj;
     }, {});
 
-    console.log(instances);
+    console.log(instances); // { nobita: 2, doraemon: 3, shizuka: 3, suneo: 2, takeshi: 2, uesugi: 2 }
   ```
 
 
