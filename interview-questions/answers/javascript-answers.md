@@ -539,17 +539,32 @@ function fizz() {
 - `Higher-order function` is mean to perform repeatable operation on each items of the given data.
 - `Higher-order function` examples would be `map`, `forEarch`, `filter`, and `reduce` for operating function on an array and `Function.prototype.bind` for operating function from another function. 
 
-#### Array.prototype.map()
-  ```javacsript
+#### Array.prototype.map() (Returns a new array)
+  ```javascript
     const gundamNames = ["Wing", "TurnA", "X", "Freedom", "OO"];
     const addStringToEach = function (array) {
-      return array.map(name => name += " Gundam"); // returns a new array
+      return array.map(name => name += " Gundam"); 
     };
 
-    addStringToEach(gundamNames) // ['Wing Gundam', 'TurnA Gundam', 'X Gundam', 'Freedom Gundam', '00 Gundam']
+    console.log(addStringToEach(gundamNames)); // ['Wing Gundam', 'TurnA Gundam', 'X Gundam', 'Freedom Gundam', '00 Gundam']
   ```
 
 #### Array.prototype.filter()
+  ```javascript
+    const gundams = [
+      {year: 1996, name: "Gundam Wing"},
+      {year: 1994, name: "Gundam X"},
+      {year: 2005, name: "Gundam 00"},
+      {year: 2000, name: "Gundam Seed"},
+      {year: 2001, name: "Gundam Seed Destiny"},
+      {year: 2015, name: "Gundam Blood Orphan"}
+    ];
+    const gundamBefore90s = gundams.filter(gundam => gundam.year <= 2000)
+
+    console.log(gundamBefore90s); // [{ year: 1996, name: 'Gundam Wing' }, {year: 1994, name: "Gundam X"}, {year: 2000, name: "Gundam Seed"}]
+  ```
+#### Array.prototype.forEach()
+#### Array.prototype.reduce()
 
 
 
