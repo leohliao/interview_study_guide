@@ -535,14 +535,25 @@ function fizz() {
 
 
 ### <div id="answer-58">What is the definition of a higher-order function?</div>
-- A `HIGHER ORDER FUNCTION` is a function that takes a function as an argument, or returns a function.
+- `Higher-order function` is any function that takes a function or more as arguments, which it uses to operate on some data, and/or returns a function.
+- `Higher-order function` is mean to perform repeatable operation on each items of the given data.
+- `Higher-order function` examples would be `map`, `forEarch`, `filter`, and `reduce` for operating function on an array and `Function.prototype.bind` for operating function from another function. 
+
+#### Array.prototype.map()
+  ```javacsript
+    const gundamNames = ["Wing", "TurnA", "X", "Freedom", "OO"];
+    const addStringToEach = function (array) {
+      return array.map(name => name += " Gundam"); // returns a new array
+    };
+
+    addStringToEach(gundamNames) // ['Wing Gundam', 'TurnA Gundam', 'X Gundam', 'Freedom Gundam', '00 Gundam']
+  ```
+
+#### Array.prototype.filter()
+
 
 
 [Medium : Higher Order Functions (Composing Software)](https://medium.com/javascript-scene/higher-order-functions-composing-software-5365cf2cbe99)
-
- 
- 
-
 
 ### <div id="answer-59">Can you give an example for destructuring an object or an array?</div>
 
