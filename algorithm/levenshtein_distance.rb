@@ -1,14 +1,14 @@
 def levenshtein_distance(string_i, string_ii)
-  m = string_i.length
-  n = string_ii.length
-  return m if n == 0
-  return n if m == 0
-  d = Array.new(m+1) {Array.new(n+1)}
+  length_i = string_i.length
+  length_ii = string_ii.length
+  return length_i if length_ii == 0
+  return n if length_i == 0
+  d = Array.new(length_i+1) {Array.new(length_ii+1)}
 
-  (0..m).each {|i| d[i][0] = i}
-  (0..n).each {|j| d[0][j] = j}
-  (1..n).each do |j|
-    (1..m).each do |i|
+  (0..length_i).each {|i| d[i][0] = i}
+  (0..length_ii).each {|j| d[0][j] = j}
+  (1..length_ii).each do |j|
+    (1..length_i).each do |i|
       d[i][j] = if string_i[i-1] == string_ii[j-1]  # adjust index into string
                   d[i-1][j-1]       # no operation required
                 else
@@ -19,16 +19,16 @@ def levenshtein_distance(string_i, string_ii)
                 end
     end
   end
-  d[m][n]
+  d[length_i][length_ii]
 end
 
-[ ['fire','water'], ['amazing','horse'], ["bamerindos", "giromba"] ].each do |s,t|
-  puts "levenshtein_distance('#{s}', '#{t}') = #{levenshtein_distance(s, t)}"
-end
+# [ ['fire','water'], ['amazing','horse'], ["bamerindos", "giromba"] ].each do |s,t|
+#   puts "levenshtein_distance('#{s}', '#{t}') = #{levenshtein_distance(s, t)}"
+# end
 
-levenshtein_distance('fire', 'water') == 4
-levenshtein_distance('amazing', 'horse') == 7
-levenshtein_distance('bamerindos', 'giromba') == 9
+puts levenshtein_distance('fire', 'water') == 4
+puts levenshtein_distance('amazing', 'horse') == 7
+puts levenshtein_distance('bamerindos', 'giromba') == 9
 
 ## Source Code : http://rosettacode.org/wiki/Levenshtein_distance#Ruby
 

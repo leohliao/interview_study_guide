@@ -82,6 +82,7 @@
   ```
   
   - Since NaN is the only JavaScript value that is treated as unequal to itself, you can always test if a value is NaN by checking it for equality to itself:
+  
   ```javascript
     var a = NaN;
     a !== a; // true 
