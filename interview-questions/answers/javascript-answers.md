@@ -59,7 +59,7 @@
 
 
 ### <div id="answer-04">Explain how prototypal inheritance works?</div>
-  - **A prototype is a working object instance and objects inherit directly from other objects.**
+  - A `prototype` is a **working object instance** and objects inherit directly from other objects.
   - Instances allows for easy selective inheritance and a flat [[Prototype]] delegation hierarchy. 
   - Class taxonomies are not an automatic side-effect of prototypal OO.
   - JS Object inherit their properties and methods from their prototype.
@@ -115,6 +115,40 @@
 ### <div id="answer-08">Explain how `this` works in JavaScript?</div>
   - The value of `this` is determined by how a function is called. It CANNOT be set by assignment during execution, and it may be different each time the function is called.
   - `This` works slightly differently during `strict` mode and `non-strict` mode.
+  ```javascript
+  var outside = function() {
+        console.log(this); // returns window object
+      };
+      outside();
+
+      $("#button").on("click", function() {
+        console.log(this); // #button 
+      });
+
+      var bob = {
+        firstName: "Bob",
+        lastName: "Smith",
+        whoIsBob: function() {
+          console.log(this);
+        },
+        fullName: function() {
+          console.log(this.firstName + " " + this.lastName); // "Bob Smith"
+        }
+      };
+
+      bob.whoIsBob(); // bob (object)
+
+      bob.fullName(); // "Bob Smith"
+
+      var firstName = "Keanu";  // window.firstName is Keanu
+      var lastName = "Reeves"; // window.lastName is Reeves
+      
+      var theChosenOne = function() {
+        console.log(this.firstName + " " + this.lastName); // *this* is the window here
+      };
+
+      theChosenOne(); // "Keanu Reeves"
+  ```
 
 ### <div id="answer-09">What do you think of AMD vs CommonJS?</div>
   - `AMD`: Asynchronous Module Definition - is another specification for modules. For example: ReS. It is generally more used in client-side(in-browser) JavaScript development due to this. 
