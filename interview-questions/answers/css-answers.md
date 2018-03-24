@@ -63,16 +63,7 @@
 * Have you ever worked with retina graphics? If so, when and what techniques did you use?
 * Is there any reason you'd want to use `translate()` instead of *absolute positioning*, or vice-versa? And why?
 
-What is CSS selector specificity and how does it work?
-- patterns used to select the element(s) you want to style.
-* What's the difference between "resetting" and "normalizing" CSS? Which would you choose, and why?
 
-Describe Floats and how they work.
-- Float is a CSS positioning property. To understand its purpose and origin, we can look to print design. In a print layout, images may be set into the page such that text wraps around them as needed. This is commonly and appropriately called "text wrap".
-
-* Describe z-index and how stacking context is formed.
-* Describe BFC(Block Formatting Context) and how it works.
-* What are the various clearing techniques and which is appropriate for what context?
 * How would you approach fixing browser-specific styling issues?
 * How do you serve your pages for feature-constrained browsers?
   * What techniques/processes do you use?
