@@ -651,7 +651,7 @@ function fizz() {
   let cur = sumThree.curry(3)(4)(20)(6);
   console.log(cur); // 30
   ```
-  
+
 ### <div id="answer-62">What are the benefits of using `spread syntax` and how is it different from `rest </div>syntax`?
 - `spread syntax` - offers a quicker and easier way to **create**, **combine** arrays.
   ```javascript
@@ -666,7 +666,15 @@ function fizz() {
 ```
 
 ### <div id="answer-63">How can you share code between files?</div>
-- You can use create a module to wrap the codes into one object, and then import the modules from another file.
+- _**Define a module :**_ ES2015 aims to define a module syntax which can be supported in both browser and Node environment, similar to the concept of Ruby class.
+- On the server (Node.js), the common way has been to use CommonJS. Each file is treated as a module and it can export variables and functions by attaching them to the module.exports object.
+- On the client (browser environment), as long as the variables/functions are declared in the global scope (window), all scripts can refer to them. Alternatively, adopt the Asynchronous Module Definition (AMD) via RequireJS for a more modular approach.
+
+http://requirejs.org/docs/whyamd.html
+https://nodejs.org/docs/latest/api/modules.html
+http://2ality.com/2014/09/es6-modules-final.html
+https://github.com/yangshun/front-end-interview-handbook/blob/master/questions/javascript-questions.md#why-you-might-want-to-create-static-class-members
+
 
 ### <div id="answer-64">Why you might want to create static class members?</div>
 - `static method` - a method that only exists on the class, not on the child objects
