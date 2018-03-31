@@ -43,25 +43,25 @@
 #### <div id="css-a-13"> Have you ever used a grid system, and if so, what do you prefer?</div>
 
 
-### <div id="css-a-14"> Have you used or implemented media queries or mobile specific layouts/CSS?</div>
-### <div id="css-a-14"> Are you familiar with styling SVG?</div>
-### <div id="css-a-14"> Can you give an example of an `@media` property other than `screen`?</div>
-### <div id="css-a-14"> What are some of the "gotchas" for writing efficient CSS?</div>
-### <div id="css-a-14"> What are the advantages/disadvantages of using CSS preprocessors?</div>
-  ### <div id="css-a-14"> Describe what you like and dislike about the CSS preprocessors you have used.</div>
-### <div id="css-a-14"> How would you implement a web design comp that uses non-standard fonts?</div>
-### <div id="css-a-14"> Explain how a browser determines what elements match a CSS selector.</div>
-### <div id="css-a-14"> Describe pseudo-elements and discuss what they are used for.</div>
-### <div id="css-a-14"> Explain your understanding of the box model and how you would tell the browser in </div>CSS to render your layout in different box models.
-### <div id="css-a-14"> What does ```* { box-sizing: border-box; }``` do? What are its advantages?</div>
-### <div id="css-a-14"> What is the CSS `display` property and can you give a few examples of its use?</div>
-### <div id="css-a-14"> What's the difference between inline and inline-block?</div>
-### <div id="css-a-14"> What's the difference between a relative, fixed, absolute and statically positioned element?</div>
-### <div id="css-a-14"> What existing CSS frameworks have you used locally, or in production? How would you change/improve them?</div>
-### <div id="css-a-14"> Have you played around with the new CSS Flexbox or Grid specs?</div>
-### <div id="css-a-14"> Can you explain the difference between coding a web site to be responsive versus using a mobile-first strategy?</div>
-### <div id="css-a-14"> Have you ever worked with retina graphics? If so, when and what techniques did you use?</div>
-### <div id="css-a-14"> Is there any reason you'd want to use `translate()` instead of *absolute positioning*, or vice-versa? And why?</div>
+#### <div id="css-a-14"> Have you used or implemented media queries or mobile specific layouts/CSS?</div>
+#### <div id="css-a-14"> Are you familiar with styling SVG?</div>
+#### <div id="css-a-14"> Can you give an example of an `@media` property other than `screen`?</div>
+#### <div id="css-a-14"> What are some of the "gotchas" for writing efficient CSS?</div>
+#### <div id="css-a-14"> What are the advantages/disadvantages of using CSS preprocessors?</div>
+  #### <div id="css-a-14"> Describe what you like and dislike about the CSS preprocessors you have used.</div>
+#### <div id="css-a-14"> How would you implement a web design comp that uses non-standard fonts?</div>
+#### <div id="css-a-14"> Explain how a browser determines what elements match a CSS selector.</div>
+#### <div id="css-a-14"> Describe pseudo-elements and discuss what they are used for.</div>
+#### <div id="css-a-14"> Explain your understanding of the box model and how you would tell the browser in </div>CSS to render your layout in different box models.
+#### <div id="css-a-14"> What does ```* { box-sizing: border-box; }``` do? What are its advantages?</div>
+#### <div id="css-a-14"> What is the CSS `display` property and can you give a few examples of its use?</div>
+#### <div id="css-a-14"> What's the difference between inline and inline-block?</div>
+#### <div id="css-a-14"> What's the difference between a relative, fixed, absolute and statically positioned element?</div>
+#### <div id="css-a-14"> What existing CSS frameworks have you used locally, or in production? How would you change/improve them?</div>
+#### <div id="css-a-14"> Have you played around with the new CSS Flexbox or Grid specs?</div>
+#### <div id="css-a-14"> Can you explain the difference between coding a web site to be responsive versus using a mobile-first strategy?</div>
+#### <div id="css-a-14"> Have you ever worked with retina graphics? If so, when and what techniques did you use?</div>
+#### <div id="css-a-14"> Is there any reason you'd want to use `translate()` instead of *absolute positioning*, or vice-versa? And why?</div>
 
 
 [Back to Home](/README.md)
