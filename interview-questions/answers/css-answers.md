@@ -41,8 +41,6 @@
 - `.hide { display: none; }`
 
 #### <div id="css-a-13"> Have you ever used a grid system, and if so, what do you prefer?</div>
-
-
 #### <div id="css-a-14"> Have you used or implemented media queries or mobile specific layouts/CSS?</div>
 #### <div id="css-a-14"> Are you familiar with styling SVG?</div>
 #### <div id="css-a-14"> Can you give an example of an `@media` property other than `screen`?</div>

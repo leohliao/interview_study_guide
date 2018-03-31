@@ -651,10 +651,7 @@ function fizz() {
   let cur = sumThree.curry(3)(4)(20)(6);
   console.log(cur); // 30
   ```
- 
- 
-
-
+  
 ### <div id="answer-62">What are the benefits of using `spread syntax` and how is it different from `rest </div>syntax`?
 - `spread syntax` - offers a quicker and easier way to **create**, **combine** arrays.
   ```javascript
@@ -667,16 +664,9 @@ function fizz() {
     console.log()
   }
 ```
- 
- 
-
 
 ### <div id="answer-63">How can you share code between files?</div>
 - You can use create a module to wrap the codes into one object, and then import the modules from another file.
-
- 
- 
-
 
 ### <div id="answer-64">Why you might want to create static class members?</div>
 - `static method` - a method that only exists on the class, not on the child objects
@@ -759,7 +749,7 @@ function fizz() {
    
    [Stackoverflow: What is the difference between parseInt(string) and Number(string) in JavaScript?](https://stackoverflow.com/questions/4564158/what-is-the-difference-between-parseintstring-and-numberstring-in-javascript)
  
-### <div id="js-a-67">What are ways to Enumerate properties of an Object?</div>
+### <div id="js-a-67">What are ways to Enumerate properties of an `Object?`</div>
   - `for...in loops`: This method traverses all enumerable properties of an object and its prototype chain
   - `Object.keys(o)`: This method returns an array with all the own (not in the prototype chain) enumerable properties' names ("keys") of an object o.
   - `Object.getOwnPropertyNames(o)`: This method returns an array containing all own properties' names (enumerable or not) of an object o.
