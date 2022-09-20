@@ -1,3 +1,20 @@
+/*
+    Given an integer as an input, num, return the fewest operations, or steps,
+    needed to arrive at 1, when you can only perform 3 operations:
+        - divide by 3, if num is divisible by 3
+        - divide by 2, if num is divisible by 2
+        - subtract 1
+    
+    I/O:
+        - input: 4
+        - output: 2 4 => 2 => 1
+        
+    I/O:
+        - input: 10
+        - output: 3 9 => 3 => 1
+
+*/ 
+
 // Exponential runtime
 // time = O(k^n)
 // because the solution is redundant
@@ -29,6 +46,25 @@ const minStepsToOne = (n) => {
 
     return traverse(n);
 }
+
+
+// console.time("Recursion: ")
+// console.log(minStepsToOne(100));
+// console.timeEnd("Recursion: ")
+
+// console.time("Recursion: ")
+// console.log(minStepsToOne(200));
+// console.timeEnd("Recursion: ")
+
+// console.time("Recursion: ")
+// console.log(minStepsToOne(300));
+// console.timeEnd("Recursion: ")
+
+// console.time("Recursion: ")
+// console.log(minStepsToOne(400));
+// console.timeEnd("Recursion: ")
+
+
 
 // Better solution
 // Use memoization (uses cache to store operations)
@@ -65,17 +101,26 @@ const minStepsToOneMemo = (n) => {
 
     return traverse(n);
 }
+// console.time("RecursionMemo: ")
+// console.log(minStepsToOneMemo(300));
+// console.timeEnd("RecursionMemo: ")
+
+// console.time("RecursionMemo: ")
+// console.log(minStepsToOneMemo(400));
+// console.timeEnd("RecursionMemo: ")
+
 
 
 // Tabulation - Bottom up approach
-// 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
-// [, 0, 1, 1, 2, 3, 2, 3, 3, 2,  3 ]
+//  0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+// [0, 1, 1, 2, 3, 2, 3, 3, 2,  3 ]
 // Linear O(n)
 // You can make the table persistant to improve the speed
 const minStepsToOneTabulation = (n) => {
     const table = new Array(n + 1);
-
+    console.log("initial table: ", table);
     table[1] = 0;
+    
     for (let i = 2; i < table.length; i++) {
         // subtract 1 {}
         let option = table[i - 1];
@@ -91,37 +136,20 @@ const minStepsToOneTabulation = (n) => {
         }
         
         table[i] = option + 1;
+        console.log(`table at [${i}]`,  table);
     }
     return table[n];
 
 }
 
-console.time("Recursion: ")
-console.log(minStepsToOne(100));
-console.timeEnd("Recursion: ")
 
-console.time("Recursion: ")
-console.log(minStepsToOne(200));
-console.timeEnd("Recursion: ")
 
-console.time("Recursion: ")
-console.log(minStepsToOne(300));
-console.timeEnd("Recursion: ")
-
-console.time("RecursionMemo: ")
-console.log(minStepsToOneMemo(300));
-console.timeEnd("RecursionMemo: ")
-
-console.time("Recursion: ")
-console.log(minStepsToOne(400));
-console.timeEnd("Recursion: ")
-
-console.time("RecursionMemo: ")
-console.log(minStepsToOneMemo(400));
-console.timeEnd("RecursionMemo: ")
+// console.time("RecursionTabulation: ")
+// console.log(minStepsToOneTabulation(400));
+// console.timeEnd("RecursionTabulation: ")
 
 console.time("RecursionTabulation: ")
-console.log(minStepsToOneTabulation(400));
+console.log(minStepsToOneTabulation(4));
 console.timeEnd("RecursionTabulation: ")
 
 // When being asked: what's the best way to solve this problem
