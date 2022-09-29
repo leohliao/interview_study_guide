@@ -42,20 +42,27 @@ console.log(latticePath(2,3)) // 10
     0, 2        1,1         1,1         2,0
 */ 
 
-function latticePathsMemoization(n, m) {
-    //YOUR WORK HERE
-    function findPaths(x, y) {
-        if (x === n && y === m) {
-            return 1;
-        } 
-        if (x > n || y > m) {
-            return 0;
-        }
+function latticePathsMemoization(x, y) {
+    const cache = {}
 
-        return findPaths(x, y + 1) + findPaths(x +1, y)
+    function findPaths(n, m) {
+      const key = `${n}_${m}`;
+      if (cache[key]) {
+        return cache[key]
+      }
+  
+  
+      if (n === x && m === y) {
+        return 1;
+      }
+      if (n > x || m > y) {
+        return 0;
+      }
+      cache[key] = findPaths(n + 1, m) + findPaths(n, m + 1);
+      return cache[key];
+  
     }
-
-    return findPaths(0, 0)
+    return findPaths(0, 0);
     
 }
 
