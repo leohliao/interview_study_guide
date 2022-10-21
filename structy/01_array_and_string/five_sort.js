@@ -15,7 +15,7 @@ const fiveSort = (nums) => {
     let i = 0;
     let j = nums.length - 1;
     
-    while (i <= j) {
+    while (i <= j) { // Need to stop at the same element
       if (nums[j] === 5) {
         j -= 1;
       } else if (nums[i] === 5) {
