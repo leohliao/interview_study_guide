@@ -198,3 +198,12 @@ function checkIslands(matrix) {
   console.log(countIslands(example2) === 3)
   console.log(countIslands(example3) === 2)
   console.log(countIslands(example4) === 1)
+
+/*
+  My current island didn't quiet resolve this problem when the island has an open in the middle.
+  
+  Tried using this approach but still wouldn't resolve it.
+  https://www.geeksforgeeks.org/count-number-islands-every-island-separated-line/
+
+
+*/   
